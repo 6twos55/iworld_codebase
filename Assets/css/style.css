@@ -1,0 +1,217 @@
+/*
+<!-- 
+Name: I-world Networks
+Date: 1st January, 2024
+Developer: Armaaneth Esiri
+-->
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+}
+
+/* Font Family */
+
+
+/* Header */
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Navbar styling */
+.topnav {
+    background-color: transparent;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10;
+}
+
+.topnav .logo{
+    height: 100%;
+    width: 15%;
+}
+
+.topnav .logo img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.navlist{
+    list-style-type: none;
+    width: 70%;
+    height: 100%;
+    font-size: 15px;
+}
+.navlink{
+    outline: none;
+    background: white;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navitem:hover .dropdown-content {
+    display: block;
+}
+
+.subscribe-btn{
+    width: 15%;
+    height: 100%;
+}
+
+/* Ending of navbar */
+/* Header content */
+.header-content{
+    z-index: 0;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Slides */
+  .Slides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #SlideOne{
+    background: url(../img/Bg-img.png);
+    background-position: top;
+    background-size: cover;
+  }
+  .Slides .slides-content-container{
+    width: 55%;
+    height: 100%;
+    text-align: start;
+  }
+  .Slides .slides-content-container h1{
+    font-weight: bold;
+  }
+
+  .Slides .slides-content-container h4,   .Slides .slides-content-container h1 span{
+    color: #ff6600;
+    font-weight: 700;
+}
+.Slides .slides-content-container h4, .Slides .slider-intro-text{
+    font-family: 'Lato', sans-serif;
+}
+
+  .Slides .header-btn-container{
+    width: 50%;
+    text-align: start;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    width: auto;
+    margin-top: -30px;
+    padding: 5px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #9CCB48;
+    color: white;
+}
+/* Ending of header */
+
+/* Beginning of our services styling */
+.service-container{
+    margin: 2rem 0rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.service-container .service-title{
+    width: 100%;
+    height: 20%;
+}
+
+.service-container .service-title h6{
+    font-family: 'Lato', sans-serif;
+}
+
+.service-container .service-title h6, .service-container .service-title h3{
+    font-weight: bold;
+}
+
+.service-container .service-text{
+    width: 50%;
+    text-align: center;
+}
+
+.service-container .service-grid{
+    width: 100%;
+    height: 80%;
+}
+
+.service-container .service-grid .service-video{
+    width: 30%;
+    height: 95%;
+    background: red;
+}
+
+.service-container .service-grid .service-content{
+    width: 30%;
+    height: 95%;
+}
+
+.service-container .service-grid .service-content .service{
+    width: 100%;
+    height: 32%;
+    background: #D9D9D9 ;
+}

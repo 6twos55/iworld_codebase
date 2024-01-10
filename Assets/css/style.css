@@ -114,11 +114,6 @@ Developer: Armaaneth Esiri
     height: 100%;
   }
 
-  #SlideOne{
-    background: url(../img/Bg-img.png);
-    background-position: top;
-    background-size: cover;
-  }
   .Slides .slides-content-container{
     width: 55%;
     height: 100%;
@@ -208,6 +203,7 @@ Developer: Armaaneth Esiri
 .service-container .service-grid .service-content{
     width: 30%;
     height: 95%;
+    list-style-type:none;
 }
 
 .service-container .service-grid .service-content .service{

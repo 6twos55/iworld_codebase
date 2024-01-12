@@ -211,3 +211,253 @@ Developer: Armaaneth Esiri
     height: 32%;
     background: #D9D9D9 ;
 }
+
+/* Footer styling */
+.footer{
+    margin: 10rem 0px 0px 0px;
+    width: 100%;
+    height: 96vh;
+    background: url(../img/footer-bg.png);
+    background-size: cover;
+}
+.footer form input[ type='email']{
+    width: 50%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+}
+.footer form input[ type='submit']{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background: #9CCB48;
+}
+.footer table{
+    text-align: center;
+}
+.footer li{
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+}
+.footer li a{
+    color: black;
+    text-decoration: none;               
+    font-family: 'Lato', sans-serif;
+}
+.footer-link-title{
+    color: #fff;
+}
+
+/* About Us Page Styling */
+.about-header-content{
+    width: 100%;
+    height: 90vh;
+}
+.about-header-content .about-header-text{
+    width: 50%;
+    height: 100%;
+    padding: 10rem 5rem;
+}
+.about-header-content .about-header-img{
+    width: 40%;
+    height: 100%;
+}
+.about-header-content .about-header-text .about-title{
+    font-weight: 700;
+    color: #9CCB48;
+}
+.v-m-container{
+    width: 100%;
+    height: 60vh;
+    padding: 0rem 5rem;
+}
+.v-m-container h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+.v-m-container p, .certification-container .certificates .certificate-list p{
+    font-family: 'Lato', sans-serif;
+}
+.certification-container{
+    width: 100%;
+    height: 80vh;
+}
+.certification-container .certification-image{
+    width: 35%;
+    height: 100%;
+}
+.certification-container .certificates{
+    width: 45%;
+    height: 100%;
+}
+.certification-container .certification-image img{
+    width: 100%;
+    height: 100%;
+}
+.certification-container .certificates .certificate-list{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+.certification-container .certificates .certificate-list h2{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    color: #9CCB48;
+}
+.coverage{
+    width: 100%;
+    height: 90vh;
+    border-top:2px solid white;
+}
+.coverage-map{
+    width: 100%;
+    height: 55%;
+}
+.coverage-map img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+.coverage-content{
+    width: 100%;
+    height: 45%;
+}
+.coverage-list{
+    list-style-type: none;
+    width: 50%;
+    height: 100%;
+}
+.coverage-img{
+    width: 50%;
+    height: 100%;
+}
+.coverage-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Us Page Styling */
+.contact-header-content{
+    width: 100%;
+    height: 60vh;
+}
+.contact-header-content contact-header-text{
+    width: 40%;
+    height: 100%;
+}
+.contact-header-content .contact-header-text p{
+    font-family: 'Lato', sans-serif;
+}
+.contact-header-content .contact-header-img{
+    width: 60%;
+    height: 100%;
+}
+.contact-header-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-form{
+    width: 100%;
+    height: 90vh;
+}
+.contact-form form{
+    width: 100%;
+    height: 80%;
+    font-family: 'Lato', sans-serif;
+}
+.contact-form form div{
+    width: 70%;
+    height: 25%;
+}
+.contact-form form div label{
+    font-family: 'Lato', sans-serif;
+}
+.contact-form form .input-container input, .contact-form form div textarea{
+    width: 100%;
+}
+.contact-form form div input{
+    height: 50px;
+}
+
+.support-container{
+    width: 100%;
+    height: 50vh;
+}
+.support-container .customer-support-grid{
+    width: 100%;
+    height: 85%;
+}
+.support-container .customer-support-grid .support-block{
+    background: #D9D9D9;
+    width: 40%;
+    height: 80%;
+}
+.contact-faq-container{
+    width: 100%;
+    height:80vh;
+}
+.contact-faq-container span{
+    width: 70%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.contact-faq-container .accordion-container{
+    width: 70%;
+    height: 75%;
+}
+.accordion {
+    background-color: #fff;
+    color: #ff6600;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Lato', sans-serif;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    text-align: start;
+}
+.panel p{
+    font-family: 'Lato', sans-serif;
+}
+.accordion:after .icon{
+    float: right;
+    margin-left: 5px;
+}
+.coverage-body h5{
+    font-weight: bold;
+}
+.coverage-header{
+    width: 100%;
+    height: 50vh;
+}
+.coverage-header-content{
+    width: 100%;
+    height: 40vh;
+}
+.coverage-header-text{
+    width: 80%;
+    height: 100%;
+}
+.coverage-header-text .coverage-title{
+    color: #9CCB48;
+}
+.coverage-header-text p{
+    font-family: 'Lato', sans-serif;
+}

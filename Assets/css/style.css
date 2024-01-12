@@ -461,3 +461,60 @@ Developer: Armaaneth Esiri
 .coverage-header-text p{
     font-family: 'Lato', sans-serif;
 }
+.iob-header{
+    width: 100%;
+    height: 70vh;
+}
+.iob-header .iob-header-content{
+    width: 100%;
+    height: 70vh;
+}
+.iob-header .iob-header-content .iob-header-text{
+    width: 40%;
+    height: 100%;
+}
+.iob-header .iob-header-content .iob-header-text h2{
+    color: #9CCB48;
+}
+.iob-header .iob-header-content .iob-header-img{
+    width: 60%;
+    height: 100%;
+}
+.iob-header .iob-header-content .iob-header-img img{
+    width: 100%;
+    height: 100%;
+}
+.iob-header .iob-header-content .iob-header-text button{
+    background: #9CCB48;
+    border: none;
+}
+.mv-container{
+    width: 100%;
+    height: auto;
+}
+.mv-container p{
+    font-family: 'Lato', sans-serif;
+}
+.dp-section{
+    width: 100%;
+    height: auto;
+}
+.dp-section .dp-grid-container{
+    width: 100%;
+    height: auto;
+}
+.dp-section .dp-grid-container .dp-grid{
+    width: 100%;
+    height: 100%;
+}
+.dp-section .dp-grid-container .dp-grid .col{
+    width: 35%;
+    height: auto;
+    background: rgba(0, 130, 0, 0.10);
+    text-align: center;
+}
+.dp-section .dp-grid-container .dp-grid .col .avatar{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+}

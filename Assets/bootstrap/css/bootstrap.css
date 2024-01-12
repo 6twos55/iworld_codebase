@@ -7,6 +7,8 @@
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
+  --bs-iw-orange: #ff6600;
+  --bs-iw-lemon: #9CCB48;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;

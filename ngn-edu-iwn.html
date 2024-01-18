@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="I-World Networks is a connectivity service provider in Nigeria">
+        <meta name="author" content="Armaaneth Esiri">
+        <title>I-World Networks|| Connecting possibilities</title>
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="./Assets/icons/favicon/favicon.ico" type="image/x-icon">
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="./Assets/css/style.css">
+        <link rel="stylesheet" href="./Assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Google Fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>
+            .gfe-header{
+                width: 100%;
+                height: 80vh;
+            }
+            .gfe-header-content{
+                background-color: gray;
+                width: 100%;
+                height: 70vh;
+            }
+            .gfe-header-content .gfe-header-text{
+                width: 50%;
+                height: 100%;
+            }
+            .ngn-edu-info h5,li, .school-partners h2, .school-box span, .lato{
+                font-family: 'Lato', sans-serif;
+            }
+            .educator{
+                width: 100%;
+                height: 50vh;
+                background: rgba(255, 102, 0, 0.1);
+            }
+            .educator-content{
+                width: 50%;
+                height: 100%;
+            }
+            .news-section{
+                width: 100%;
+                height: 50vh;
+            }
+            .news-section .news-slide{
+                width: 100%;
+                height: 100%;
+            }
+            .news-box{
+                width: 45%;
+                height: 100%;
+            }
+            .news-box img{
+                width: 100%;
+                height: 100%;
+            }
+            .news-box .news-text{
+                width: 100%;
+                height: 50%;
+            }
+            .gallery-container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+            .mySlides {
+                display: none;
+            }
+            .mySlides img{
+                width: 100%;
+                height: 80vh;
+                object-fit: contain;
+            }
+            .cursor {
+                cursor: pointer;
+            }
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: #ff6600;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            -webkit-user-select: none;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover,
+            .next:hover {
+                background-color: #9CCB48;
+            }
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .caption-container {
+                text-align: center;
+                padding: 2px 16px;
+                color: #000;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column {
+                float: left;
+                width: 15%;
+            }
+            .demo {
+                opacity: 0.6;
+            }
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+            .sdts-testimonials{
+                width: 100%;
+                height: auto;
+            }
+            @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+            .snip1533 {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            color: #000;
+            display: inline-block;
+            font-family: 'Lato', Arial, sans-serif;
+            font-size: 16px;
+            margin: 35px 10px 10px;
+            max-width: 310px;
+            min-width: 250px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border-top: 5px solid #ff6600;
+            }
+
+            .snip1533 *,
+            .snip1533 *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.1s ease-out;
+            transition: all 0.1s ease-out;
+            }
+
+            .snip1533 figcaption {
+            padding: 13% 10% 12%;
+            }
+
+            .snip1533 figcaption:before {
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            color: #ff6600;
+            content: "\f10e";
+            font-family: 'FontAwesome';
+            font-size: 32px;
+            font-style: normal;
+            left: 50%;
+            line-height: 60px;
+            position: absolute;
+            top: -30px;
+            width: 60px;
+            }
+
+            .snip1533 h3 {
+            color: #ff6600;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 24px;
+            margin: 10px 0 5px;
+            }
+
+            .snip1533 h4 {
+            font-weight: 400;
+            margin: 0;
+            opacity: 0.5;
+            color: #000;
+            }
+
+            .snip1533 blockquote {
+            font-style: italic;
+            font-weight: 300;
+            margin: 0 0 20px;
+            }
+        </style>
+    </head>
+<body>
+    <!-- Header Beginning -->
+    <div class="gfe-header">
+        <!-- Navbar beginning -->
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+                <a href="./index.html" class="logolink">
+                    <img src="./Assets/icons/logos/iworld_logo2.jpg" alt="iworld_logo">
+                </a>
+            </div>
+            <ul class="navlist d-flex flex-row align-items-center justify-content-evenly">
+                <li class="navitem">
+                    <a href="./index.html" class="navlink">Home</a>
+                </li>
+                <li class="navitem">
+                    <button  class="navlink dropdown">Connectivity Services <img src="./Assets/icons/dropdown_icon.png" alt="dropdown_icon"></button>
+                    <div class="dropdown-content">
+                        <a href="#">Internet for Home</a>
+                        <a href="#">Internet for Small Business</a>
+                        <a href="#">Enterprise Internet</a>
+                        <a href="#">MPLS (Multiprotocol Label Switching)</a>
+                      </div>
+                </li>
+                <li class="navitem">
+                    <button  class="navlink dropdown">Google Cloud Services <img src="./Assets/icons/dropdown_icon.png" alt="dropdown_icon"></button>
+                    <div class="dropdown-content">
+                        <a href="#">Nigeria Google for Education</a>
+                        <a href="#">Google Workspace</a>
+                        <a href="#">Google Chrome Enterprise</a>
+                    </div>
+                </li>
+                <li class="navitem">
+                    <button  class="navlink dropdown">Managed Service Provider (MSP) <img src="./Assets/icons/dropdown_icon.png" alt="dropdown_icon"></button>
+                    <div class="dropdown-content">
+                        <a href="#">Education</a>
+                        <a href="#">Small & Medium Businesses</a>
+                        <a href="#">Enterprise</a>
+                    </div>
+                </li>
+                <li class="navitem">
+                    <a href="./contact.html" class="navlink">Contact Us</a>
+                </li> 
+            </ul>
+            <div class="subscribe-btn d-flex align-items-center justify-content-center">
+                <a href="" class="btn btn-success">Subscribe</a>
+            </div>
+        </div>
+        <!-- Ending of navbar -->
+        <div class="gfe-header-content ">
+            <div class="gfe-header-text p-5 d-flex flex-column align-items-start justify-content-center" >
+                <span style="font-family: 'Lato', sans-serif;">Google Cloud Services </span>
+                <h2 style="font-family: 'Montserrat', sans-serif;color: #9CCB48;">Nigeria Google For Education</h2>
+                <p style="font-family: 'Lato', sans-serif;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae magni iure fugit dicta dolorem? Nisi nulla velit accusantium obcaecati, dolorem, itaque officiis sit sed deserunt hic quaerat nihil facilis quis.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+    
+    <!-- Beginning of objectives and benefits section -->
+    <div class="container ngn-edu-info my-5">
+        <div class="ngn-objectives">
+            <h5>Objectives of Nigeria Google for Education Program:</h5>
+            <ol>
+                <li>
+                    The Program is to expand the use of Google Workspace for Education Technology & Tools purposely built for digital learning and innovations 
+                </li>
+                <li>
+                    To help Schools (K-12) and Higher Education to achieve Hybrid/Blended learning environment which is standard for educational institutions after covid-19 pandemic
+                </li>
+            </ol>
+        </div>
+        <div class="ngn-benefits">
+            <h5>Benefits of the Nigeria Google for Education Program:</h5>
+            <ol>
+                <li>
+                    Upgrade of Secured Internet Infrastructure to all Classroom, Hostels, Offices and the entire campus to 21st century technology (WI-FI 6) 
+                </li>
+                <li>
+                    Deployment of Chromebook Laptops for all Students and academic staff.
+                </li>
+                <li>
+                    Onboarding, Training and Capacity Development for the Educators and Staffs for effective use of Google Workspace for delivering learning and innovation for the students 
+                </li>
+                <li>
+                    Google Workspace Educational Plus account for Students and Staffs 
+                </li>
+                <li>
+                    Up to 4Gbps/4Gbps Internet backbone directly from Google Equiano Submarine Cable 
+                </li>
+                <li>
+                    Infrastructure fully powered by renewable energy for Google zero carbon footprint
+                </li>
+            </ol>
+        </div>
+
+        <div class="ngn-thumbnail">
+            <img src="./Assets/icons/students-thumbnail.png" alt="" class="thumbnail">
+            <span class="mx-3">Over <b>200,000</b> Active Students</span>
+
+            <h5 class="my-3">Click <a href="#" style="color: #9CCB48;" class="fw-bold">here</a> to get started</h5>
+        </div>
+    </div>
+    <!-- Ending of objectives and benefits section -->
+
+    <!-- Beginning of  partner section -->
+    <div class="container partner-school-section">
+        <div class="swiper school-partners">
+            <h2 class="fw-bold text-start ">Our Partner Schools</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex flex-row justify-content-evenly" >
+                    <div class="school-box">
+                      <img src="./Assets/icons/bowen-icon.png"> 
+                      <p class="fw-bold text-center" >Bowen University</p>
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>  
+                    </div>
+                    <div class="school-box">
+                      <img src="./Assets/icons/uniben-icon.png">
+                      <p class="fw-bold text-center" >University Of Ibadan</p>
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>
+                    </div>
+              
+                    <div class="school-box"> 
+                        <img src="./Assets/icons/ui-icon.png">
+                        <p class="fw-bold text-center" >University Of Benin</p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>
+                    </div>
+                  </div>
+          <!-- Slide two -->
+              <div class="swiper-slide d-flex flex-row justify-content-evenly" >
+                <div class="school-box">
+                  <img src="./Assets/icons/bowen-icon.png"> 
+                  <p class="fw-bold text-center" >Bowen University</p>
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>
+                </div>
+                <div class="school-box">
+                  <img src="./Assets/icons/uniben-icon.png">
+                  <p class="fw-bold text-center" >University Of Ibadan</p>
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>
+                </div>
+          
+                <div class="school-box"> 
+                    <img src="./Assets/icons/ui-icon.png">
+                    <p class="fw-bold text-center" >University Of Benin</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex flex-row justify-content-evenly" >
+                <div class="school-box">
+                  <img src="./Assets/icons/bowen-icon.png"> 
+                  <p class="fw-bold text-center" >Bowen University</p>
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>  
+                </div>
+                <div class="school-box">
+                  <img src="./Assets/icons/uniben-icon.png">
+                  <p class="fw-bold text-center" >University Of Ibadan</p>
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>
+                </div>
+          
+                <div class="school-box"> 
+                    <img src="./Assets/icons/ui-icon.png">
+                    <p class="fw-bold text-center" >University Of Benin</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vero ullam! Distinctio</span>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Navigation buttons -->  
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>  
+    </div>
+    <!-- Ending of  partner section -->
+
+    <!-- Beginning of  educator section -->
+    <section class="educator  my-5 ">
+        <div class="container py-5">
+            <div class="educator-content ">
+                <h2 class="text-start fw-bold lato">Become an Educator</h2>
+                <p class="lato">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad optio labore perferendis repellat doloribus numquam sint tempore iste, ea eaque, cumque rem, id deserunt quaerat autem? Omnis dolore nesciunt nostrum!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nesciunt totam eaque, porro non consectetur cum natus libero sequi minima illo doloribus minus mollitia expedita necessitatibus amet, explicabo officia nulla.
+                </p>
+                <a href="#" class="btn btn-warning px-3 py-2">APPLY NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- Ending of educator section -->
+
+    <!-- Beginning of  news section -->
+    <section class="news-section">
+        <div class="container swiper">
+            <h2 class="fw-bold text-start ">News & Updates</h2>
+            <div class="swiper-wrapper" id="newsSwiperWrapper">
+                
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Navigation buttons -->  
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- Ending of news section -->
+
+    <!-- Beginning of image gallery section -->
+    <div class="container gallery">
+        <h2 class="fw-bold text-start my-2">Pictures of some of our Students: </h2>
+        <div class="gallery-container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="./Assets/img/education-iworld1.jpg">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="./Assets/img/education-iworld2.jpg">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="./Assets/img/education-iworld3.jpg">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="./Assets/img/education-iworld2.jpg">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="./Assets/img/education-iworld1.jpg">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="./Assets/img/education-iworld3.jpg">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption" class="fw-bold "></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="./Assets/img/education-iworld1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Assets/img/education-iworld2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Assets/img/education-iworld3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Assets/img/education-iworld2.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Assets/img/education-iworld1.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Assets/img/education-iworld3.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- Ending of image gallery section -->
+
+    <!-- Beginning of students testimonials section -->
+    <div class="sdts-testimonials container  my-5">
+        <h2  class="fw-bold text-start">Comments from Students</h2>
+        <span>Lorem ipsum dolor sit amet consectetur. Amet vulputate varius sit nisi magna <br>malesuada varius venenatis in.</span>
+        <div class="testimonial-container d-flex align-items-center justify-content-center">
+            <figure class="snip1533">
+                <figcaption>
+                  <blockquote>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, at inventore quaerat itaque maiores corrupti nostrum harum amet</p>
+                  </blockquote>
+                  <h3>Wisteria Ravenclaw</h3>
+                  <h4>Acheivers <br> University</h4>
+                </figcaption>
+              </figure>
+              <figure class="snip1533">
+                <figcaption>
+                  <blockquote>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, at inventore quaerat itaque maiores corrupti nostrum harum amet</p>
+                  </blockquote>
+                  <h3>Ursula Gurnmeister</h3>
+                  <h4>Adekunle Ajasin University</h4>
+                </figcaption>
+              </figure>
+              <figure class="snip1533">
+                <figcaption>
+                  <blockquote>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, at inventore quaerat itaque maiores corrupti nostrum harum amet</p>
+                  </blockquote>
+                  <h3>Ingredia Nutrisha</h3>
+                  <h4>Day Waterman College</h4>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <!-- Ending of students testimonials section -->
+
+    <!-- Beginning of footer section -->
+    <footer class="footer">
+        <!-- Beginning of newsletter -->
+        <div class="newsletter d-flex flex-column align-items-center justify-content-center">
+            <div class="box rounded p-5" style="background-color: #ff6600; width: 600px; height: 250px;" >
+                <h2>Be the first Among Equals</h2>
+                <p style="font-family: 'Lato', sans-serif;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <form action="" style="font-family: 'Lato', sans-serif;">
+                        <input type="email" name="email" id="newsletter-email" placeholder="Email Address" class="rounded shadow">
+                        <input type="submit" value="Notify Me" class="rounded shadow">
+                </form>
+            </div>
+        </div>
+        <!-- Ending of newsletter -->
+        <!-- Footer Links -->
+        <div class="footer-content">
+            <div class="footer-links">
+                <table class="footer-table" >
+                    <tr class="">
+                        <td rowspan="2" class="px-5 text-start" style="font-family: 'Lato', sans-serif; width: 30%;">
+                            <li>
+                                <a href="./index.html" class="footer-home">
+                                    <img src="./Assets/icons/logos/logo_2.png" alt="" class="footer-logo">
+                                </a>
+                            </li>
+                            <li>
+                                Elevate Your Online Presence with Blazing Fast Internet from  I-World
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <iconify-icon icon="logos:facebook" class="mx-2 my-2" width="40" height="40"></iconify-icon>
+                                </a>
+                                <a href="#">
+                                    <iconify-icon icon="skill-icons:instagram" class="mx-2 my-2" width="40" height="40"></iconify-icon>
+                                </a>
+                                <a href="#">
+                                    <iconify-icon icon="devicon:linkedin" class="mx-2 my-2" width="40" height="40"></iconify-icon>
+                                </a>
+                                <a href="#">
+                                    <iconify-icon icon="logos:twitter" class="mx-2 my-2" width="40" height="40"></iconify-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <span style="font-weight: 700;">All Rights Reserved. 2024 </span><br>I-World Networks, Connecting Possibilities
+                            </li>
+                        </td>
+                        <td rowspan="2" style="font-family: 'Lato', sans-serif; width: 25%;">
+                            <li class="footer-link-title">Links</li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </td>
+                        <td style="font-family: 'Lato', sans-serif; width: 25%;">
+                            <li class="footer-link-title">Services</li>
+                            <li><a href="#">Connectivity Service</a></li>
+                            <li><a href="#">Google Cloud Service</a></li>
+                            <li><a href="#">Managed Service Provider</a></li>
+                        </td>
+                        <td style="font-family: 'Lato', sans-serif; width: 20%;">
+                            <li class="footer-link-title">Telecommunications</li>
+                            <li><a href="#">Coverage Map</a></li>
+                            <li><a href="#">Coverage Areas</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li class="footer-link-title">Partners</li>
+                            <li><a href="#">Google</a></li>
+                        </td>
+                        <td>
+                            <li class="footer-link-title">Get in Touch</li>
+                            <li><a href="mailto: iworldnetwork@gmail.com">iworldnetwork@gmail.com</a></li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="footer-details">
+                <table>
+                    <tr style="width: 100%; ">
+                        <td  class="" style="font-family: 'Lato', sans-serif; width: 30%;">
+                            <a href="#" style="width: 100%;">
+                                <img src="./Assets/icons/logos/cloud_partner_logo.png" alt="" class="object-fit-contain" width="250">
+                            </a>
+                        </td>
+                        <td class="mx-3" style="font-family: 'Lato', sans-serif; width: 30%;">
+                            <li class="footer-link-title">Sales Hotlines</li>
+                            <li>08077675560</li>
+                            <li>08077675565</li>
+                            <li>09076237956</li>
+                        </td>
+                        <td class="mx-5" style="font-family: 'Lato', sans-serif;">
+                            <li class="footer-link-title">Locations</li>
+                            <li>Abeokuta, Sagamu, Ijebu Ode, Mowe-Ibafo, Otta, Ifo, Agbara, Ala</li>
+                            <li>Ibadan, Oshogbo, Osun State (Old-Ife Road, Gbongan, Iwo Road, Osogbo)</li>
+                            <li>Epe, Isheri, Magboro</li>
+                            <li>Ibadan-Abeokuta Highway, Abeokuta-Sagamu-Lagos Highway</li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+    <!-- Ending of footer section -->
+
+
+
+    <!-- Scripts -->
+    <script src="./Assets/js/app.js"></script>
+    <script src="./Assets/js/swiper.js"></script>
+    <script src="./Assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var partnersSlider = new Swiper('.school-partners', {
+          slidesPerView: 'auto',
+          spaceBetween: 30,  
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+    </script>
+</body>
+</html>

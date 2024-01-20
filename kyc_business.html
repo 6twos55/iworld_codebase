@@ -79,50 +79,6 @@
                 <a href="" class="btn btn-success">Subscribe</a>
             </div>
         </div>
-        <!-- Ending of navbar --><!-- Navbar beginning -->
-        <div class="topnav" id="myTopnav">
-            <div class="logo">
-                <a href="./index.html" class="logolink">
-                    <img src="./Assets/icons/logos/iworld_logo2.jpg" alt="iworld_logo">
-                </a>
-            </div>
-            <ul class="navlist d-flex flex-row align-items-center justify-content-evenly">
-                <li class="navitem">
-                    <a href="./index.html" class="navlink">Home</a>
-                </li>
-                <li class="navitem">
-                    <button  class="navlink dropdown">Connectivity Services <img src="./Assets/icons/dropdown_icon.png" alt="dropdown_icon"></button>
-                    <div class="dropdown-content">
-                        <a href="./internet_for_home.html">Internet for Home</a>
-                        <a href="Internet_for_business.html">Internet for Small Business</a>
-                        <a href="./enterprise_internet.html">Enterprise Internet</a>
-                        <a href="./mlps.html">MPLS (Multiprotocol Label Switching)</a>
-                      </div>
-                </li>
-                <li class="navitem">
-                    <button  class="navlink dropdown">Google Cloud Services <img src="./Assets/icons/dropdown_icon.png" alt="dropdown_icon"></button>
-                    <div class="dropdown-content">
-                        <a href="ngn-edu-iwn.html">Nigeria Google for Education</a>
-                        <a href="Google_Workspace.html">Google Workspace</a>
-                        <a href="#">Google Chrome Enterprise</a>
-                    </div>
-                </li>
-                <li class="navitem">
-                    <button  class="navlink dropdown">Managed Service Provider (MSP) <img src="./Assets/icons/dropdown_icon.png" alt="dropdown_icon"></button>
-                    <div class="dropdown-content">
-                        <a href="#">Education</a>
-                        <a href="./smb_msp.html">Small & Medium Businesses</a>
-                        <a href="#">Enterprise</a>
-                    </div>
-                </li>
-                <li class="navitem">
-                    <a href="./contact.html" class="navlink">Contact Us</a>
-                </li> 
-            </ul>
-            <div class="subscribe-btn d-flex align-items-center justify-content-center">
-                <a href="" class="btn btn-success">Subscribe</a>
-            </div>
-        </div>
         <!-- Ending of navbar -->
         <div class="kyc-header-content ">
             <div class="kyc-header-text p-5 d-flex flex-column align-items-start justify-content-center" >
@@ -188,7 +144,14 @@
                 <label for="textarea" class="lato form-label">Add a Description</label>
                 <textarea class="lato form-control" id="textarea" rows="7" ></textarea>
               </div>
-        
+              
+              <div class="kyc-upload">
+                <p class="lato">
+                    Attention! You are required to complete this <span class="fw-bold">Confidential</span> kyc form and upload it back
+                </p>
+                <p class="lato fw-bold"> Click here to download  <button class="lato btn btn-success rounded-pill" onclick="console.log('Button clicked!'); location.href='./Assets/documents/KNOW_YOUR_CUSTOMER.docx';">Download KYC Form</button> <label class="lato" for="kyc-file">Upload KYC Form</label><input type="file" name="kyc-file" id="kyc-file" class="lato mx-3 btn btn-success rounded-pill"></p>
+              </div>
+
               <!-- Submit button -->
               <button type="submit" class="w-100 btn btn-success fw-bold fs-4">Register</button>
             </form>

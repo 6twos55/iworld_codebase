@@ -44,3 +44,12 @@ function gridView() {
     elements[i].style.width = "50%";
   }
 }
+
+
+$(document).ready(function () {
+    $('.home-header-slide-container').slidejs({
+      start: 1, // Start with the first slide
+      time: 5000, // Time between slides in milliseconds (adjust as needed)
+      auto: true, // Auto play the carousel
+    });
+  });

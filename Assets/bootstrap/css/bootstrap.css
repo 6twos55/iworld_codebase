@@ -126,6 +126,10 @@
   --bs-form-invalid-border-color: #dc3545;
 }
 
+.i-green{
+  color: #9CCB48;
+}
+
 [data-bs-theme=dark] {
   color-scheme: dark;
   --bs-body-color: #adb5bd;
@@ -6025,6 +6029,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  height: 70vh !important;
 }
 
 .carousel.pointer-event {

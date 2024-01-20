@@ -20,23 +20,7 @@ Developer: Armaaneth Esiri
 /* Header */
 .header{
     width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-#SlideOne{
-    background: url(../img/iw_header.png) center;
-    background-size: cover;
-}
-
-#SlideTwo{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/header2.jpg) center;
-    background-size: cover;
-}
-
-#SlideThree{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/header1.jpg) center;
-    background-size: cover;
+    height: 80vh;
 }
 
 /* Navbar styling */
@@ -108,75 +92,24 @@ Developer: Armaaneth Esiri
 .header-content{
     z-index: 0;
     width: 100%;
-    height: 90vh;
-    position: absolute;
+    height: 60vh !important;
+    background-color: #000;
 }
-
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-    background: #f1f1f1f1;
+.carousel-container{
     width: 100%;
-    height: 100%;
-  }
-  
-  /* Slides */
-  .Slides {
-    display: none;
-    padding: 80px;
-    text-align: center;
+    height: 70vh !important;
+}
+.carousel-inner .carousel-item{
+    background-color: white;
+}
+.header-content .carousel{
+    width: 100% !important;
+    height: 100% !important;
+}
+.header-content .carousel img{
     width: 100%;
-    height: 100%;
-  }
-
-  .Slides .slides-content-container{
-    width: 55%;
-    height: 100%;
-    text-align: start;
-    color: white;
-  }
-  .Slides .slides-content-container h1{
-    font-weight: bold;
-  }
-
-  .Slides .slides-content-container h4,   .Slides .slides-content-container h1 span{
-    color: #ff6600;
-    font-weight: 700;
-}
-.Slides .slides-content-container h4, .Slides .slider-intro-text{
-    font-family: 'Lato', sans-serif;
-}
-
-  .Slides .header-btn-container{
-    width: 50%;
-    text-align: start;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 20%;
-    width: auto;
-    margin-top: -30px;
-    padding: 5px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: #9CCB48;
-    color: white;
+    height: 70vh;
+    object-position: top;
 }
 /* Ending of header */
 
@@ -519,39 +452,45 @@ Developer: Armaaneth Esiri
     height: 80px;
     background: #fff;
 }
-.service-container{
+
+/* How it works styling */
+.service-container {
     width: 100%;
     height: 100vh;
 }
-.service-container .service-title{
+.yt_thumbnail{
     width: 100%;
-    height: 20%;
+    height: 40vh;
 }
-.service-container .service-grid{
-    width: 100%;
-    height: 80%;
-}
-.service-container .service-grid .row{
+.yt_thumbnail img{
     width: 100%;
     height: 100%;
 }
-.service-container .service-grid .row .channel-img{
-    width: 45%;
-    height: 90%;
-}
-.service-container .service-grid .row .channel-img img{
+
+.service-container .service-grid .row {
     width: 100%;
     height: 100%;
 }
-.service-container .service-grid .row .services-info{
+
+.service-container .service-grid .row .services-info {
     width: 45%;
-    height: 90%;
+    height: 100%;
 }
-.service-container .service-grid .row .services-info .info-box{
-    width: 100%;
-    height: 22vh;
-    background: #f60;
+
+.service-container .service-grid .row .services-info {
+    padding: 20px;
 }
+
+.service-container .service-grid .row .services-info p {
+    margin-bottom: 15px;
+}
+
+.service-container .service-grid .row .services-info a.btn {
+    display: inline-block;
+}
+
+
+
 .ngn-edu-container{
     width: 100%;
     height: 60vh;

@@ -112,6 +112,20 @@ Developer: Armaaneth Esiri
     object-position: top;
 }
 /* Ending of header */
+/* .service-grid{
+    /* width: auto; */
+    /* height: 40vh; */
+
+.service-icon{
+    width: 80px;
+    height: 50px;
+}
+
+
+.dp-avatar{
+    width: 100px;
+    height: 100px;
+}
 
 /* Beginning of our services styling */
 .service-container{
@@ -140,12 +154,10 @@ Developer: Armaaneth Esiri
 }
 
 /* Footer styling */
-.footer{
-    margin: 10rem 0px 0px 0px;
+/* .footer{
     width: 100%;
-    height: 96vh;
-    background: url(../img/footer-bg.png);
-    background-size: cover;
+    height: 60vh;
+    background: rgba(89, 175, 23, 0.5);
 }
 .footer form input[ type='email']{
     width: 50%;
@@ -157,7 +169,7 @@ Developer: Armaaneth Esiri
     padding: 10px 20px;
     outline: none;
     border: none;
-    background: #9CCB48;
+    background: #59AF17;
 }
 .footer table{
     text-align: center;
@@ -173,13 +185,11 @@ Developer: Armaaneth Esiri
 }
 .footer-link-title{
     color: #fff;
-}
+} */
 
 .internet-header{
     width: 100%;
     height: 60vh;
-    background: url(../img/internet-for-business-bg.png) center no-repeat;
-    background-size: contain;
 }
 
 /* About Us Page Styling */
@@ -198,7 +208,7 @@ Developer: Armaaneth Esiri
 }
 .about-header-content .about-header-text .about-title{
     font-weight: 700;
-    color: #9CCB48;
+    color: #59AF17;
 }
 .v-m-container{
     width: 100%;
@@ -237,8 +247,9 @@ Developer: Armaaneth Esiri
     font-size: 23px;
     font-weight: 500;
     font-family: 'Lato', sans-serif;
-    color: #9CCB48;
+    color: #59AF17;
 }
+/* 
 .coverage{
     width: 100%;
     height: 90vh;
@@ -270,7 +281,7 @@ Developer: Armaaneth Esiri
 .coverage-img img{
     width: 100%;
     height: 100%;
-}
+} */
 
 /* Contact Us Page Styling */
 .contact-header-content{
@@ -389,39 +400,20 @@ Developer: Armaaneth Esiri
     width: 80%;
     height: 100%;
 }
-.coverage-header-text .coverage-title{
-    color: #9CCB48;
-}
-.coverage-header-text p{
-    font-family: 'Lato', sans-serif;
-}
+
+
+
 .iob-header{
     width: 100%;
     height: 70vh;
 }
 .iob-header .iob-header-content{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
+    background: url(../img/smb.jpg);
+    background-size: cover;
 }
-.iob-header .iob-header-content .iob-header-text{
-    width: 40%;
-    height: 100%;
-}
-.iob-header .iob-header-content .iob-header-text h2{
-    color: #9CCB48;
-}
-.iob-header .iob-header-content .iob-header-img{
-    width: 60%;
-    height: 100%;
-}
-.iob-header .iob-header-content .iob-header-img img{
-    width: 100%;
-    height: 100%;
-}
-.iob-header .iob-header-content .iob-header-text button{
-    background: #9CCB48;
-    border: none;
-}
+
 .mv-container{
     width: 100%;
     height: auto;
@@ -442,15 +434,10 @@ Developer: Armaaneth Esiri
     height: 100%;
 }
 .dp-section .dp-grid-container .dp-grid .col{
-    width: 35%;
+    width: 40%;
     height: auto;
     background: rgba(0, 130, 0, 0.10);
     text-align: center;
-}
-.dp-section .dp-grid-container .dp-grid .col .avatar{
-    width: 80px;
-    height: 80px;
-    background: #fff;
 }
 
 /* How it works styling */
@@ -493,19 +480,14 @@ Developer: Armaaneth Esiri
 
 .ngn-edu-container{
     width: 100%;
-    height: 60vh;
+    height: auto;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Assets/img/education-iworld1.jpg) top fixed;
     background-size: cover;
-}
-.ngn-edu-container .ngn-edu-content{
-    width: 50%;
-    height: 100%;
-    color: white;
 }
 
 .testimonial-container{
     width: 100%;
-    height: 60vh;
+    height: auto;
 }
 .swiper {
     width: 100%;
@@ -579,7 +561,97 @@ Developer: Armaaneth Esiri
     height: 100vh;
     overflow: hidden;
 }
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
 .mySlides {
+    display: none;
+}
+.mySlides img{
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.preview {
+opacity: 0.6;
+}
+
+.active,
+.preview:hover {
+opacity: 1;
+}
+
+
+/* .mySlides {
     display: none;
 }
 .mySlides img{
@@ -611,7 +683,7 @@ Developer: Armaaneth Esiri
 }
 .prev:hover,
 .next:hover {
-    background-color: #9CCB48;
+    background-color: #59AF17;
 }
 .numbertext {
     color: #f2f2f2;
@@ -630,7 +702,7 @@ Developer: Armaaneth Esiri
     display: table;
     clear: both;
 }
-.column {
+.demo-column {
     float: left;
     width: 15%;
 }
@@ -640,7 +712,9 @@ Developer: Armaaneth Esiri
 .active,
 .demo:hover {
     opacity: 1;
-}
+} */
+
+/* Students testimonials styling */
 .sdts-testimonials{
     width: 100%;
     height: auto;
@@ -771,4 +845,26 @@ margin: 0 0 20px;
 }
 .show {
     display:block;
+}
+
+/* Service request form styling */
+.srf-header-content{
+    width: 100%;
+    height: 50vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/srf-bg.jpg) center;
+    background-size: cover;
+}
+
+
+/* Google workspace styling */
+.workspace-header{
+    width: 100%;
+    height: 70vh;
+}
+.workspace-header-content{
+    width: 100%;
+    height: 60vh;
+    background: url(../img/google.jpg) center;
+    background-size: cover;
 }

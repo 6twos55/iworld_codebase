@@ -1,0 +1,12 @@
+/* Media Queries for Medium-sized screens (992px - 767px) */
+@media (max-width: 991px) {
+    .carousel-item img{
+        object-fit: contain;
+    }
+}
+/* Media Queries for Smaller screens (max-width: 767px) */
+@media (max-width: 767px) {
+    .carousel-item img{
+        object-fit: contain;
+    }
+}

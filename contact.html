@@ -21,7 +21,7 @@
     </head>
 <body>
         <!-- Header Beginning -->
-        <div class="contact-header">
+        <div class="contact-header text-white">
         <!-- Navbar beginning -->
         <nav class="navbar navbar-expand-lg navbar-light fw-bold">
             <div class="container-fluid">
@@ -59,7 +59,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./smb_msp.html">Managed Service Provider (MSP)</a>
+                            <a class="nav-link" href="./smb_msp.html">Managed Service Provider </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">Contact Us</a>
@@ -73,9 +73,9 @@
         </nav>
         <!-- Ending of navbar -->
             <div class="contact-header-content d-flex flex-row align-items-center justify-content-evenly" >
-                <div class="contact-header-text px-5" >
-                    <h2 style="font-family: 'Montserrat', sans-serif;">Contact Us</h2>
-                    <p>
+                <div class="contact-header-text px-5 container">
+                    <h2 class="i-green fs-1 fw-bold">Contact Us</h2>
+                    <p class="fs-5">
                         We're excited to learn more about your IT requirements. Please take a moment to provide us with some essential details so that we can tailor our managed services to meet your business needs.
                     </p>
                     <span>Find us here</span> <br>
@@ -94,16 +94,54 @@
                         </a>
                     </div>
                 </div>
-                <div class="contact-header-img">
-                    <img src="./Assets/img/contact-header-img.png" alt="" class="">
-                </div>
             </div>
             <!-- Ending of contact header -->
         </div>
         <!-- Contact Form Beginning -->
-        <div class="contact-form d-flex flex-column align-items-start justify-content-center">
-            <h2 class="mx-5">Contact Form</h2>
-            <form action="" class=" d-flex flex-column align-items-center">
+        <div class="container">
+            <h2 class="">Contact Form</h2>
+            <p class="lato">Our dedicated customer support team is available 24/7 to address any inquiries, technical issues, or general assistance you may require.</p>
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <label for="customer-name">Name:</label>
+                            <input type="text" class="form-control" id="customer-name" required>
+                        </div>
+        
+                        <div class="col-md-6 col-12">
+                            <label for="customer-email">Email:</label>
+                            <input type="email" class="form-control" id="customer-email" required>
+                        </div>
+                    </div>
+        
+                    <div class="col">
+                        <label for="customer-message">Message:</label>
+                        <textarea class="form-control" id="customer-message" rows="4" required></textarea>
+                    </div>
+        
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            
+            <!-- <form action="" class=" d-flex flex-column align-items-center">
+                <form action="" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="customer-name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="customer-name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="customer-email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="customer-email" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="customer-message" class="form-label">Leave a message:</label>
+                        <textarea class="form-control" id="customer-message" rows="5"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn rounded-pill my-3 py-2 px-5" style="background: #9CCB48;">Submit Form</button>
+                    </div>
+                </form>
                 <div class="input-container d-flex flex-column  align-items-start justify-content-evenly name-input ">
                     <label class="text-start" for="customer-name">Name: </label>
                     <input class="shadow-sm rounded border border-1" type="text" id="customer-name" required>
@@ -119,7 +157,7 @@
                 <div class="d-flex flex-column  align-items-end justify-content-center">
                     <input type="submit" value="Submit Form" class="rounded-pill my-3 py-2 px-5 border border-0" style="background: #9CCB48;">
                 </div>
-            </form>
+            </form> -->
         </div>
         <!-- Contact Form Ending -->
 

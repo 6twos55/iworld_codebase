@@ -11,6 +11,7 @@
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="./Assets/css/style.css">
         <link rel="stylesheet" href="./Assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./Assets/css/responsivecss.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -19,21 +20,36 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        <style>
-            .hiring-section{
-                width: 100%;
-                height: 70vh;
-                background: url(./Assets/img/careers-bg.png) top no-repeat;
-                background-size: cover;
-            }
-            .career-header-content {
-                width: 50%;
-            }
-        </style>
     </head>
     <body>
+    <!-- Preloader Beginning -->
+    <div class="spinner-wrapper">
+        <div class="spinner d-flex align-items-center justify-content-center">
+            <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Ending -->
+
+    <!-- Back to top Button -->
+    <button onclick="topFunction()" id="BacktoTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M15 20H9v-8H4.16L12 4.16L19.84 12H15z"/></svg>
+    </button>
+    <!-- Back to top Button -->
+
+
+
         <!-- Header Beginning -->
-        <div class="gfe-header">
+        <div class="career-header">
         <!-- Navbar beginning -->
         <nav class="navbar navbar-expand-lg navbar-light fw-bold">
             <div class="container-fluid">
@@ -85,48 +101,27 @@
         </nav>
         <!-- Ending of navbar -->
             
-            <div class="gfe-header-content ">
-                <div class="gfe-header-text p-5 d-flex flex-column align-items-start justify-content-center" >
-                    <h2 style="font-family: 'Montserrat', sans-serif;color: #9CCB48;">Careers</h2>
-                    <p style="font-family: 'Lato', sans-serif;">
-                        Curabitur urna pellentesque viverra pretium vulputate ut vitae ut. Fusce proin velit pellentesque semper. Eget tortor arcu nec odio mauris. Nec diam consequat pellentesque a commodo. Vel purus 
-                    </p>
+        <div class="career-header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="career-header-text p-3 p-md-5 col-md-8">
+                        <h2 class="mb-3 fw-bold i-green" >
+                            Join the I-World Network Team: Where Innovation Meets Opportunity</h2>
+                        <p class="lato fs-5">
+                            At I-World Networks, innovation is in our DNA. Joining our team means immersing yourself in a culture that fosters creativity, encourages new ideas, and values forward-thinking approaches. Be part of a workplace where your contributions truly matter.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        </div>
         <!-- End of Header -->
-
-        <!-- Beginning of hiring section -->
-        <section class="hiring-section container">
-            <div class="career-header-content ">
-                <div class="career-header-text py-5 d-flex flex-column align-items-start justify-content-center" >
-                    <h2 style="font-family: 'Montserrat', sans-serif;color: #9CCB48;">We are Hiring</h2>
-                    <p style="font-family: 'Lato', sans-serif;">
-                        We listen. We advise. We design, together. Happy customers and ongoing relationships are what we strive for. Success is measured by results, the most important being how our clients feel about their experience with us. <br>
-                        Join us if you have what it takes.
-                    </p>
-                    <a href="#" class="btn btn-success">Apply Now</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button onclick="dropdownFunction()" class="fs-5 fw-bold  lato dropbtn">See Available Vacancy<img src="./Assets/icons/dropdown_icon.png" alt=""></button>
-                <div id="CoverageDropdown" class="dropdown-content list-unstyled">
-                  <li class="lato" href="#">Abeokuta, Sagamu, Ijebu Ode.</li>
-                  <li class="lato" href="#">Mowe-Ibafo, Otta, Ifo, Agbara, Ala</li>
-                  <li class="lato" href="#">Ibadan, Oshogbo</li>
-                  <li href="#" class="lato">Epe, Isheri, Magboro</li>
-                  <li href="#" class="lato">Ibadan-Abeokuta Highway</li>
-                  <li href="#" class="lato">Abeokuta-Sagamu-Lagos Highway</li>
-                  <li href="#" class="lato">Osun State (Old-Ife Road, Gbongan, Iwo Road, Osogbo)</li>
-                </div>
-            </div>
-        </section>
-        <!-- Ending of hiring section --> 
 
         <!-- Beginning of resume-form section -->
         <section class="resume-form container">
-            <div class="container mt-5">
-                <h4 class="mb-2 fw-bold">Submit CV /Resume /Portfolio</h4>
+            <div class="container">
+                <p class="fs-4 fw-bold">Submit CV /Resume /Portfolio</p>
                 <form>
               
                   <!-- First Row -->
@@ -180,7 +175,9 @@
                   </div>
               
                   <!-- Submit Button -->
-                  <button type="submit" class="lato w-100 fw-bold fs-5 btn btn-warning">Submit</button>
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                      <button type="submit" class="lato w-100 fw-bold fs-5 btn btn-warning">Submit</button>
+                  </div>
               
                 </form>
               </div>
@@ -450,5 +447,35 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!--  Preloader Functionality -->
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+    </script>
+
+    <!-- Back to top Button Functionality -->
+    <script>
+        let BacktoTopBtn = document.getElementById("BacktoTopBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            BacktoTopBtn.style.display = "block";
+        } else {
+            BacktoTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
     </body>
 </html>

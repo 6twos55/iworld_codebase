@@ -28,10 +28,40 @@
                 background: url(./Assets/img/enterprise.jpg);
                 background-size: cover;
             }
-            
+
         </style>
     </head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
 <body>
+        <!-- Preloader Beginning -->
+        <div class="spinner-wrapper">
+            <div class="spinner d-flex align-items-center justify-content-center">
+                <div class="sk-cube-grid">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                  </div>
+            </div>
+        </div>
+        <!-- Preloader Ending -->
+
+    <!-- Whatsapp widget beginning-->
+    <a href="#" class="btn btn-success whatsapp-link">Chat with us on WhatsApp!</a>
+    <!--whatsapp widget ending  -->
+
+    <!-- Back to top button beginning -->
+    <button onclick="topFunction()" id="BacktoTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M15 20H9v-8H4.16L12 4.16L19.84 12H15z"/></svg>
+    </button>
+    <!-- Back to top button ending -->
+
     <!-- Header Beginning -->
     <div class="enterprise-internet-header mb-4">
         <!-- Navbar beginning -->
@@ -86,135 +116,139 @@
         <!-- Ending of navbar -->
         <!-- Header content beginning -->
         <div class="enterprise-internet-header-content">
-            
         </div>
         <!-- Ending of enterprise-internet header -->
     </div>
 
 <!--  dataplans section beginning -->
-<div class="dp-section px-5 container">
-    <h5 class="dataplan-title fw-bold">Choose a Preferred Plan</h5>
-    <div class="container mt-4 d-flex flex-column align-items-center justify-content-between">
-        <div class="row">
-          <div class="col-md-6 mb-4 rounded">
-            <a href="./Service_Request_Form.html" id="dp-lite" class="text-decoration">
-                <div class="card border">
-              <div class="card-body">
-                <!-- content goes here -->
-                <h5 class="card-title pt-4">H-Lite</h5>
-                <p class="card-text">
-                    <li class="lato list-unstyled px-3">18,275 per month</li>
-                    <li class="lato list-unstyled px-3">100% Unlimited upload and download</li>    
-                    <li class="lato list-unstyled px-3">99.8% up-time</li>    
-                    <li class="lato list-unstyled px-3">One-off installation fee</li>    
-                    <li class="lato list-unstyled px-3">No speed throttling</li>
-                    <li class="lato list-unstyled px-3">6x faster than 4G </li>
-                    <li class="lato list-unstyled px-3">Multiple device connectivity</li>
-                    <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
-                    <li class="lato list-unstyled px-3">Get your 1st Month Free </li>
-                    <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
-                </p>
-              </div>
-            </div>
-            </a>
-            
-          </div>
-          <div class="col-md-6 mb-4 rounded">
-            <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration">
-                <div class="card border">
+    <div class="dp-section px-5 container">
+        <h5 class="dataplan-title fw-bold">Choose a Preferred Plan</h5>
+        <div class="container mt-4 d-flex flex-column align-items-center justify-content-between">
+            <div class="row">
+            <div class="col-md-6 mb-4 rounded">
+                <a href="./Service_Request_Form.html" id="dp-lite" class="text-decoration">
+                    <div class="card border">
                 <div class="card-body">
                     <!-- content goes here -->
-                    <h5 class="card-title pt-4">H-Max</h5>
+                    <h5 class="card-title pt-4">H-Lite</h5>
                     <p class="card-text">
-                        <li class="lato list-unstyled px-3">26,875 per month</li>
+                        <li class="lato list-unstyled px-3">₦21,000 per month</li>
                         <li class="lato list-unstyled px-3">100% Unlimited upload and download</li>    
                         <li class="lato list-unstyled px-3">99.8% up-time</li>    
                         <li class="lato list-unstyled px-3">One-off installation fee</li>    
                         <li class="lato list-unstyled px-3">No speed throttling</li>
                         <li class="lato list-unstyled px-3">6x faster than 4G </li>
                         <li class="lato list-unstyled px-3">Multiple device connectivity</li>
+                        <li class="lato list-unstyled px-3">Router and Bandwidth Management device </li>
                         <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
                         <li class="lato list-unstyled px-3">Get your 1st Month Free </li>
                         <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
                     </p>
-                  </div>
+                </div>
+                </div>
+                </a>
+                
             </div>
-            </a>
-            
-          </div>
-        </div>         
-        <div class="row">
-          <div class="col-md-6 mb-4 rounded">
-            <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration">
-                <div class="card border">
+            <div class="col-md-6 mb-4 rounded">
+                <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration">
+                    <div class="card border">
                     <div class="card-body">
                         <!-- content goes here -->
-                        <h5 class="card-title pt-4">U-Pro</h5>
+                        <h5 class="card-title pt-4">H-Max</h5>
                         <p class="card-text">
-                            <li class="lato list-unstyled px-3">32,250 per month</li>
+                            <li class="lato list-unstyled px-3">₦32,250 per month</li>
                             <li class="lato list-unstyled px-3">100% Unlimited upload and download</li>    
                             <li class="lato list-unstyled px-3">99.8% up-time</li>    
                             <li class="lato list-unstyled px-3">One-off installation fee</li>    
                             <li class="lato list-unstyled px-3">No speed throttling</li>
                             <li class="lato list-unstyled px-3">6x faster than 4G </li>
                             <li class="lato list-unstyled px-3">Multiple device connectivity</li>
+                            <li class="lato list-unstyled px-3">Router and Bandwidth Management device </li>
                             <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
                             <li class="lato list-unstyled px-3">Get your 1st Month Free </li>
                             <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
                         </p>
-                      </div>
+                    </div>
                 </div>
-            </a>
-          </div>
-          <div class="col-md-6 mb-4 rounded">
-            <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration-none">
-                <div class="card border">
-                    <div class="card-body">
-                        <!-- content goes here -->
-                        <h5 class="card-title pt-4 pt-4">H-Custom</h5>
-                        <p class="card-text">
-                            <li class="lato list-unstyled px-3">Need a Custom Home Plan?</li>
-                            <li class="lato list-unstyled px-3">Tailored to your need only?</li>    
-                            <li class="lato list-unstyled px-3">Are you a diasporan?</li>    
-                            <li class="lato list-unstyled px-3">Are you into Gaming and require<br> bandwidth?</li>    
-                            <li class="lato list-unstyled px-3">Do you have a special gadget with high <br> internet need?</li>
-                            <li class="lato list-unstyled px-3">6x faster than 4G </li>
-                            <li class="lato list-unstyled px-3">Multiple device connectivity</li>
-                            <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
-                            <li class="lato list-unstyled px-3">Get a free survey and quote Here</li>
-                            <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
-                        </p>
-                      </div>
-                </div>
-            </a>
-          </div>
+                </a>
+                
+            </div>
+            </div>         
+            <div class="row">
+            <div class="col-md-6 mb-4 rounded">
+                <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration">
+                    <div class="card border">
+                        <div class="card-body">
+                            <!-- content goes here -->
+                            <h5 class="card-title pt-4">U-Pro</h5>
+                            <p class="card-text">
+                                <li class="lato list-unstyled px-3">₦43,000 per month</li>
+                                <li class="lato list-unstyled px-3">100% Unlimited upload and download</li>    
+                                <li class="lato list-unstyled px-3">99.8% up-time</li>    
+                                <li class="lato list-unstyled px-3">One-off installation fee</li>    
+                                <li class="lato list-unstyled px-3">No speed throttling</li>
+                                <li class="lato list-unstyled px-3">6x faster than 4G </li>
+                                <li class="lato list-unstyled px-3">Multiple device connectivity</li>
+                                <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
+                                <li class="lato list-unstyled px-3">Get your 1st Month Free </li>
+                                <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 mb-4 rounded">
+                <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration-none">
+                    <div class="card border">
+                        <div class="card-body">
+                            <!-- content goes here -->
+                            <h5 class="card-title pt-4 pt-4">U-Custom</h5>
+                            <p class="card-text">
+                                <li class="lato list-unstyled px-3">Need a Custom Home Plan?</li>
+                                <li class="lato list-unstyled px-3">Tailored to your need only?</li>    
+                                <li class="lato list-unstyled px-3">Are you running a special business?
+                                </li>    
+                                <li class="lato list-unstyled px-3">Do you require more block of IPs</li>    
+                                <li class="lato list-unstyled px-3">Do you require a bundled service?</li>
+                                <li class="lato list-unstyled px-3">Do you have a special gadget with extreme internet needs?</li>
+                                <li class="lato list-unstyled px-3">Whatever your special need?</li>
+                                <li class="lato list-unstyled px-3">Get a free survey and quote Here</li>
+                                <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
         </div>
-      </div>
-</div>
+    </div>
 <!-- dataplans section ending  -->
 
     <!-- Coverage section beginning -->
-    <div class="coverage container d-flex flex-column align-items-center justify-content-evenly mt-5 pt-5">
-        <div class="coverage-map d-flex flex-column align-items-start justify-content-center">
-            <h3 class="coverage-title text-start">
-                Our Coverage Map
-            </h3>
-            <img src="./Assets/img/coverage-map-placeholder.png" alt="coverage-map" class="">
+    <div class="coverage container">
+        <div class="coverage-content row align-items-center justify-content-evenly my-5">
+            <div class="coverage-list col-lg-6">
+                <h5 class="lato fw-bold fs-3">We are located at these Places</h5>
+                <ul class="">
+                    <li class="coverage-place my-2 lato fs-5">Abeokuta, Sagamu, Ijebu Ode.</li>
+                    <li class="coverage-place my-2 lato fs-5">Mowe-Ibafo, Otta, Ifo, Agbara, Ala</li>
+                    <li class="coverage-place my-2 lato fs-5">Ibadan, Oshogbo</li>
+                    <li class="coverage-place my-2 lato fs-5">Epe, Isheri, Magboro</li>
+                    <li class="coverage-place my-2 lato fs-5">Ibadan-Abeokuta Highway</li>
+                    <li class="coverage-place my-2 lato fs-5">Abeokuta-Sagamu-Lagos Highway</li>
+                    <li class="coverage-place my-2 lato fs-5">Osun State (Old-Ife Road, Gbongan, Iwo Road, Osogbo)</li>
+                </ul>
+            </div>
+            <div class="coverage-img col-lg-6">
+                <img src="./Assets/img/Directions-amico.png" alt="" class="img-fluid">
+            </div>
         </div>
-        <div class="coverage-content d-flex flex-row align-items-center justify-content-evenly my-5">
-            <div class="coverage-list">
-                <h2>We are located at these Places</h2>
-                <li class="coverage-place my-2" style="font-family: 'Lato', sans-serif;">Abeokuta, Sagamu, Ijebu Ode.</li>
-                <li class="coverage-place my-2" style="font-family: 'Lato', sans-serif;">Mowe-Ibafo, Otta, Ifo, Agbara, Ala</li>
-                <li class="coverage-place my-2" style="font-family: 'Lato', sans-serif;">Ibadan, Oshogbo</li>
-                <li class="coverage-place my-2" style="font-family: 'Lato', sans-serif;">Epe, Isheri, Magboro</li>
-                <li class="coverage-place my-2" style="font-family: 'Lato', sans-serif;">Ibadan-Abeokuta Highway</li>
-                <li class="coverage-place my-2" style="font-family: 'Lato', sans-serif;">Abeokuta-Sagamu-Lagos Highway</li>
-                <li class="coverage-place my-2" style="font-family: 'Lato', sans-serif;">Osun State (Old-Ife Road, Gbongan, Iwo Road, Osogbo)</li>
-            </div>
-            <div class="coverage-img ">
-                <img src="./Assets/img/Directions-amico.png" alt="" class="object-fit-contain">                
-            </div>
+        <div class="coverage-map container my-5">
+            <h5 class="coverage-title text-start">
+                Our Coverage Map
+            </h5>
+            <div id="map"></div>
+            <!-- <img src="./Assets/img/coverage-map-placeholder.png" alt="coverage-map" class="img-fluid"> -->
         </div>
     </div>
     <!-- Coverage section ending -->
@@ -461,13 +495,108 @@
 
 
     <!-- Javascripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
+    <!-- Whatsapp widget initializer -->
+    <script>
+        document.querySelector('.whatsapp-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('https://wa.me/08104161937', '_blank');
+        });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./Assets/js/accordion.js"></script>
-    <script src="./Assets/js/app.js"></script>
+    <!-- <script src="./Assets/js/app.js"></script> -->
     <script src="./Assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./Assets/js/dropdown.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Iconify Initializer -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
+  <script>
+      let markers = [];
+      const coverage = [
+          ['Abeokuta', 7.1671847, 3.2775732],
+          ['Sagamu', 6.8439097, 3.6067748],
+          ['Ijebu-Ode', 6.8236533, 3.8826509],
+          ['Mowe-Ibafo', 6.7410981, 3.413658],
+          ['Otta', 6.726709, 3.9777163],
+          ['Ifo', 6.7813334, 3.0893891],
+          ['Agbara', 6.513693, 3.1010192],
+          ['Alagbado', 6.6573728, 3.2409316],
+          ['Ibadan', 7.3868872, 3.7402421],
+          ['Oshogbo', 7.784123, 4.4802993],
+          ['Epe', 6.5284696, 2.8091408],
+          ['Isheri', 6.5589824, 3.2702242],
+          ['Magboro', 6.7165648, 3.3931875],
+          ['Ibadan-Abeokuta Highway', 7.3855684, 3.8406437],
+          ['Abeokuta-Sagamu-Lagos Highway', 6.9235877, 3.6338472],
+          ['Old-Ife Road', 7.3910496, 3.9542622],
+          ['Gbongan', 7.4760795, 4.3334893],
+          ['Iwo Road', 7.4036643, 3.9291142],
+          ['Osogbo', 7.784123, 4.4802993]
+      ]
+      function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 8.8,
+          center: { lat: 7.2142069, lng: 3.8814042},
+      });
+
+      for (let i = 0; i < coverage.length; i++) {
+          const bts = coverage[i];
+
+          markers.push(
+              new google.maps.Marker({
+                  map,
+                  draggable: false,
+                  animation: google.maps.Animation.DROP,
+                  position: { lat: bts[1], lng: bts[2]},
+                  title: bts[0],
+              })
+          );
+          markers[i].addListener("click", toggleBounce);
+          }
+      }
+      function toggleBounce() {
+          if (this.getAnimation() !== null) {
+              this.setAnimation(null);
+          } else {
+              this.setAnimation(google.maps.Animation.BOUNCE);
+          }
+      }
+      window.initMap = initMap;
+  </script>
+      <!--  Preloader Functionality -->
+      <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+    </script>
+
+    <!-- Back to top Button Functionality -->
+    <script>
+        let BacktoTopBtn = document.getElementById("BacktoTopBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            BacktoTopBtn.style.display = "block";
+        } else {
+            BacktoTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 </html>

@@ -88,34 +88,34 @@
     <section class="service-form container" >
         <div class="container mt-5">
             <h2 class="lato mb-4 fw-bold">Service Request Form</h2>
-            <form>
+            <form id="serviceForm">
               <div class="lato row mb-3">
                 <div class="lato col-md-6">
-                  <label for="input1" class="lato form-label">Full Name: [Your Full Name]</label>
-                  <input required type="text" class="lato form-control" id="input1">
+                  <label for="fullName" class="lato form-label">Full Name: [Your Full Name]</label>
+                  <input required type="text" class="lato form-control" id="fullName">
                 </div>
                 <div class="lato col-md-6">
-                  <label for="input2" class="lato form-label">Email Address: [YourEmail@example.com]</label>
-                  <input required type="email" class="lato form-control" id="input2">
+                  <label for="email" class="lato form-label">Email Address: [YourEmail@example.com]</label>
+                  <input required type="email" class="lato form-control" id="email">
                 </div>
               </div>
               <div class="lato row mb-3">
                 <div class="lato col-md-6">
-                  <label for="input3" class="lato form-label">Phone Number: [Your Phone Number]</label>
-                  <input required type="text" class="lato form-control" id="input3">
+                  <label for="phoneNumber" class="lato form-label">Phone Number: [Your Phone Number]</label>
+                  <input required type="text" class="lato form-control" id="phoneNumber">
                 </div>
                 <div class="lato col-md-6">
-                  <label for="input4" class="lato form-label">Address: [Your Complete Address]</label>
-                  <input required type="text" class="lato form-control" id="input4">
+                  <label for="address" class="lato form-label">Address: [Your Complete Address]</label>
+                  <input required type="text" class="lato form-control" id="address">
                 </div>
               </div>
               <p class="lato">Connection Preferences:</p>
 
               <div class="lato row mb-3">
                 <div class="lato col-md-6">
-                    <label for="select1" class="lato form-label">Select Service Plan:</label>
-                    <select class="lato form-select" id="select1">
-                      <option value="option1">Lagos</option>
+                    <label for="servicePlan" class="lato form-label">Select Service Plan:</label>
+                    <select required class="lato form-select" id="servicePlan">
+                      <option value="Lagos">Lagos</option>
                       <option value="option2">Option 2</option>
                       <option value="option3">Option 3</option>
                       <option value="option4">Option 4</option>
@@ -123,19 +123,19 @@
                     </select>
                 </div>
                 <div class="lato col-md-6">
-                    <label for="survey-date" class="form-label lato">Select a Date:</label>
-                    <input type="date" id="survey-date" class="lato form-control" placeholder="Select date">
+                    <label for="surveyDate" class="form-label lato">Select a Date:</label>
+                    <input required type="date" id="surveyDate" class="lato form-control" placeholder="Select date">
                 </div>
               </div>
                 <p class="lato">Current Internet Provider Information (if applicable):</p>
                 <div class="lato row mb-3">
                     <div class="lato col-md-6">
-                        <label for="select1" class="lato form-label">Current ISP: [Current Provider Name]</label>
-                        <input type="text" class="lato form-control" name="current-isp" id="current-isp">
+                        <label for="currentISP" class="lato form-label">Current ISP: [Current Provider Name]</label>
+                        <input required type="text" class="lato form-control" name="current-isp" id="currentISP">
                     </div>
                     <div class="lato col-md-6">
-                        <label for="survey-date" class="form-label lato">Contract End Date:</label>
-                        <input type="date" id="survey-date" class="lato form-control" placeholder="Select date">
+                        <label for="contractEndDate" class="form-label lato">Contract End Date:</label>
+                        <input required type="date" id="contractEndDate" class="lato form-control" placeholder="Select date">
                     </div>
                 </div>     
                 
@@ -169,12 +169,12 @@
                         <label class="form-check-label lato" for="serviceCheckbox6">Additional Wireless Router</label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
-                        <label class="form-check-label lato" for="serviceCheckbox6">CCTV </label>
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox7">
+                        <label class="form-check-label lato" for="serviceCheckbox7">CCTV </label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
-                        <label class="form-check-label lato" for="serviceCheckbox6">Phone Service (VOIP)
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox8">
+                        <label class="form-check-label lato" for="serviceCheckbox8">Phone Service (VOIP)
                         </label>
                     </div>
                 </div>
@@ -182,18 +182,18 @@
                     <label class="lato" for="servicesNeeded">How Did You Hear About Us?
                     </label>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox1">
-                        <label class="form-check-label lato" for="serviceCheckbox1">Online Advertisement
+                        <input type="checkbox" class="form-check-input" id="howYouHeard1">
+                        <label class="form-check-label lato" for="howYouHeard1">Online Advertisement
                         </label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
-                        <label class="form-check-label lato" for="serviceCheckbox2">Social Media
+                        <input type="checkbox" class="form-check-input" id="howYouHeard2">
+                        <label class="form-check-label lato" for="howYouHeard2">Social Media
                         </label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
-                        <label class="form-check-label lato" for="serviceCheckbox2">Referral
+                        <input type="checkbox" class="form-check-input" id="howYouHeard3">
+                        <label class="form-check-label lato" for="howYouHeard3">Referral
                         </label>
                     </div>
                     <div class="form-group mt-2">
@@ -204,7 +204,7 @@
               <!-- Textarea -->
               <div class="lato mb-3">
                 <label for="textarea" class="lato form-label">Additional Comments or Questions:</label>
-                <textarea class="lato form-control" id="textarea" rows="5" placeholder="Enter message"></textarea>
+                <textarea class="lato form-control" id="additionalComments" rows="5" placeholder="Enter message"></textarea>
               </div>
               <!-- Submit Button -->
               <button type="submit" class="w-100 btn btn-warning fw-bold fs-4">Submit</button>
@@ -500,6 +500,11 @@
             });
         });
     </script> -->
+
+    <!-- BACKEND JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> -->
+    <script src="./Assets/js/mail_sending/Service_Request_Form.js"></script>
     
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>

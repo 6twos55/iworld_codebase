@@ -615,9 +615,76 @@ font-style: italic;
 font-weight: 300;
 margin: 0 0 20px;
 }
+
+/* Testimonials Styling end */
+
+/* Generic styles */
 .lato{
     font-family: 'Lato', sans-serif;
 }
+.i-orange{
+    color: #ff6600;
+}
+.align-center{
+    text-align: center;
+}
+/* Generic styles */
+
+/* Home-Services Styling */
+
+.services{
+    box-shadow: 0px 0px 1px #59AF17;
+}
+.services:hover{
+    transition: .5s ease-in-out;
+    box-shadow: 1px 2px 2px #59AF17;
+}
+/* Home-Services Styling ending*/
+
+/* Enterprise Internet Styling*/
+.enterprise-internet-header{
+    width: 100%;
+    height: 70vh;
+}
+.enterprise-internet-header .enterprise-internet-header-content{
+    width: 100%;
+    height: 60vh;
+    background: url(../img/enterprise.jpg);
+    background-size: cover;
+}
+
+.enterprise-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enterprise-offer:hover{
+    transition: .4s;
+    background: rgba(89, 175, 23, 0.5);
+    box-shadow: 0px 0px 4px #59AF17;
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands:hover{
+    transition: .4s;
+    /* background: rgba(89, 175, 23, 0.5); */
+    box-shadow: 0px 0px 4px #59AF17;   
+}
+.google-info .smb-benefit:hover{
+    transition: .4s;
+    /* background: rgba(89, 175, 23, 0.5); */
+    box-shadow: 0px 0px 4px #59AF17;
+}
+/* Enterprise Internet Styling ending*/
+
 .btn-primary,
 .btn-primary:active,
 .btn-primary:focus,
@@ -693,8 +760,8 @@ margin: 0 0 20px;
 .workspace-header-content{
     width: 100%;
     height: 60vh;
-    background: url(../img/google.jpg) center;
-    background-size: cover;
+    background:#f7f8f9 url(../img/workspace-bg.png) center no-repeat;
+    background-size: contain;
 }
 
 
@@ -761,3 +828,5 @@ margin: 0 0 20px;
     transition: .4s;
     background: rgba(88, 175, 21, 0.5);
 }
+
+

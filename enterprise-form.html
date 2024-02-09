@@ -5,24 +5,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="I-World Networks is a connectivity service provider in Nigeria">
         <meta name="author" content="Armaaneth Esiri">
-        <title>I-World Networks||Connecting possibilities</title>
+        <title>I-World Networks|| Connecting possibilities</title>
         <!-- FAVICON -->
         <link rel="shortcut icon" href="./Assets/icons/favicon/favicon.ico" type="image/x-icon">
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="./Assets/css/style.css">
         <link rel="stylesheet" href="./Assets/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
         <!-- Google Fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     </head>
-    
-<body class="overflow-x-hidden">
+<body  class="overflow-x-hidden">
+    <!-- Preloader Beginning -->
+    <!-- <div class="spinner-wrapper">
+        <div class="spinner d-flex align-items-center justify-content-center">
+            <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+                </div>
+        </div>
+    </div> -->
+    <!-- Preloader Ending -->
+
+    <!-- Whatsapp widget beginning-->
+    <a href="#" class="btn btn-success whatsapp-link">Chat with us on WhatsApp!</a>
+    <!--whatsapp widget ending  -->
+
+    <!-- Back to top button beginning -->
+    <button onclick="topFunction()" id="BacktoTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M15 20H9v-8H6.16L12 4.16L19.84 12H15z"/></svg>
+    </button>
+    <!-- Back to top button ending -->
+
     <!-- Header Beginning -->
-    <div class="srf-header">
+    <div class="enterprise-internet-header mb-5">
         <!-- Navbar beginning -->
         <nav class="navbar navbar-expand-lg navbar-light fw-bold">
             <div class="container-fluid">
@@ -73,206 +99,56 @@
             </div>
         </nav>
         <!-- Ending of navbar -->
-        <div class="srf-header-content">
-            <div class="srf-header-text p-5 d-flex flex-column align-items-start justify-content-center" >
-                <h2 style="color: #9CCB48;" class="px-5 fw-bold fs-1">Service Request Form</h2>
-                <p class="lato fw-bold px-5 fs-3">
-                    We are delighted to have you here. Kindly take a moment to provide us with some essential details so that we can better assist you with our Internet service.
+        <!-- Header content beginning -->
+        <div class="enterprise-internet-header-content">
+        </div>
+        <!-- Ending of enterprise-internet header -->
+    </div>
+
+    <!-- Enterprise Form beginning -->
+    <div class="container enterprise-form mt-2">
+        <h4 class="i-green text-center fw-bold">Request Form for Enterprise Internet service</h4>
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label lato">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="companyName" class="form-label lato">Company Name:</label>
+                    <input type="text" class="form-control" id="companyName" name="companyName">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label lato">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="phoneNumber" class="form-label lato">Phone number:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="state" class="form-label lato">State:</label>
+                    <input type="text" class="form-control" id="state" name="state">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="city" class="form-label lato">City:</label>
+                    <input type="text" class="form-control" id="city" name="city">
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="address" class="form-label lato">Address:</label>
+                    <textarea class="form-control" id="address" name="address"></textarea>
+                </div>
+            </div>
+            <!-- CTA Button -->
+            <div class="cta d-flex flex-column align-items-center justify-content-center my-5">
+                <button type="submit" class="btn btn-success w-50 text-uppercase fw-bold">Submit</button>
+                <p class="my-2 lato">
+                    Thank you for choosing I-World Networks! We will contact you within the hour.
                 </p>
             </div>
-        </div>
+
+        </form>
     </div>
-    <!-- End of Header -->
-
-    <!-- Beginning of service request form section -->
-    <section class="service-form container" >
-        <div class="container mt-5">
-            <h2 class="lato mb-4 fw-bold">Service Request Form</h2>
-            <!-- <form>
-              <div class="lato row mb-3">
-                <div class="lato col-md-6">
-                  <label for="input1" class="lato form-label">Full Name: [Your Full Name]</label>
-                  <input required type="text" class="lato form-control" id="input1">
-                </div>
-                <div class="lato col-md-6">
-                  <label for="input2" class="lato form-label">Email Address: [YourEmail@example.com]</label>
-                  <input required type="email" class="lato form-control" id="input2">
-                </div>
-              </div>
-              <div class="lato row mb-3">
-                <div class="lato col-md-6">
-                  <label for="input3" class="lato form-label">Phone Number: [Your Phone Number]</label>
-                  <input required type="text" class="lato form-control" id="input3">
-                </div>
-                <div class="lato col-md-6">
-                  <label for="input4" class="lato form-label">Address: [Your Complete Address]</label>
-                  <input required type="text" class="lato form-control" id="input4">
-                </div>
-              </div>
-              <div class="lato row mb-3">
-                <div class="lato col-md-6">
-                    <label for="select1" class="lato form-label">Select City:</label>
-                    <select class="lato form-select" id="select1">
-                      <option value="option1">Lagos</option>
-                      <option value="option2">Abeokuta</option>
-                      <option value="option3">Sagamu</option>
-                      <option value="option4">Ijebu Ode</option>
-                      <option value="option5">Ibadan</option>
-                      <option value="option1">Epe</option>
-                      <option value="option2">Isheri</option>
-                      <option value="option3">Magboro</option>
-                      <option value="option4">Agbara</option>
-                      <option value="option5">Osogbo</option>
-                      <option value="option1">Akure</option>
-                      <option value="option2">Ifo</option>
-                      <option value="option3">Mowe-Ibafo</option>
-                      <option value="option4">Ijebu Ode</option>
-                      <option value="option5">Ibadan</option>
-                    </select>
-                </div>
-                <div class="lato col-md-6">
-                    <label for="survey-date" class="form-label lato">Select a Date:</label>
-                    <input type="date" id="survey-date" class="lato form-control" placeholder="Select date">
-                </div>
-              </div>
-            <div class="lato row mb-3">
-                <div class="lato col-md-6">
-                    <label for="select1" class="lato form-label">Current ISP: [Current Provider Name]</label>
-                    <input type="text" class="lato form-control" name="current-isp" id="current-isp">
-                </div>
-                <div class="lato col-md-6">
-                    <label for="survey-date" class="form-label lato">Contract End Date:</label>
-                    <input type="date" id="survey-date" class="lato form-control" placeholder="Select date">
-                </div>
-            </div>     
-                
-                <div class="form-group my-4">
-                    <label class="lato" for="servicesNeeded">Additional Products or Services of interest (if applicable):</label>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox1">
-                        <label class="form-check-label lato" for="serviceCheckbox1">Managed IT Service
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
-                        <label class="form-check-label lato" for="serviceCheckbox2">Structured Networks Cabling
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox3">
-                        <label class="form-check-label lato" for="serviceCheckbox3">Google Workspace</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox4">
-                        <label class="form-check-label lato" for="serviceCheckbox4">Google ChromeOS Enterprise</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox5">
-                        <label class="form-check-label lato" for="serviceCheckbox5"> Additional IP Address</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
-                        <label class="form-check-label lato" for="serviceCheckbox6">Additional Wireless Router</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
-                        <label class="form-check-label lato" for="serviceCheckbox6">CCTV </label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
-                        <label class="form-check-label lato" for="serviceCheckbox6">Phone Service (VOIP)
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group my-4">
-                    <label class="lato" for="servicesNeeded">How Did You Hear About Us?
-                    </label>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox1">
-                        <label class="form-check-label lato" for="serviceCheckbox1">Online Advertisement
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
-                        <label class="form-check-label lato" for="serviceCheckbox2">Social Media
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
-                        <label class="form-check-label lato" for="serviceCheckbox2">Referral
-                        </label>
-                    </div>
-                    <div class="form-group mt-2">
-                        <label class="lato" for="otherServices">Others:</label>
-                        <input type="text" class="lato form-control" id="otherServices" placeholder="Please specify">
-                    </div>
-                </div>
-              <div class="lato mb-3">
-                <label for="textarea" class="lato form-label">Additional Comments or Questions:</label>
-                <textarea class="lato form-control" id="textarea" rows="5" placeholder="Enter message"></textarea>
-              </div>
-              <button type="submit" class="w-100 btn btn-warning fw-bold fs-4">Submit</button>
-            </form> -->
-            <form>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="h-name" class="form-label lato">Name:</label>
-                        <input required type="text" class="form-control" id="h-name" name="h-name">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="h-companyName" class="form-label lato">Company Name:</label>
-                        <input required type="text" class="form-control" id="h-companyName" name="h-companyName">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="h-email" class="form-label lato">Email:</label>
-                        <input required type="email" class="form-control" id="h-email" name="h-email">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="h-phoneNumber" class="form-label lato">Phone number:</label>
-                        <input required type="tel" class="form-control" id="h-phoneNumber" name="h-phoneNumber">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="h-state" class="form-label lato">State:</label>
-                        <input required type="text" class="form-control" id="h-state" name="h-state">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="h-city" class="form-label lato">City:</label>
-                        <input required type="text" class="form-control" id="h-city" name="h-city">
-                    </div>
-                    <div class="col-md-12 mb-3">
-                        <label for="h-address" class="form-label lato">Address:</label>
-                        <textarea class="form-control" id="h-address" name="h-address"></textarea>
-                    </div>
-                </div>
-                <!-- CTA Button -->
-                <div class="cta d-flex flex-column align-items-center justify-content-center ">
-                    <button type="submit" class="btn btn-success w-50 text-uppercase fw-bold">Submit</button>
-                    <p class="my-2 lato">
-                        Thank you for choosing I-World Networks! We will contact you within the hour.
-                    </p>
-                </div>
-            </form>
-          </div>
-    </section>
-    <!-- Ending of service request form section -->
-
-    <!-- Beginning of  coverage dropdown section -->
-    <section class="coverage-dropdown container my-5">
-        <div class="dropdown">
-            <button onclick="dropdownFunction()" class="fs-5 fw-bold  lato dropbtn">Our Coverage Areas <img src="./Assets/icons/dropdown_icon.png" alt=""></button>
-            <div id="CoverageDropdown" class="dropdown-content list-unstyled">
-              <li class="lato" href="#">Abeokuta, Sagamu, Ijebu Ode.</li>
-              <li class="lato" href="#">Mowe-Ibafo, Otta, Ifo, Agbara, Ala</li>
-              <li class="lato" href="#">Ibadan, Oshogbo</li>
-              <li href="#" class="lato">Epe, Isheri, Magboro</li>
-              <li href="#" class="lato">Ibadan-Abeokuta Highway</li>
-              <li href="#" class="lato">Abeokuta-Sagamu-Lagos Highway</li>
-              <li href="#" class="lato">Osun State (Old-Ife Road, Gbongan, Iwo Road, Osogbo)</li>
-            </div>
-        </div>
-    </section>
-    <!-- Ending of  coverage dropdown section -->
-
     <!-- Footer section Beginning -->
     <footer class=" text-center pt-4">
         <!-- Grid container -->
@@ -433,44 +309,38 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Footer section ending -->
-
-    <!-- Dropdown Logic -->
-    <script>
-        function dropdownFunction() {
-            document.getElementById("CoverageDropdown").classList.toggle("show");
-            }
-            window.onclick = function(event) {
-                if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                    }
-                }
-            }
-    </script>
-    <!-- Datepicker Initialiser -->
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            flatpickr("#datepicker", {
-                dateFormat: "Y-m-d",
-                // Additional configuration options if needed
-            });
-        });
-    </script> -->
     
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
-    <script src="./Assets/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="./Assets/js/app.js"></script>
-    <script src="./Assets/js/dropdown.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Scripts -->
+    <!--  Preloader Functionality -->
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+    </script>
+    
+    <!-- Back to top Button Functionality -->
+    <script>
+        let BacktoTopBtn = document.getElementById("BacktoTopBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            BacktoTopBtn.style.display = "block";
+        } else {
+            BacktoTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 </html>

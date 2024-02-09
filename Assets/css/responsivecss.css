@@ -18,6 +18,26 @@
         padding: 8px;
         font-size: 14px;
     }
+    .contact-header-content{
+        background-size: contain;
+    }
+}
+@media (max-width: 576px) {
+    /* Two columns on small devices */
+    .contact-header-content{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/contact-bg.jpg) top fixed;
+        background-size: cover;
+        /* background: left;
+        background-size: cover; */
+    }
+    .gfe-header-content{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/responsive-ngn-edu-bg1.png) center;
+        background-size: cover;    
+    }
+    .educator-content{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (min-width: 576px) {
@@ -27,6 +47,11 @@
     }
     .gallery-slides img{
         height: 35vh;
+    }
+    
+    .contact-header-content{
+        background: left;
+        background-size: cover;
     }
 }
 

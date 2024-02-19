@@ -39,35 +39,3 @@
         height: 100%;
     }
 }
-
-@media (min-width: 576px) {
-    /* Two columns on small devices */
-    .gallery-column {
-        width: 50%;
-    }
-    .gallery-slides img{
-        height: 35vh;
-    }
-    
-    .contact-header-content{
-        background: left;
-        background-size: cover;
-    }
-}
-
-@media (min-width: 768px) {
-    /* Three columns on medium devices */
-    .gallery-column {
-        width: 33.33%;
-    }
-    .gallery-slides img{
-        height: 35vh;
-    }
-}
-
-@media (min-width: 992px) {
-    /* Four columns on large devices */
-    .gallery-column {
-        width: 25%;
-    }
-}

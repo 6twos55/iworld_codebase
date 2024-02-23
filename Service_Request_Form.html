@@ -213,35 +213,35 @@
               </div>
               <button type="submit" class="w-100 btn btn-warning fw-bold fs-4">Submit</button>
             </form> -->
-            <form>
+            <form id="serviceForm">
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="h-name" class="form-label lato">Name:</label>
-                        <input required type="text" class="form-control" id="h-name" name="h-name">
+                        <label for="name" class="form-label lato">Name:</label>
+                        <input required type="text" class="form-control" id="name" name="h-name">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-companyName" class="form-label lato">Company Name:</label>
-                        <input required type="text" class="form-control" id="h-companyName" name="h-companyName">
+                        <label for="companyName" class="form-label lato">Company Name:</label>
+                        <input required type="text" class="form-control" id="companyName" name="companyName">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-email" class="form-label lato">Email:</label>
-                        <input required type="email" class="form-control" id="h-email" name="h-email">
+                        <label for="email" class="form-label lato">Email:</label>
+                        <input required type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-phoneNumber" class="form-label lato">Phone number:</label>
-                        <input required type="tel" class="form-control" id="h-phoneNumber" name="h-phoneNumber">
+                        <label for="phoneNumber" class="form-label lato">Phone number:</label>
+                        <input required type="tel" class="form-control" id="phoneNumber" name="phoneNumber">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-state" class="form-label lato">State:</label>
-                        <input required type="text" class="form-control" id="h-state" name="h-state">
+                        <label for="state" class="form-label lato">State:</label>
+                        <input required type="text" class="form-control" id="state" name="state">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-city" class="form-label lato">City:</label>
-                        <input required type="text" class="form-control" id="h-city" name="h-city">
+                        <label for="city" class="form-label lato">City:</label>
+                        <input required type="text" class="form-control" id="city" name="city">
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="h-address" class="form-label lato">Address:</label>
-                        <textarea class="form-control" id="h-address" name="h-address"></textarea>
+                        <label for="address" class="form-label lato">Address:</label>
+                        <textarea class="form-control" id="address" name="address"></textarea>
                     </div>
                 </div>
                 <!-- CTA Button -->
@@ -397,6 +397,11 @@
     </footer>
     <!-- Footer section ending -->
 
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
+
     <!-- Dropdown Logic -->
     <script>
         function dropdownFunction() {
@@ -434,5 +439,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/Service_Request_Form.js"></script>
 </body>
 </html>

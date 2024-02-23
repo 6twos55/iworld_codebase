@@ -31,11 +31,51 @@
         background-size: cover; */
     }
     .gfe-header-content{
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/responsive-ngn-edu-bg1.png) center;
+        /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/responsive-ngn-edu-bg1.png) center; */
         background-size: cover;    
     }
     .educator-content{
         width: 100%;
         height: 100%;
     }
+}
+
+@media (max-width: 575.98px) {
+    .about-us-text{
+        font-size: 17px !important;
+    }
+    .about-list2{
+        display: block;
+        font-size: 17px !important ;
+    }
+    .about-list1{
+        display: none;
+    }
+    .customer-support-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .support-block {
+        margin-bottom: 20px;
+    }
+}
+
+/* CSS for small devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Your CSS styles here */
+}
+
+/* CSS for medium devices (desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Your CSS styles here */
+}
+
+/* CSS for large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Your CSS styles here */
+}
+
+/* CSS for extra large devices (large desktops) */
+@media (min-width: 1200px) {
+    /* Your CSS styles here */
 }

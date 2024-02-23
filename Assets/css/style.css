@@ -5,11 +5,13 @@ Date: 1st January, 2024
 Developer: Armaaneth Esiri
 -->
 */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', serif;
+    font-family: 'Titillium Web', serif;
 }
 body{
     overflow-x: hidden;
@@ -156,8 +158,31 @@ body{
 }
 /* Index: Ending of header */
 
+/* Index: About */
+/* .header-about{
+    background-color: #eeeeef;
+} */
+
+.about-list2{
+    display: none;
+}
+.aboutText{
+    box-shadow: 0px 0px 0.5px #59AF17;
+}
+.aboutText:hover{
+    transition: .2s ease-in-out;
+    box-shadow: 1px 2px 2px #59AF17;
+}
+/* Index: About us Styling */
+
+
 /* Beginning of Index:our services styling */
+#services{
+    background-color: #eeeeef !important;
+}
+
 .services{
+    background-color: white;
     box-shadow: 0px 0px 1px #59AF17;
 }
 .services:hover{
@@ -167,19 +192,20 @@ body{
 /* Index: Our Services Styling */
 
 
+
 /* Index: Google for Education */
 .ngn-edu-container{
     width: 100%;
     height: auto;
-    background: linear-gradient(to top left, #4D4D4D, #ff6600);
+    background: #eeeeef;
 }
 /* Index: Google for Education ending*/
 
 
 /* Footer styling */
 footer{
-    color: white;
-    background: linear-gradient(to bottom, #59AF17, #4D4D4D);
+    /* color: white; */
+    background:rgba(89, 175, 23, 0.5);
 }
 footer .text-body{
     color: white;
@@ -193,20 +219,9 @@ footer .text-body{
 /* About Us Page Styling */
 .about-header-content{
     width: 100%;
-    height: 90vh;
-}
-.about-header-content .about-header-text{
-    width: 50%;
-    height: 100%;
-    padding: 10rem 5rem;
-}
-.about-header-content .about-header-img{
-    width: 40%;
-    height: 100%;
-}
-.about-header-content .about-header-text .about-title{
-    font-weight: 700;
-    color: #59AF17;
+    height: 60vh;
+    background: url(../img/about-bg.png) center no-repeat;
+    background-size: cover;
 }
 .v-m-container{
     width: 100%;
@@ -273,17 +288,20 @@ footer .text-body{
 }
 .contact-form{
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 
 .support-container{
     width: 100%;
-    height: 50vh;
+    height: auto;
 }
 .support-container .customer-support-grid{
     width: 100%;
     height: 85%;
+}
+.customer-support-grid2{
+    display: none;
 }
 /* Contact Us Page Styling */
 
@@ -337,6 +355,13 @@ footer .text-body{
 }
 /* Contact Us Page Styling */
 
+/* Internet For home Styling */
+.about-home{
+    background: #eeeeef;
+}
+
+/* Internet For home Styling */
+
 /* Internet for Business Page Styling */
 .iob-header{
     width: 100%;
@@ -371,14 +396,14 @@ footer .text-body{
 /* NGN GOOGLE FOR EDUCATION PAGE STYLING */
 .gfe-header{
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
 }
 .gfe-header-content{
     background: white url(../img/google-bg.png) center no-repeat;
     background-size: contain;
     color: white;
     width: 100%;
-    height: 90%;
+    min-height: 60vh;
 }
 .ngn-benefit{
     display: flex;
@@ -471,7 +496,7 @@ footer .text-body{
 
 /* Generic styles */
 .lato{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 .i-orange{
     color: #ff6600;
@@ -479,6 +504,17 @@ footer .text-body{
 .align-center{
     text-align: center;
 }
+hr{
+    border: none;
+    height: 2px; 
+    background-color: rgb(89, 175, 23);
+}
+.bg-successed{
+    background: #59AF17;
+}
+
+
+
 /* Whatsapp widget button styling */
 .whatsapp-link {
     position: fixed;
@@ -503,18 +539,17 @@ footer .text-body{
     background: url(../img/enterprise.jpg);
     background-size: cover;
 }
+.enterprise-content{
+    background-color: #eeeeef;
+}
 
 .enterprise-offer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 250px;
 }
 
 .enterprise-offer:hover{
     transition: .4s;
-    background: rgba(89, 175, 23, 0.5);
-    box-shadow: 0px 0px 4px #59AF17;
+    box-shadow: 1px 2px 0px #59AF17;
 }
 
 .brands{
@@ -526,12 +561,10 @@ footer .text-body{
 
 .brands:hover{
     transition: .4s;
-    /* background: rgba(89, 175, 23, 0.5); */
     box-shadow: 0px 0px 4px #59AF17;   
 }
 .google-info .smb-benefit:hover{
     transition: .4s;
-    /* background: rgba(89, 175, 23, 0.5); */
     box-shadow: 0px 0px 4px #59AF17;
 }
 /* Enterprise Internet Styling ending*/
@@ -631,7 +664,7 @@ footer .text-body{
 /* Careers Styling */
 .career-header{
     width: 100%;
-    height: 70vh;
+    height: auto;
 }
 .career-header-content {
     width: 100%;
@@ -677,7 +710,7 @@ footer .text-body{
 .chrome-content{
     border-top: 1px solid rgba(128, 128, 128, 0.358);
     width: 100%;
-    height: 80%;
+    height: 85%;
     background: url(../img/chromeOS.png) center no-repeat;
     background-size: contain;
 }
@@ -697,4 +730,14 @@ footer .text-body{
 .chrome-service:hover{
     transition: .5s ease-in-out;
     box-shadow: 1px 2px 2px #59AF17;
+}
+
+
+/* MPLS Service styling */
+.mpls-benefit{
+    background: #eeeeef;
+}
+
+.enterprise-form{
+    background: #eeeeef;
 }

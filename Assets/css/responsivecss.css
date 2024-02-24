@@ -30,6 +30,12 @@
     .gfe-img{
         width: 100% !important;
     }
+    .desktop-view{
+        display: none !important;
+    }
+    .mobile-view{
+        display: block !important;
+    }
 }
 @media (max-width: 576px) {
     /* Two columns on small devices */

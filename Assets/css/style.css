@@ -137,7 +137,7 @@ body{
 .header-content{
     z-index: 0;
     width: 100%;
-    height: 60vh !important;
+    height: 70vh !important;
     background-color: #000;
 }
 .carousel-container{
@@ -161,6 +161,10 @@ body{
 /* Index: About */
 /* .header-about{
     background-color: #eeeeef;
+    SEM Reseller
+104, 1st Floor, A-43, Sector 63
+Noida (Delhi NCR) 201301
+Uttar Pradesh, India
 } */
 
 .about-list2{
@@ -677,11 +681,11 @@ hr{
 /* Managed Service Choice Provider Page Styling */
 .msp-header{
     width: 100%;
-    height: 70vh;
+    height: auto;
 }
 .msp-header .msp-header-content{
     width: 100%;
-    height: 90%;
+    height: 60vh;
     color: white;
     background: url(../img/MITS.jpg) left;
     background-size: cover;
@@ -740,7 +744,7 @@ hr{
 }
 
 .enterprise-form, .gray-bg{
-    background: #eeeeef;
+    background: #eeeeef !important;
 }
 
 /* MITS SERVICE STYLING */

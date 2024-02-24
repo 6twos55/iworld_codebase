@@ -4449,11 +4449,6 @@ textarea.form-control-lg {
   --bs-card-bg: var(--bs-body-bg);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-width: 0;
   height: var(--bs-card-height);
   color: var(--bs-body-color);
@@ -4461,7 +4456,6 @@ textarea.form-control-lg {
   background-color: var(--bs-card-bg);
   background-clip: border-box;
   border-radius: var(--bs-card-border-radius); 
-  text-align: center;
   width: auto;
 }
 .card > hr {

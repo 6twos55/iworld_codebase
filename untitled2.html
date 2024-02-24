@@ -1,238 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I-World Networks Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fadeInUp {
+      animation-name: fadeInUp;
+    }
+  </style>
 </head>
 <body>
-    <div class="service-container container mt-5 text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="service-demo-container container">
-                            <div class="row demo-row ">
-                                <div class=" col"><p class="service1 lato shadow-sm border d-flex align-items-center justify-content-center  demo  mb-4">Home Internet</p> </div>
-                                <div class=" col"><p class="service2 lato shadow-sm border d-flex align-items-center justify-content-center  demo mb-4">Small Business Internet</p> </div>
-                                <div class=" col"><p class="service3 lato shadow-sm border d-flex align-items-center justify-content-center  demo mb-4">Enterprise Internet</p> </div>
-                            </div>
-                            <div class="row demo-row">
-                                <div class=" col"><p class="service4 lato shadow-sm border d-flex align-items-center justify-content-center  demo mb-4">Managed Service Provider</p> </div>
-                                <div class=" col"><p class="service5 lato shadow-sm border d-flex align-items-center justify-content-center  demo mb-4">Multi-Label Protocol Switching (MPLS)</p> </div>
-                                <div class=" col"><p class="service6 lato shadow-sm border d-flex align-items-center justify-content-center  demo mb-4">Google Cloud Services</p> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col card-column-container">
-                        <!-- Card One -->
-                        <div class="border lato pb-3 card card-1">
-                                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                    <img src="./Assets/img/home_internet.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Home Internet</h5>
-                                    <p class="card-text">
-                                    Our Home Internet plans are premium home internet plan with high-speed, unlimited data, and reliable connectivity, along with additional benefits such as a free first month and 24/7 customer support.
-                                    </p>
-                                
-                                    <button type="button" class="btn btn-success"><a href="./internet_for_home.html" class="text-decoration-none"></a> Subscribe</button>
-                                </div>
-                        </div>
-                        <!-- Card two -->
-                        <div class="border lato pb-3 card card-2">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                    <img src="./Assets/img/smb.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                    </a>
-                                </div>
-                                
-                                <div class="card-body">
-                                    <h5 class="card-title">Small Business Internet</h5>
-                                    <p class="card-text">
-                                    Small business internet are dedicated internet services tailored to meet the connectivity needs of small businesses. These plans offer reliable and high-speed internet access, essential for various online operations, communication, and data-related tasks.
-                                    </p>
-                                
-                                    <button type="button" class="btn btn-success"><a href="./Internet_for_business.html" class="text-decoration-none"></a> Subscribe</button>
-                                </div>
-                        </div>
-                        <!-- Card three -->
-                        <div class="border lato pb-3 card card-3">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                    <img src="./Assets/img/enterprise.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                    </a>
-                                </div>
-                                
-                                <div class="card-body">
-                                    <h5 class="card-title">Enterprise Internet</h5>
-                                    <p class="card-text">
-                                    Elevate your business connectivity to new heights with I-World Enterprise Internet. Our robust and reliable enterprise-grade solutions are designed to meet the diverse and demanding connectivity needs of modern businesses.
-                                    </p>
-                                
-                                    <button type="button" class="btn btn-success"><a href="./enterprise_internet.html" class="text-decoration-none"></a> Subscribe</button>
-                                </div>
-                        </div>
-                        <!-- Card Four -->
-                        <div class="border lato pb-3 card card-4">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                    <img src="./Assets/img/MITS.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                    </a>
-                                </div>
-                                
-                                <div class="card-body">
-                                    <h5 class="card-title">Managed Internet Service Provider</h5>
-                                    <p class="card-text">
-                                    I-World Networks is here to revolutionize the way you handle your IT infrastructure. As your trusted Managed Service Provider, we offer top-notch IT solutions designed to optimize your operations, enhance security, and minimize costs. With our expertise, you can shift your focus to what truly matters - the growth and success of your business.
-                                    </p>
-                                
-                                    <button type="button" class="btn btn-success"><a href="./smb_msp.html" class="text-decoration-none"></a> Subscribe</button>
-                                </div>
-                        </div>
-                        <!-- Card Five -->
-                        <div class="border lato pb-3 card card-5">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                    <img src="./Assets/img/MPLS.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                    </a>
-                                </div>
-                                
-                                <div class="card-body">
-                                    <h5 class="card-title">Multi-Label Protocol Switching (MPLS)</h5>
-                                    <p class="card-text">
-                                    I-World Networks introduces a cutting-edge solution with Multi-Label Protocol Switching (MLPS) to revolutionize data routing for businesses and allows for the simultaneous handling of multiple data labels, optimizing network efficiency and enhancing overall performance.
-                                    </p>
-                                
-                                    <button type="button" class="btn btn-success"><a href="./mpls.html" class="text-decoration-none"></a> Subscribe</button>
-                                </div>
-                        </div>
-                        <!-- Card Six -->
-                        <div class="border lato pb-3 card card-6">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                    <img src="./Assets/img/google.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                    </a>
-                                </div>
-                                
-                                <div class="card-body">
-                                    <h5 class="card-title">Google Cloud Services</h5>
-                                    <p class="card-text">
-                                    At I-world Networks, we are Making cloud-first tech choices to benefit the planet, your people, and your profitability to give you a competitive edge — now and into the future.
-                                    </p>
-                                
-                                    <button type="button" class="btn btn-success"><a href="./Google_Workspace.html" class="text-decoration-none"></a> Subscribe</button>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
 
-
-            <div class="dp-section px-5 container">
-                <h5 class="dataplan-title fw-bold">Choose a Preferred Plan</h5>
-                <div class="container mt-4 d-flex flex-column align-items-center justify-content-between">
-                    <div class="row">
-                    <div class="col-md-6 mb-4 rounded">
-                        <a href="./Service_Request_Form.html" id="dp-lite" class="text-decoration">
-                            <div class="card border">
-                        <div class="card-body">
-                            <!-- content goes here -->
-                            <h5 class="card-title pt-4">H-Lite</h5>
-                            <p class="card-text">
-                                <li class="lato list-unstyled px-3">₦21,000 per month</li>
-                                <li class="lato list-unstyled px-3">100% Unlimited upload and download</li>    
-                                <li class="lato list-unstyled px-3">99.8% up-time</li>    
-                                <li class="lato list-unstyled px-3">One-off installation fee</li>    
-                                <li class="lato list-unstyled px-3">No speed throttling</li>
-                                <li class="lato list-unstyled px-3">6x faster than 4G </li>
-                                <li class="lato list-unstyled px-3">Multiple device connectivity</li>
-                                <li class="lato list-unstyled px-3">Router and Bandwidth Management device </li>
-                                <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
-                                <li class="lato list-unstyled px-3">Get your 1st Month Free </li>
-                                <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
-                            </p>
-                        </div>
-                        </div>
-                        </a>
-                        
-                    </div>
-                    <div class="col-md-6 mb-4 rounded">
-                        <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration">
-                            <div class="card border">
-                            <div class="card-body">
-                                <!-- content goes here -->                       <h5 class="card-title pt-4">H-Max</h5>
-                                <p class="card-text">
-                                    <li class="lato list-unstyled px-3">₦32,250 per month</li>
-                                    <li class="lato list-unstyled px-3">100% Unlimited upload and download</li>    
-                                    <li class="lato list-unstyled px-3">99.8% up-time</li>    
-                                    <li class="lato list-unstyled px-3">One-off installation fee</li>    
-                                    <li class="lato list-unstyled px-3">No speed throttling</li>
-                                    <li class="lato list-unstyled px-3">6x faster than 4G </li>
-                                    <li class="lato list-unstyled px-3">Multiple device connectivity</li>
-                                    <li class="lato list-unstyled px-3">Router and Bandwidth Management device </li>
-                                    <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
-                                    <li class="lato list-unstyled px-3">Get your 1st Month Free </li>
-                                    <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
-                                </p>
-                            </div>
-                        </div>
-                        </a>
-                        
-                    </div>
-                    </div>         
-                    <div class="row">
-                    <div class="col-md-6 mb-4 rounded">
-                        <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration">
-                            <div class="card border">
-                                <div class="card-body">
-                                    <!-- content goes here -->                          <h5 class="card-title pt-4">U-Pro</h5>
-                                    <p class="card-text">
-                                        <li class="lato list-unstyled px-3">₦43,000 per month</li>
-                                        <li class="lato list-unstyled px-3">100% Unlimited upload and download</li>    
-                                        <li class="lato list-unstyled px-3">99.8% up-time</li>    
-                                        <li class="lato list-unstyled px-3">One-off installation fee</li>    
-                                        <li class="lato list-unstyled px-3">No speed throttling</li>
-                                        <li class="lato list-unstyled px-3">6x faster than 4G </li>
-                                        <li class="lato list-unstyled px-3">Multiple device connectivity</li>
-                                        <li class="lato list-unstyled px-3">24/7 Customer Support Service</li>      
-                                        <li class="lato list-unstyled px-3">Get your 1st Month Free </li>
-                                        <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 mb-4 rounded">
-                        <a href="./Service_Request_Form.html" id="dp-custom" class="text-decoration-none">
-                            <div class="card border">
-                                <div class="card-body">
-                                    <!-- content goes here -->                          <h5 class="card-title pt-4 pt-4">U-Custom</h5>
-                                    <p class="card-text">
-                                        <li class="lato list-unstyled px-3">Need a Custom Home Plan?</li>
-                                        <li class="lato list-unstyled px-3">Tailored to your need only?</li>    
-                                        <li class="lato list-unstyled px-3">Are you running a special business?
-                                        </li>    
-                                        <li class="lato list-unstyled px-3">Do you require more block of IPs</li>    
-                                        <li class="lato list-unstyled px-3">Do you require a bundled service?</li>
-                                        <li class="lato list-unstyled px-3">Do you have a special gadget with extreme internet needs?</li>
-                                        <li class="lato list-unstyled px-3">Whatever your special need?</li>
-                                        <li class="lato list-unstyled px-3">Get a free survey and quote Here</li>
-                                        <li class="lato list-unstyled px-3 btn btn-warning my-2">Click Here </li>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    </div>
-                </div>
+<!-- <div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="mb-4">Managed IT Service</h2>
+      <p>I-World Networks understands that businesses run on a tight budget. Hiring an in-house IT team can be expensive. Therefore, I-World Networks has developed a structure to ensure that SMBs and startups get an all-in-one IT solution with predictable and affordable costs.</p>
+      <p>Our all-in-one IT solution takes care of all your IT needs with zero or low capital expenditure (capex) and Total cost of Owner. You will free up resources and investment for your core business selling proposition when you leverage on our Managed IT Services.</p>
+      <p>We will take care of your entire infrastructure with our 24/7 help desk and proactive monitoring, efficiency to improve your availability and efficiency. You will enjoy the following service in one bundle under a predictable monthly budget.</p>
+    </div>
+  </div>
+  
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h2 class="mb-4">I-World MSP Service Combinations</h2>
+      
+      <div class="accordion" id="serviceAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Internet Service+ Google Workspace
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#serviceAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Saves your business up to 50% on your monthly current bill.</li>
+                <li>Zero Sign-up cost.</li>
+                <li>Training of your staffs on the use of Google Workspace for business productivity and growth.</li>
+                <li>99.8% Service availability.</li>
+                <li>24/7 Technical Support.</li>
+                <li>Dedicated Account Manager.</li>
+              </ul>
             </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Internet Service+ Computer/Network Infrastructure
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#serviceAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Saves your business up to 45% on your monthly maintenance, repairs, and operational, subscription bill.</li>
+                <li>Zero Sign-up and build cost.</li>
+                <li>Proactive monitoring and routine schedule maintenance.</li>
+                <li>99.8% Service availability and failover for business continuity.</li>
+                <li>24/7 Onsite Technical Support.</li>
+                <li>Dedicated Account Manager.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">IT Consultancy Service</h5>
+            <p class="card-text">Expert consultation to streamline your IT infrastructure.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Internet Connectivity</h5>
+            <p class="card-text">Reliable internet solutions tailored to your business needs.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Computer and Network Services</h5>
+            <p class="card-text">Proactive maintenance and support for your systems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-primary text-white p-3">
+          <h5 class="card-title">One Solution. One Package. One Payment.</h5>
+          <p class="card-text">Simplify Your IT Operations with Our All-Inclusive Package</p>
+          <ul>
+            <li>Comprehensive suite of services bundled into one package</li>
+            <li>Streamlined billing with one convenient payment</li>
+            <li>Eliminate the hassle of managing multiple vendors</li>
+            <li>Focus on your core business while we handle your IT needs</li>
+          </ul>
+          <p class="card-text"><strong>Call us Now & save 50% from your IT cost.</strong></p>
+          <a href="#" class="btn btn-success">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">IT Consultancy Service</h5>
+            <p class="card-text">Expert consultation to streamline your IT infrastructure.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Internet Connectivity</h5>
+            <p class="card-text">Reliable internet solutions tailored to your business needs.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Computer and Network Services</h5>
+            <p class="card-text">Proactive maintenance and support for your systems.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Google Workspace for Mail, Messaging Collaboration & Productivity</h5>
+            <p class="card-text">Collaborative tools for seamless communication and productivity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Business Phone System (VOIP/IPBX)</h5>
+            <p class="card-text">Advanced VOIP/IPBX solutions for efficient communication.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Website and Mobile Apps Development</h5>
+            <p class="card-text">Customized development for your digital presence.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Google Cloud Services and Generative AI </h5>
+            <p class="card-text">Harness the power of Google's cloud and AI technologies.</p>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">24/7 Proactive Monitoring</h5>
+            <p class="card-text">Constant monitoring to ensure the security and stability of your systems.<span class="text-white">Google Cloud Services and Generative AI</span></p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-body" style="background: #eeeeef;">
+          <h5 class="card-title">One Solution. One Package. One Payment.</h5>
+          <p class="card-text">Simplify Your IT Operations with Our All-Inclusive Package</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Comprehensive suite of services bundled into one package</li>
+            <li class="list-group-item">Streamlined billing with one convenient payment</li>
+            <li class="list-group-item">Eliminate the hassle of managing multiple vendors</li>
+            <li class="list-group-item">Focus on your core business while we handle your IT needs</li>
+          </ul>
+          <p class="card-text mt-3"><strong>Call us Now & save 50% from your IT cost.</strong></p>
+          <button class="btn btn-warn">Contact Us</button>
+        </div>
+      </div>
+  </div> -->
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="border p-3 col-md-4">
+            <div class="service-container animated fadeInUp">
+            <h2 class="service-heading"><i class="icon fas fa-wifi"></i> Internet Service + Google Workspace</h2>
+            <p class="service-description">Bundle your Internet Subscription with Google Workspace.</p>
+            <ul class="benefit-list">
+                <li><i class="icon fas fa-dollar-sign"></i> Save up to 50% on monthly bill</li>
+                <li><i class="icon fas fa-check"></i> Zero Sign-up cost</li>
+                <li><i class="icon fas fa-users"></i> Staff training on Google Workspace</li>
+                <li><i class="icon fas fa-server"></i> 99.8% Service availability</li>
+                <li><i class="icon fas fa-headset"></i> 24/7 Technical Support</li>
+                <li><i class="icon fas fa-user-tie"></i> Dedicated Account Manager</li>
+            </ul>
+            <button class="btn btn-warning btn-block call-to-action">Request Free Consultation</button>
+            </div>
+        </div>
+      <div class="border p-3 col-md-4">
+        <div class="service-container animated fadeInUp" style="animation-delay: 0.2s;">
+          <h2 class="service-heading"><i class="icon fas fa-network-wired"></i> Internet Service + Network Infrastructure</h2>
+          <p class="service-description">Get Internet Connectivity and Network Infrastructure as a service.</p>
+          <ul class="benefit-list">
+            <li><i class="icon fas fa-dollar-sign"></i> Save up to 45% on maintenance costs</li>
+            <li><i class="icon fas fa-check"></i> Zero Sign-up and build cost</li>
+            <li><i class="icon fas fa-wrench"></i> Proactive monitoring and maintenance</li>
+            <li><i class="icon fas fa-server"></i> 99.8% Service availability</li>
+            <li><i class="icon fas fa-headset"></i> 24/7 Onsite Technical Support</li>
+            <li><i class="icon fas fa-user-tie"></i> Dedicated Account Manager</li>
+          </ul>
+          <button class="btn btn-warning btn-block call-to-action">Request Free Consultation</button>
+        </div>
+      </div>
+      <div class="border p-3 col-md-4">
+        <div class="service-container animated fadeInUp" style="animation-delay: 0.4s;">
+          <h2 class="service-heading"><i class="icon fas fa-wifi"></i> Internet Service + Google Workspace + Network Infrastructure (Most popular)</h2>
+          <p class="service-description">Our most popular service combination for businesses.</p>
+          <ul class="benefit-list">
+            <li><i class="icon fas fa-dollar-sign"></i> Save up to 55% on monthly costs</li>
+            <li><i class="icon fas fa-chart-line"></i> Lowest Total Cost of Ownership</li>
+            <li><i class="icon fas fa-check"></i> Zero Sign-up and build cost</li>
+            <li><i class="icon fas fa-wrench"></i> Proactive monitoring and maintenance</li>
+            <li><i class="icon fas fa-server"></i> 99.8% Service availability</li>
+            <li><i class="icon fas fa-headset"></i> 24/7 Onsite Technical Support</li>
+            <li><i class="icon fas fa-user-tie"></i> Dedicated Account Manager</li>
+            <li><i class="icon fas fa-database"></i> Data Backup and Recovery</li>
+          </ul>
+          <button class="btn btn-warning btn-block call-to-action">Request Free Consultation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

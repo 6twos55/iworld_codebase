@@ -127,13 +127,13 @@
 }
 
 .i-green{
-  color: #59af17;
+  color: #5CC640 !important;
 }
 .i-orange{
-  color: #ff6600;
+  color: #ff6600 !important;
 }
 .bg-i-green{
-  background: #5CC640;
+  background: #5CC640 !important;
 }
 [data-bs-theme=dark] {
   color-scheme: dark;
@@ -8459,7 +8459,7 @@ textarea.form-control-lg {
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: 1.15rem !important;
 }
 
 .fs-6 {

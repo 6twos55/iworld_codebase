@@ -19,7 +19,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-white">
     <!-- Header Beginning -->
     <div class="workspace-header">
         <!-- Navbar beginning -->
@@ -53,13 +53,16 @@
                                 Google Cloud Services
                             </a>
                             <div class="dropdown-menu" aria-labelledby="googleCloudDropdown">
-                                <a class="dropdown-item" href="ngn-edu-iwn.html">Nigeria Google for Education</a>
+                                <a class="dropdown-item" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education Program</a>
                                 <a class="dropdown-item" href="Google_Workspace.html">Google Workspace</a>
-                                <a class="dropdown-item" href="./chrome_os.html">Google Chrome Enterprise</a>
+                                <!-- <a class="dropdown-item" href="./chrome_os.html">Google Chrome Enterprise</a> -->
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./smb_msp.html">Managed Service Provider (MSP)</a>
+                            <a class="nav-link" href="./msp.html">Managed Service Provider (MSP)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./careers.html">Careers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">Contact Us</a>
@@ -77,55 +80,61 @@
     <!-- End of Header -->
 
     <!-- Beginning of Google Workspace Info -->
-    <div class="google-info container my-5">
+    <div class="google-info container pt-3">
         <!--  Google Cloud Services: Google Workspace For Individual-->
-        <h4 class="i-green text-center fw-bold">Google Cloud Services: Google Workspace For Individual</h4>
-        
+        <h4 class="text-start fw-bold">Google Cloud Services: Google Workspace For Individual</h4>
+        <hr class="hr">
         <div class="individual-workspace">
             <span class="fs-6 lato align-center">
                 Power your business with tools that help you with everyday tasks like scheduling appointments and email marketing, so you have more time to spend connecting with customers and focusing on the work that matters.</span><br><br>
                 <div class="container d-flex justify-content-center">
-                    <img src="./Assets/img/workspace_individual.png" alt="" class="object-fit-contain">
+                    <img src="./Assets/img/workspace_individual.png" alt="" class="object-fit-contain img-fluid">
                 </div>
-            <span class="fs-4 lato fw-bold i-orange">
+            <span class="fs-5 lato fw-bold">
                 Enjoy the following features:
             </span>
             <div class="container">
-                <div class="row">
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Extended and engaging video calls </h6>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-sm-12 aboutText m-2 border p-2">
+                        <img src="./Assets/icons/workspace-icons/individual-icons/video-call.svg" width="40" height="40" alt="" class="">
+                        <h6 class="fw-bold">Extended and engaging video calls </h6>
                         <p class="lato">
                             Get premium features for more productive meetings
                         </p>
                     </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* 1 TB of storage for your business needs</h6>
+                    <div class="col-md-3 col-sm-12 aboutText m-2 border p-2">
+                        <img src="./Assets/icons/workspace-icons/individual-icons/database.svg" width="40" height="40" alt="" class="">
+                        <h6 class="fw-bold">1 TB of storage for your business needs</h6>
                         <p class="lato">
                             Securely store, share, and collaborate on files and folders from any device
                         </p>
                     </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Advanced appointment scheduling </h6>
+                    <div class="col-md-3 col-sm-12 aboutText m-2 border p-2">
+                        <img src="./Assets/icons/workspace-icons/individual-icons/receptionist.svg" width="40" height="40" alt="" class="">
+                        <h6 class="fw-bold">Advanced appointment scheduling </h6>
                         <p class="lato">
                             Let others book meetings with you
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Professional email tools </h6>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-sm-12 aboutText m-2 border p-2">
+                        <img src="./Assets/icons/workspace-icons/individual-icons/contact.svg" width="40" height="40" alt="" class="">
+                        <h6 class="fw-bold">Professional email tools </h6>
                         <p class="lato">
                             Personalize with custom layouts and mail merge
                         </p>
                     </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Integrated eSignature (Beta) </h6>
+                    <div class="col-md-3 col-sm-12 aboutText m-2 border p-2">
+                        <img src="./Assets/icons/workspace-icons/individual-icons/digital-signature.svg" width="40" height="40" alt="" class="">
+                        <h6 class="fw-bold">Integrated eSignature (Beta) </h6>
                         <p class="lato">
                             Request and capture electronic signatures
                         </p>
                     </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Get personalized live help </h6>
+                    <div class="col-md-3 col-sm-12 aboutText m-2 border p-2">
+                        <img src="./Assets/icons/workspace-icons/individual-icons/support.svg" width="40" height="40" alt="" class="">
+                        <h6 class="fw-bold">Get personalized live help </h6>
                         <p class="lato">
                             Support whenever you need it
                         </p>
@@ -133,193 +142,218 @@
                 </div>
             </div>
             <!-- CTA Button -->
-            <div class="cta d-flex flex-column align-items-center justify-content-center">
-                <a href="#workspace_form" class="btn btn-warn w-50 text-uppercase fw-bold">Get now</a>
+            <div class="cta">
+                <a href="#workspace_form" class="btn btn-warn w-auto text-uppercase fw-bold">Try for 30 Days Free</a>
             </div>
         </div>
-        <hr>
+    </div>
+
+    <!--  Google Cloud Services: Google Workspace For SME-->
+    <div class="container-fluid gray-bg mt-5 py-3">
         <!--  Google Cloud Services: Google Workspace For SME-->
-        <h4 class="i-green text-center fw-bold">Google Cloud Services: Google Workspace For SME</h4>
-        <div class="smb-workspace">
-            <span class="fs-6 lato align-center">
-                Use Google Workspace for business email, video conferencing, cloud storage, and file sharing. Get all the tools your team needs to collaborate and get more work done
-            </span> <br> <br>
-            <span class="fs-4 lato fw-bold i-orange">
-                Google Workspace Benefits for SMB:
-            </span>
-            <div class="container">
-                <div class="row">
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">*Take Gmail to work</h6>
-                        <p class="lato">
-                            Google's ultra-reliable servers guarantee 99.9% uptime on your business email. Industry-leading spam filters keep junk out of your inbox.
-                        </p>
+        <div class="container">
+            <h4 class="text-start fw-bold">Google Cloud Services: Google Workspace For SME</h4>
+            <hr>
+            <div class="smb-workspace">
+                <span class="fs-6 lato align-center">
+                    Use Google Workspace for business email, video conferencing, cloud storage, and file sharing. Get all the tools your team needs to collaborate and get more work done
+                </span> <br> <br>
+                <span class="fs-5 lato fw-bold">
+                    Google Workspace Benefits for SMB:
+                </span>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-sm-12 aboutText bg-white m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/smb-icons/new.svg" width="40" height="40" alt="" class="img-fluid">
+                            <h6 class="fw-bold">Take Gmail to work</h6>
+                            <p class="lato">
+                                Google's ultra-reliable servers guarantee 99.9% uptime on your business email. Industry-leading spam filters keep junk out of your inbox.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 aboutText bg-white m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/smb-icons/anywhere.svg" width="40" height="40" alt="" class="img-fluid">
+                            <h6 class="fw-bold">Work from anywhere</h6>
+                            <p class="lato">
+                                Collaborate on documents, spreadsheets and presentations across devices. Real-time co-editing helps you get to the final version faster.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 aboutText bg-white m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/smb-icons/card.svg" width="40" height="40" alt="" class="img-fluid">
+                            <h6 class="fw-bold">Business-grade security</h6>
+                            <p class="lato">
+                                Keep all your company data safe and protected even in the event of lost or stolen devices and employee turnover. 
+                            </p>
+                        </div>
                     </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Work from anywhere</h6>
-                        <p class="lato">
-                            Collaborate on documents, spreadsheets and presentations across devices. Real-time co-editing helps you get to the final version faster.
-                        </p>
-                    </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Business-grade security</h6>
-                        <p class="lato">
-                            Keep all your company data safe and protected even in the event of lost or stolen devices and employee turnover. 
-                        </p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-sm-12 aboutText bg-white m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/smb-icons/engineer.svg" width="40" height="40" alt="" class="img-fluid">
+                            <h6 class="fw-bold">Easy IT administration</h6>
+                            <p class="lato">
+                                Set up new team members in minutes. Google Workspace stays up to date automatically, so you won't have to worry about software updates or security patches.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 aboutText bg-white m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/smb-icons/paper.svg" width="40" height="40" alt="" class="img-fluid">
+                            <h6 class="fw-bold">Work with popular file types</h6>
+                            <p class="lato">
+                                Easily open and edit common file formats like Microsoft® Word, Excel, and Powerpoint. You can also export and share files with people who don't use Google Workspace.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 aboutText bg-white m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/smb-icons/share.svg" width="40" height="40" alt="" class="img-fluid">
+                            <h6 class="fw-bold">Store and share files</h6>
+                            <p class="lato">
+                                Keep all your work in one secure place with cloud storage. Access and share with teammates whenever you need it, from your computer, phone, or tablet
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Easy IT administration</h6>
-                        <p class="lato">
-                            Set up new team members in minutes. Google Workspace stays up to date automatically, so you won't have to worry about software updates or security patches.
-                        </p>
-                    </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Work with popular file types</h6>
-                        <p class="lato">
-                            Easily open and edit common file formats like Microsoft® Word, Excel, and Powerpoint. You can also export and share files with people who don't use Google Workspace.
-                        </p>
-                    </div>
-                    <div class="col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">*Store and share files</h6>
-                        <p class="lato">
-                            Keep all your work in one secure place with cloud storage. Access and share with teammates whenever you need it, from your computer, phone, or tablet
-                        </p>
-                    </div>
+                <!-- CTA Button -->
+                <div class="cta">
+                    <a href="#workspace_form" class="btn btn-warn w-auto text-uppercase fw-bold">Try for 30 Days Free</a>
                 </div>
-            </div>
-            <!-- CTA Button -->
-            <div class="cta d-flex flex-column align-items-center justify-content-center">
-                <a href="#workspace_form" class="btn btn-warn w-50 text-uppercase fw-bold">Get now</a>
             </div>
         </div>
-        <hr>
-        <!--  Google Cloud Services: Google Workspace For Enterprise-->
-        <h4 class="i-green text-center fw-bold">Google Cloud Services: Google Workspace For Enterprise</h4>
-        <div class="enterprise-workspace">
-            <span class="fs-6 lato align-center">
-                Google Workspace transforms how work gets done.
-                Familiar cloud-based apps like Gmail, Docs, Drive, Calendar and Meet let your people connect, collaborate and deliver impact from anywhere, on any device, Keeping teams connected and productive from anywhere.
-            </span> <br> <br>
-            <span class="fs-4 lato fw-bold i-orange">
-                Google Workspace Benefits For Enterprise:
-            </span>
-            <div class="container">
-                <div class="row">
-                    <div class="border py-2 col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">*Collaborative Tools</h6>
-                        <p class="lato">
-                            Google Workspace offers a suite of collaborative tools such as Google Docs, Sheets, Slides, and Drive. These tools allow employees to work together in real-time, regardless of their location or preferred work style. 
-                        </p>
-                    </div>
-                    <div class="border py-2 col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Communication Platforms: </h6>
-                        <p class="lato">
-                            Google Workspace includes communication platforms such as Gmail, Google Meet, and Google Chat. These platforms facilitate effective communication and connection among employees, whether they are working remotely or in the office.
-                        </p>
-                    </div>
-                    <div class="border py-2 col smb-benefit m-2 border p-2">
-                        <h6 class="fw-bold">* Well-being Resources:</h6>
-                        <p class="lato">
-                            Google Workspace provides access to well-being resources and tools designed to support employee health and wellness. This may include features like Google Calendar for scheduling and managing work-life balance and Google Assistant for managing tasks and reminders.
-                        </p>
+    </div>
+
+
+    <!--  Google Cloud Services: Google Workspace For Enterprise-->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <!--  Google Cloud Services: Google Workspace For Enterprise-->
+            <h4 class="text-start fw-bold">Google Cloud Services: Google Workspace For Enterprise</h4>
+            <hr class="hr">
+            <div class="enterprise-workspace">
+                <span class="fs-6 lato align-center">
+                    Google Workspace transforms how work gets done.
+                    Familiar cloud-based apps like Gmail, Docs, Drive, Calendar and Meet let your people connect, collaborate and deliver impact from anywhere, on any device, Keeping teams connected and productive from anywhere.
+                </span> <br> <br>
+                <span class="fs-5 lato fw-bold">
+                    Google Workspace Benefits For Enterprise:
+                </span>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="border py-2 col-md-3 col-sm-12 aboutText bg-white m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/enterprise_workspace_icons/collaborative.svg" alt="" width="40" height="40" class="img-fluid">
+                            <h6 class="fw-bold">Collaborative Tools</h6>
+                            <p class="lato">
+                                Google Workspace offers a suite of collaborative tools such as Google Docs, Sheets, Slides, and Drive. These tools allow employees to work together in real-time, regardless of their location or preferred work style. 
+                            </p>
+                        </div>
+                        <div class="border py-2 col-md-3 col-sm-12 aboutText m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/enterprise_workspace_icons/tools.svg" alt="" width="40" height="40" class="img-fluid">
+                            <h6 class="fw-bold">Communication Platforms: </h6>
+                            <p class="lato">
+                                Google Workspace includes communication platforms such as Gmail, Google Meet, and Google Chat. These platforms facilitate effective communication and connection among employees, whether they are working remotely or in the office.
+                            </p>
+                        </div>
+                        <div class="border py-2 col-md-3 col-sm-12 aboutText m-2 border p-2">
+                            <img src="./Assets/icons/workspace-icons/enterprise_workspace_icons/google-assistant.svg" alt="" width="40" height="40" class="img-fluid">
+                            <h6 class="fw-bold">Well-being Resources:</h6>
+                            <p class="lato">
+                                Google Workspace provides access to well-being resources and tools designed to support employee health and wellness. This may include features like Google Calendar for scheduling and managing work-life balance and Google Assistant for managing tasks and reminders.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- CTA Button -->
-            <div class="cta d-flex flex-column align-items-center justify-content-center">
-                <a href="#workspace_form" class="btn btn-warn w-50 text-uppercase fw-bold">Get now</a>
+                <!-- CTA Button -->
+                <div class="cta">
+                    <a href="#workspace_form" class="btn btn-warn w-auto text-uppercase fw-bold">Try for 30 Days Free</a>
+                </div>
             </div>
         </div>
-        <hr>
     </div>
     <!-- Ending of google workspace info -->
 
     <!-- Beginning of form section -->
-    <div class="container mt-5" id="workspace_form">
-        <p class="i-green text-center fs-4 fw-bold">Google Workspace Request Form</p>
-        <p class="text-center lato">
-            We're excited to learn more about your IT requirements. Please take a moment to provide us with some essential details so that we can tailor our managed services to meet your business needs.
-        </p>
-        <form>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="fullName" class="form-label lato">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+    <div class="container-fluid gray-bg py-3">
+        <div class="container py-2" id="workspace_form">
+            <p class="text-start fs-4 fw-bold">Google Workspace Request Form</p>
+            <hr class="">
+            <p class="text-start lato">
+                We're excited to learn more about your IT requirements. Please take a moment to provide us with some essential details so that we can tailor our managed services to meet your business needs.
+            </p>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label lato">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="businessName" class="form-label lato">Business Name</label>
+                            <input type="text" class="form-control" id="businessName" placeholder="Enter business name">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label lato">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="businessEmail" class="form-label lato">Business Email</label>
+                            <input type="email" class="form-control" id="businessEmail" placeholder="Enter business email">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="businessName" class="form-label lato">Business Name</label>
-                        <input type="text" class="form-control" id="businessName" placeholder="Enter business name">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="companySize" class="form-label lato">Company Size</label>
+                            <select class="form-select" id="companySize">
+                                <option selected disabled>Select company size</option>
+                                <option value="1-10">1 - 10</option>
+                                <option value="11-20">11 - 20</option>
+                                <option value="21-50">21 - 50</option>
+                                <option value="50+">50 and above</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="businessDomain" class="form-label lato">Business Domain Name</label>
+                            <input type="text" class="form-control" id="businessDomain" placeholder="Enter business domain name">
+                        </div>
                     </div>
                 </div>
-                
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label lato">Phone Number</label>
-                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="howDidYouHear" class="form-label lato">How did you hear about us?</label>
+                            <select class="form-select" id="howDidYouHear">
+                                <option selected disabled>Select option</option>
+                                <option value="Online">Online</option>
+                                <option value="SocialMedia">Social media</option>
+                                <option value="Event">Event</option>
+                                <option value="CoWorkingSpace">Co-working space</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="businessEmail" class="form-label lato">Business Email</label>
-                        <input type="email" class="form-control" id="businessEmail" placeholder="Enter business email">
-                    </div>
+                <!-- CTA Button -->
+                <div class=nter">
+                    <button type="submit" class="btn btn-warn w-auto text-uppercase fw-bold">Submit</button>
+                    <p class="my-2 lato">
+                        Thank you for choosing I-World Networks! We will contact you within the hour.
+                    </p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="companySize" class="form-label lato">Company Size</label>
-                        <select class="form-select" id="companySize">
-                            <option selected disabled>Select company size</option>
-                            <option value="1-10">1 - 10</option>
-                            <option value="11-20">11 - 20</option>
-                            <option value="21-50">21 - 50</option>
-                            <option value="50+">50 and above</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="businessDomain" class="form-label lato">Business Domain Name</label>
-                        <input type="text" class="form-control" id="businessDomain" placeholder="Enter business domain name">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="howDidYouHear" class="form-label lato">How did you hear about us?</label>
-                        <select class="form-select" id="howDidYouHear">
-                            <option selected disabled>Select option</option>
-                            <option value="Online">Online</option>
-                            <option value="SocialMedia">Social media</option>
-                            <option value="Event">Event</option>
-                            <option value="CoWorkingSpace">Co-working space</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <!-- CTA Button -->
-            <div class="cta d-flex flex-column align-items-center justify-content-center">
-                <button type="submit" class="btn btn-warn w-50 text-uppercase fw-bold">Submit</button>
-                <p class="my-2 lato">
-                    Thank you for choosing I-World Networks! We will contact you within the hour.
-                </p>
-            </div>
-        </form>
-    </div>    
+            </form>
+        </div>
+    </div>
+        
     <!-- Ending of form section -->
 
     <!-- Beginning of quick links section -->
-    <section class="quick-links-container container my-5 pb-5">
+    <!-- <section class="quick-links-container container my-5 pb-5">
         <h4 class="fw-bold">
             Still Uncertain?
         </h4>
@@ -360,75 +394,72 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Ending of quick links section -->
 
     <!-- Footer section Beginning -->
-    <footer class=" text-start border pt-3">
+    <footer class=" text-start border pt-5">
         <!-- Grid container -->
         <div class="container">
             <!-- Section: Links -->
-            <section class="lato">
+            <section class="">
                 <!--Grid row-->
                 <div class="row">
-                    
                     <!--Grid column-->
-                    <div class="lato col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h6 class="lato text-uppercase">Connectivity Services</h6>
-                        
-                        <ul class="lato list-unstyled mb-0">
-                            <li>
-                                <a class="lato text-body text-light" href="./internet_for_home.html">Internet for Home</a>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h6 class="fw-bold fs-5 text-uppercase">Connectivity Services</h6>
+                        <ul class="list-unstyled mb-0">
+                            
+                            <li class="mt-2">
+                                <a class="text-body text-light" href="./internet_for_home.html">Internet for Home</a>
                             </li>
-                            <li>
-                                <a class="lato text-body text-light" href="./Internet_for_business.html">Internet for Business</a>
+                            <li class="mt-2">
+                                <a class="text-body text-light" href="./Internet_for_business.html">Internet for Business</a>
                             </li>
-                            <li>
-                                <a class="lato text-body text-light" href="./enterprise_internet.html">Enterprise Internet</a>
+                            <li class="mt-2">
+                                <a class="text-body text-light" href="./enterprise_internet.html">Enterprise Internet</a>
                             </li>
-                            <li>
-                                <a class="lato text-body text-light" href="./mpls.html">MPLS (Multiprotocol Label Switching)</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!--Grid column-->
-                    <div class="lato col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h6 class="lato text-uppercase">Google Cloud Services </h6>
-                
-                        <ul class="lato list-unstyled mb-0">
-                            <li>
-                            <a class="lato text-body text-light" href="./ngn-edu-iwn.html">Nigeria Google for Education</a>
-                            </li>
-                            <li>
-                            <a class="lato text-body text-light" href="./Google_Workspace.html">Google Workspace</a>
-                            </li>
-                            <li>
-                            <a class="lato text-body text-light" href="#">Google Chrome Enterprise</a>
-                            </li>
-                            <li>
-                            <a class="lato text-body text-light" href="./smb_msp.html">Managed Service Provider (MSP) </a>
+                            <li class="mt-2">
+                                <a class="text-body text-light" href="./mpls.html">MPLS (Multiprotocol Label Switching)</a>
                             </li>
                         </ul>
                     </div>
 
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h6 class="lato text-uppercase">Quick Links</h6>
+                        <h6 class="fw-bold fs-5 text-uppercase">Google Cloud Services </h6>
+                
+                        <ul class="list-unstyled mb-0">
+                            <li class="mt-2">
+                            <a class="text-body text-light" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education</a>
+                            </li>
+                            <li class="mt-2">
+                            <a class="text-body text-light" href="./Google_Workspace.html">Google Workspace</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h6 class="fw-bold fs-5 text-uppercase">Quick Links</h6>
             
-                        <ul class="lato list-unstyled mb-0">
-                        <li>
-                            <a class="lato text-body text-light" href="./index.html">Home</a>
+                        <ul class="list-unstyled mb-0">
+                        <li class="mt-2">
+                            <a class="text-body text-light" href="./index.html">Home</a>
                         </li>
-                        <li>
-                            <a class="lato text-body text-light" href="./about.html">About Us</a>
+                        <li class="mt-2">
+                            <a class="text-body text-light" href="./about.html">About Us</a>
                         </li>
-                        <li>
-                            <a class="lato text-body text-light" href="./contact.html">Contact Us</a>
+                        <li class="mt-2">
+                            <a class="text-body text-light" href="./contact.html">Contact Us</a>
                         </li>
-                        <li>
-                            <a class="lato text-body text-light" href="./careers.html">Careers</a>
+                        <li class="mt-2">
+                            <a class="text-body text-light" href="./smb_msp.html">Managed Service Provider (MSP) </a>
                         </li>
+                        <li class="mt-2">
+                            <a class="text-body text-light" href="./careers.html">Careers</a>
+                        </li>
+                        
                         </ul>
                     </div>
 
@@ -465,9 +496,9 @@
                         <!-- <h5 class="text-uppercase">
                             <img src="./Assets/icons/logos/logo_2.png" alt="">
                         </h5>
-                        <ul class="lato list-unstyled mb-0">
-                            <li>
-                                <a class="lato text-body text-light" href="#!">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mt-2">
+                                <a class="text-body text-light" href="#!">
                                     <img src="./Assets/icons/logos/cloud_partner_logo.png" alt="" width="200" height="70">
                                 </a>
                             </li>
@@ -479,7 +510,7 @@
         <!-- Section: Links -->
         </div>
         <!-- Copyright -->
-        <div class="lato text-center p-3 mt-2" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="text-center p-3 mt-2" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2024 Copyright:
         <a class="text-reset fw-bold" href="./index.html">I-World Networks</a>
         </div>

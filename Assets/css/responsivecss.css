@@ -21,6 +21,15 @@
     .contact-header-content{
         background-size: contain;
     }
+    .gfe-text{
+        height: auto !important;
+    }
+    .gfe-inner-text{
+        width: 100% !important;
+    }
+    .gfe-img{
+        width: 100% !important;
+    }
 }
 @media (max-width: 576px) {
     /* Two columns on small devices */

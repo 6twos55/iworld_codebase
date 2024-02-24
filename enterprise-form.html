@@ -111,7 +111,7 @@
     <!-- Enterprise Form beginning -->
     <div class="container enterprise-form mt-2">
         <h4 class="i-green text-startfw-bold">Request Form for Enterprise Internet service</h4>
-        <form>
+        <form id="enterpriseForm">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="name" class="form-label lato">Name:</label>
@@ -273,7 +273,10 @@
         <!-- Copyright -->
     </footer>
     
-
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
 
     <!-- Scripts -->
     <!--  Preloader Functionality -->
@@ -305,5 +308,9 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/enterprise_form.js"></script>
 </body>
 </html>

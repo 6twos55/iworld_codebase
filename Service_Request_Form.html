@@ -91,35 +91,160 @@
     <section class="service-form container" >
         <div class="container mt-5">
             <h2 class="lato mb-4 fw-bold">Service Request Form</h2>
-            <form>
+            <!-- <form>
+              <div class="lato row mb-3">
+                <div class="lato col-md-6">
+                  <label for="input1" class="lato form-label">Full Name: [Your Full Name]</label>
+                  <input required type="text" class="lato form-control" id="input1">
+                </div>
+                <div class="lato col-md-6">
+                  <label for="input2" class="lato form-label">Email Address: [YourEmail@example.com]</label>
+                  <input required type="email" class="lato form-control" id="input2">
+                </div>
+              </div>
+              <div class="lato row mb-3">
+                <div class="lato col-md-6">
+                  <label for="input3" class="lato form-label">Phone Number: [Your Phone Number]</label>
+                  <input required type="text" class="lato form-control" id="input3">
+                </div>
+                <div class="lato col-md-6">
+                  <label for="input4" class="lato form-label">Address: [Your Complete Address]</label>
+                  <input required type="text" class="lato form-control" id="input4">
+                </div>
+              </div>
+              <div class="lato row mb-3">
+                <div class="lato col-md-6">
+                    <label for="select1" class="lato form-label">Select City:</label>
+                    <select class="lato form-select" id="select1">
+                      <option value="option1">Lagos</option>
+                      <option value="option2">Abeokuta</option>
+                      <option value="option3">Sagamu</option>
+                      <option value="option4">Ijebu Ode</option>
+                      <option value="option5">Ibadan</option>
+                      <option value="option1">Epe</option>
+                      <option value="option2">Isheri</option>
+                      <option value="option3">Magboro</option>
+                      <option value="option4">Agbara</option>
+                      <option value="option5">Osogbo</option>
+                      <option value="option1">Akure</option>
+                      <option value="option2">Ifo</option>
+                      <option value="option3">Mowe-Ibafo</option>
+                      <option value="option4">Ijebu Ode</option>
+                      <option value="option5">Ibadan</option>
+                    </select>
+                </div>
+                <div class="lato col-md-6">
+                    <label for="survey-date" class="form-label lato">Select a Date:</label>
+                    <input type="date" id="survey-date" class="lato form-control" placeholder="Select date">
+                </div>
+              </div>
+            <div class="lato row mb-3">
+                <div class="lato col-md-6">
+                    <label for="select1" class="lato form-label">Current ISP: [Current Provider Name]</label>
+                    <input type="text" class="lato form-control" name="current-isp" id="current-isp">
+                </div>
+                <div class="lato col-md-6">
+                    <label for="survey-date" class="form-label lato">Contract End Date:</label>
+                    <input type="date" id="survey-date" class="lato form-control" placeholder="Select date">
+                </div>
+            </div>     
+                
+                <div class="form-group my-4">
+                    <label class="lato" for="servicesNeeded">Additional Products or Services of interest (if applicable):</label>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox1">
+                        <label class="form-check-label lato" for="serviceCheckbox1">Managed IT Service
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
+                        <label class="form-check-label lato" for="serviceCheckbox2">Structured Networks Cabling
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox3">
+                        <label class="form-check-label lato" for="serviceCheckbox3">Google Workspace</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox4">
+                        <label class="form-check-label lato" for="serviceCheckbox4">Google ChromeOS Enterprise</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox5">
+                        <label class="form-check-label lato" for="serviceCheckbox5"> Additional IP Address</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
+                        <label class="form-check-label lato" for="serviceCheckbox6">Additional Wireless Router</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
+                        <label class="form-check-label lato" for="serviceCheckbox6">CCTV </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox6">
+                        <label class="form-check-label lato" for="serviceCheckbox6">Phone Service (VOIP)
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group my-4">
+                    <label class="lato" for="servicesNeeded">How Did You Hear About Us?
+                    </label>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox1">
+                        <label class="form-check-label lato" for="serviceCheckbox1">Online Advertisement
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
+                        <label class="form-check-label lato" for="serviceCheckbox2">Social Media
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="serviceCheckbox2">
+                        <label class="form-check-label lato" for="serviceCheckbox2">Referral
+                        </label>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label class="lato" for="otherServices">Others:</label>
+                        <input type="text" class="lato form-control" id="otherServices" placeholder="Please specify">
+                    </div>
+                </div>
+              <div class="lato mb-3">
+                <label for="textarea" class="lato form-label">Additional Comments or Questions:</label>
+                <textarea class="lato form-control" id="textarea" rows="5" placeholder="Enter message"></textarea>
+              </div>
+              <button type="submit" class="w-100 btn btn-warning fw-bold fs-4">Submit</button>
+            </form> -->
+            <form id="serviceForm">
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="h-name" class="form-label lato">Name:</label>
-                        <input required type="text" class="form-control" id="h-name" name="h-name">
+                        <label for="name" class="form-label lato">Name:</label>
+                        <input required type="text" class="form-control" id="name" name="h-name">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-companyName" class="form-label lato">Company Name:</label>
-                        <input required type="text" class="form-control" id="h-companyName" name="h-companyName">
+                        <label for="companyName" class="form-label lato">Company Name:</label>
+                        <input required type="text" class="form-control" id="companyName" name="companyName">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-email" class="form-label lato">Email:</label>
-                        <input required type="email" class="form-control" id="h-email" name="h-email">
+                        <label for="email" class="form-label lato">Email:</label>
+                        <input required type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-phoneNumber" class="form-label lato">Phone number:</label>
-                        <input required type="tel" class="form-control" id="h-phoneNumber" name="h-phoneNumber">
+                        <label for="phoneNumber" class="form-label lato">Phone number:</label>
+                        <input required type="tel" class="form-control" id="phoneNumber" name="phoneNumber">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-state" class="form-label lato">State:</label>
-                        <input required type="text" class="form-control" id="h-state" name="h-state">
+                        <label for="state" class="form-label lato">State:</label>
+                        <input required type="text" class="form-control" id="state" name="state">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="h-city" class="form-label lato">City:</label>
-                        <input required type="text" class="form-control" id="h-city" name="h-city">
+                        <label for="city" class="form-label lato">City:</label>
+                        <input required type="text" class="form-control" id="city" name="city">
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="h-address" class="form-label lato">Address:</label>
-                        <textarea class="form-control" id="h-address" name="h-address"></textarea>
+                        <label for="address" class="form-label lato">Address:</label>
+                        <textarea class="form-control" id="address" name="address"></textarea>
                     </div>
                 </div>
                 <!-- CTA Button -->
@@ -280,6 +405,11 @@
     </footer>
     <!-- Footer section ending -->
 
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
+
     <!-- Dropdown Logic -->
     <script>
         function dropdownFunction() {
@@ -317,5 +447,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/Service_Request_Form.js"></script>
 </body>
 </html>

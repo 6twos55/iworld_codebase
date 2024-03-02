@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="I-World Networks is a connectivity service provider in Nigeria">
         <meta name="author" content="Armaaneth Esiri">
-        <title>I-World Networks|| Connecting possibilities</title>
+        <title>I-World Networks || Connecting possibilities</title>
         <!-- FAVICON -->
-        <link rel="shortcut icon" href="./Assets/icons/favicon/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./Assets/icons/favicon/favicon-32x32.png" type="image/x-icon">
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="./Assets/css/style.css">
+        <link rel="stylesheet" href="./Assets/css/responsivecss.css">
         <link rel="stylesheet" href="./Assets/bootstrap/css/bootstrap.css">
     
         <!-- Google Fonts  -->
@@ -23,93 +24,71 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
 <body class="overflow-x-hidden">
-        <!-- Preloader Beginning -->
-        <div class="spinner-wrapper">
-            <div class="spinner d-flex align-items-center justify-content-center">
-                <div class="sk-cube-grid">
-                    <div class="sk-cube sk-cube1"></div>
-                    <div class="sk-cube sk-cube2"></div>
-                    <div class="sk-cube sk-cube3"></div>
-                    <div class="sk-cube sk-cube4"></div>
-                    <div class="sk-cube sk-cube5"></div>
-                    <div class="sk-cube sk-cube6"></div>
-                    <div class="sk-cube sk-cube7"></div>
-                    <div class="sk-cube sk-cube8"></div>
-                    <div class="sk-cube sk-cube9"></div>
-                  </div>
-            </div>
-        </div>
-        <!-- Preloader Ending -->
+    <!-- Back to top button beginning -->
+    <button onclick="topFunction()" id="BacktoTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M15 20H9v-8H6.16L12 4.16L19.84 12H15z"/></svg>
+    </button>
+    <!-- Back to top button ending -->
 
-        <!-- Whatsapp widget beginning-->
-        <a href="#" class="btn btn-warning whatsapp-link">Chat with us on WhatsApp!</a>
-        <!--whatsapp widget ending  -->
-
-        <!-- Back to top button beginning -->
-        <button onclick="topFunction()" id="BacktoTopBtn" title="Go to top">
-            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M15 20H9v-8H6.16L12 4.16L19.84 12H15z"/></svg>
-        </button>
-        <!-- Back to top button ending -->
-
-        <!-- Header Beginning -->
-        <div class="enterprise-internet-header">
-            <!-- Navbar beginning -->
-            <nav class="navbar navbar-expand-lg navbar-light fw-bold">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="./Assets/icons/logos/iworld_logo2.jpg" alt="iworld_logo" height="50">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="InternetDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Internet Services
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="InternetDropdown">
-                                    <a class="dropdown-item" href="./internet_for_home.html">Internet for Home</a>
-                                    <a class="dropdown-item" href="Internet_for_business.html">Internet for Small Business</a>
-                                    <a class="dropdown-item" href="./enterprise_internet.html">Enterprise Internet</a>
-                                    <!-- <a class="dropdown-item" href="./mpls.html">MPLS (Multiprotocol Label Switching)</a> -->
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="googleCloudDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Google Cloud Services
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="googleCloudDropdown">
-                                    <a class="dropdown-item" href="#Nigerian_Google_for_Education_Program">Nigeria Google for Education Program</a>
-                                    <a class="dropdown-item" href="Google_Workspace.html">Google Workspace</a>
-                                    <!-- <a class="dropdown-item" href="./chrome_os.html">Google Chrome Enterprise</a> -->
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./msp.html">Managed IT Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./careers.html">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact Us</a>
-                            </li>
-                        </ul>
-                        <div class="subscribe-btn ms-auto">
-                            <a href="./internet_for_home.html" class="btn btn-warn">Subscribe</a>
-                        </div>
+    <!-- Header Beginning -->
+    <div class="enterprise-internet-header">
+        <!-- Navbar beginning -->
+        <nav class="navbar navbar-expand-lg navbar-light fw-bold">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Assets/icons/logos/iworld_logo2.jpg" alt="iworld_logo" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="InternetDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Internet Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="InternetDropdown">
+                                <a class="dropdown-item" href="./internet_for_home.html">Internet for Home</a>
+                                <a class="dropdown-item" href="Internet_for_business.html">Internet for Small Business</a>
+                                <a class="dropdown-item" href="./enterprise_internet.html">Enterprise Internet</a>
+                                <!-- <a class="dropdown-item" href="./mpls.html">MPLS (Multiprotocol Label Switching)</a> -->
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="googleCloudDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Google Cloud Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="googleCloudDropdown">
+                                <a class="dropdown-item" href="#Nigerian_Google_for_Education_Program">Nigeria Google for Education Program</a>
+                                <a class="dropdown-item" href="Google_Workspace.html">Google Workspace</a>
+                                <!-- <a class="dropdown-item" href="./chrome_os.html">Google Chrome Enterprise</a> -->
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./msp.html">Managed IT Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="subscribe-btn ms-auto">
+                        <a href="./internet_for_home.html" class="btn btn-warn">Subscribe</a>
                     </div>
                 </div>
-            </nav>
-            <!-- Ending of navbar -->
-            <!-- Header content beginning -->
-            <div class="enterprise-internet-header-content"></div>
-            <!-- Ending of enterprise-internet header -->
-        </div>
+            </div>
+        </nav>
+        <!-- Ending of navbar -->
+        <!-- Header content beginning -->
+        <div class="enterprise-internet-header-content"></div>
+        <!-- Ending of enterprise-internet header -->
+    </div>
 
     <!-- section beginning -->
     <div class="container-fluid py-5">
@@ -132,50 +111,19 @@
             </p>
             <p class="text-start list list-unstyled" >
                 <span class=" fs-5">
-                    <!-- <img src="./Assets/icons/about-icons/calendar_icon.svg" width="30" height="30" alt=""> -->
-                        Do you need Internet Service for a Critical Business Mission? 
+                    Do you need Internet Service for a Critical Business Mission? 
                 </span> <br>
                 <span class=" fs-5">
-                    <!-- <img src="./Assets/icons/about-icons/user_icon.svg" width="30" height="30" alt=""> -->
-                        Is your company, organization or Institution overpaying for Internet Service? 
+                    Is your company, organization or Institution overpaying for Internet Service? 
                 </span> <br>
                 <span class=" fs-5">
-                    <!-- <img src="./Assets/icons/about-icons/spancense_icon2.svg" width="30" height="30" alt=""> -->
-                        Do you wait for days before you get urgent needed technical support? 
+                    Do you wait for days before you get urgent needed technical support? 
                 </span> <br>
                 <span class=" fs-5">
-                    <!-- <img src="./Assets/icons/about-icons/award_icon.svg" width="30" height="30" alt=""> -->
-                        Do you need End-to-End Support for your Internet and Internal distribution network? 
+                    Do you need End-to-End Support for your Internet and Internal distribution network? 
                 </span> <br>
             </p>
             <hr class="hr">
-            <!-- <div class="enterprise-service ">
-                <div class="container">
-                    <div class=" justify-content-center row mb-2">
-                        <div class="col border p-4 mx-1 lato fs-6 fw-bold aboutText bg-white text-start">
-                            <img src="./Assets/icons/Enterprise-icons/globe_icon.svg" width="30" height="30" alt="">
-                            Dedicated Enterprise Internet  is a national offering and is available in all locations in the country. </div>
-                        
-                        <div class="col border p-4  mx-1 lato fs-6 fw-bold aboutText bg-white text-start">
-                            <img src="./Assets/icons/Enterprise-icons/contract_icon.svg" width="30" height="30" alt="">Dedicated Enterprise Internet with a comprehensive  SLA guarantees performance and 99.8% availability.</div>
-                        <div class="col border p-4 mx-1 lato fs-6 fw-bold aboutText bg-white text-start">
-                            <img src="./Assets/icons/Enterprise-icons/shield_icon.svg" width="30" height="30" alt="">
-                            Business continuity that protects your business with automated failover to backup services.</div>
-                    </div>
-                    <div class="about-list-row1 justify-content-center row ">
-                        <div class="col border p-4  mx-1 lato fs-6 fw-bold aboutText bg-white text-start">
-                            <img src="./Assets/icons/Enterprise-icons/technician_icon.svg" width="30" height="30" alt="">
-                            Our technicians can install your equipment and provide ongoing maintenance, including 24/7 proactive monitoring and dedicated support.</div>
-                        <div class="col border p-4   mx-1 lato fs-6 fw-bold aboutText bg-white text-start">
-                            <img src="./Assets/icons/Enterprise-icons/plant _icon.svg" width="30" height="30" alt="">
-                            We power 85% of our infrastructure with renewable energy, ensuring cost efficiency and affordable pricing for our customers.
-                        </div>
-                        <div class="col border p-4   mx-1 lato fs-6 fw-bold aboutText bg-white text-start">
-                            <img src="./Assets/icons/Enterprise-icons/process_icon.svg" width="30" height="30" alt="">
-                            We use multiple Fibre upstream to create a self-healing redundancy to give you maximum uptime and service availability.</div>
-                    </div>
-                </div>
-            </div> -->
             <div class="cta  my-2">
                 <a href="#enterprise-form" class="btn btn-warn w-auto px-3 text-uppercase fw-bold">Request for Free Survey</a>
             </div>
@@ -265,6 +213,92 @@
     </div>
     <!--section ending  -->
 
+    <!-- Service combinations -->
+    <div class="container-fluid bg-green pt-3 pb-5">
+        <div class="container">
+            <h5 class="dataplan-title fw-bold fs-3 text-start">I-World Enterprise Service Combinations</h5>
+            <hr class="hr">
+            <p class="fs-5">
+                Businesses can choose any of our service bundles to reduce their Internet, Network, Google Workspace overall initial investment and monthly recurring operational costs. <br>
+                This fastest cost saving mechanism for Enterprise, Small business, and startups 
+            </p>
+            <div class="row">
+                <div class="border p-3 col-md-4 bg-white">
+                    <div class="service-container d-flex flex-column justify-content-between h-100">
+                        <div class="">
+                            <h5 class="service-heading fs-4 fw-bold">
+                                Internet Service + Google Workspace
+                            </h5> <br>
+                            <p class="service-description mb-4">Bundle your Internet Subscription with Google Workspace.</p>
+                            <ul class="benefit-list list-unstyled">
+                                <li class="border-bottom border-top mt-3 pt-3">Save up to 50% on monthly bill</li>
+                                <li class="border-bottom mt-3"> Zero Sign-up cost</li>
+                                <li class="border-bottom mt-3"> Staff training on Google Workspace</li>
+                                <li class="border-bottom mt-3">99.8% Service availability</li>
+                                <li class="border-bottom mt-3">24/7 Technical Support</li>
+                                <li class="border-bottom mt-3">Dedicated Account Manager</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-warn btn-block call-to-action"> <a href="#msp_Form" class="text-decoration-none text-white text-uppercase">Request Free Consultation</a> </button>
+                        </div>
+                    </div>
+                </div>
+              <div class="border p-3 col-md-4 bg-white">
+                <div class="service-container d-flex flex-column justify-content-between h-100">
+                    <div class="">
+                        <h5 class="service-heading fs-4 fw-bold ">
+                            Internet Service + Network Infrastructure
+                        </h5> <br>
+                        <p class="service-description mb-4">Get Internet Connectivity and Network Infrastructure as a service.</p>
+                        <ul class="benefit-list list-unstyled">
+                            <li class="border-bottom border-top pt-3 mt-3">Save up to 45% on maintenance costs</li>
+                            <li class="border-bottom mt-3"> Zero Sign-up and build cost</li>
+                            <li class="border-bottom mt-3">Proactive monitoring and maintenance</li>
+                            <li class="border-bottom mt-3">99.8% Service availability</li>
+                            <li class="border-bottom mt-3">24/7 Onsite Technical Support</li>
+                            <li class="border-bottom mt-3">Dedicated Account Manager</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-warn btn-block call-to-action"> 
+                            <a href="#msp_Form" class="text-decoration-none text-white text-uppercase">Request Free Consultation</a> 
+                        </button>
+                    </div>
+                </div>
+              </div>
+              <div class="border p-3 col-md-4 bg-white">
+                <div class="service-container d-flex flex-column justify-content-between h-100">
+                    <div class="">
+                        <h5 class="service-heading fs-4 fw-bold">
+                            Internet Service + Google Workspace + Network Infrastructure
+                            <br> <span class="fs-5">(Most popular)</span>
+                            
+                        </h5>
+                        <br>
+                        <p class="service-description mb-4">Our most popular service combination for businesses.</p>
+                        <ul class="benefit-list list-unstyled">
+                        <li class="border-bottom border-top pt-3">Save up to 55% on monthly costs</li>
+                        <li class="border-bottom mt-2">Lowest Total Cost of Ownership</li>
+                        <li class="border-bottom mt-2">Zero Sign-up and build cost</li>
+                        <li class="border-bottom mt-2">Proactive monitoring and maintenance</li>
+                        <li class="border-bottom mt-2">99.8% Service availability</li>
+                        <li class="border-bottom mt-2">24/7 Onsite Technical Support</li>
+                        <li class="border-bottom mt-2">Dedicated Account Manager</li>
+                        <li class="border-bottom mt-2">Data Backup and Recovery</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-warn btn-block call-to-action"> 
+                            <a href="#msp_Form" class="text-decoration-none text-white text-uppercase">Request Free Consultation</a>
+                        </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Enterprise Form  -->
     <div class="container-fluid py-5" id="enterprise-form">
         <form class="container">
@@ -312,102 +346,89 @@
     </div>
 
     <!-- Footer section Beginning -->
-    <footer class=" text-start border pt-5">
+    <footer class=" text-start border pt-5 text-white bg-black">
         <!-- Grid container -->
         <div class="container">
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
-                <div class="row">
+                <div class="row py-5">
                     <!--Grid column-->
                     <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Quick Links</h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Quick Links</h6>
             
                         <ul class="list-unstyled mb-0">
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./index.html">Home</a>
+                            <a class="text-white" href="./index.html">Home</a>
                         </li>
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./about.html">About Us</a>
+                            <a class="text-white" href="./about.html">About Us</a>
                         </li>
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./contact.html">Contact Us</a>
+                            <a class="text-white" href="./contact.html">Contact Us</a>
                         </li>
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./careers.html">Careers</a>
+                            <a class="text-white" href="./careers.html">Careers</a>
                         </li>
                         
                         </ul>
                     </div>
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Connectivity Services</h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Connectivity Services</h6>
                         <ul class="list-unstyled mb-0">
                             
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./internet_for_home.html">Internet for Home</a>
+                                <a class="text-white" href="./internet_for_home.html">Internet for Home</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./Internet_for_business.html">Internet for Business</a>
+                                <a class="text-white" href="./Internet_for_business.html">Internet for Business</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./enterprise_internet.html">Enterprise Internet</a>
+                                <a class="text-white" href="./enterprise_internet.html">Enterprise Internet</a>
                             </li>
-                            <!-- <li class="mt-2">
-                                <a class="text-body text-light" href="./mpls.html">MPLS (Multiprotocol Label Switching)</a>
-                            </li> -->
                         </ul>
                     </div>
 
                     <!--Grid column-->
                     <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Cloud Services </h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Cloud Services </h6>
                         <ul class="list-unstyled mb-0">
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education</a>
+                                <a class="text-white" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./Google_Workspace.html">Google Workspace</a>
+                                <a class="text-white" href="./Google_Workspace.html">Google Workspace</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./smb_msp.html">Managed Service Provider (MSP) </a>
+                                <a class="text-white" href="./msp.html">Managed Service Provider (MSP) </a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Grid Column -->
                     <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Hotlines</h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Hotlines</h6>
                         <ul class="list-unstyled mb-0">
-                            <!-- <li class="mt-2">
-                            
-                                <a class="text-body text-light" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education</a>
-                            </li>
-                            <li class="mt-2">
-                                <a class="text-body text-light" href="./Google_Workspace.html">Google Workspace</a>
-                            </li>
-                            <li class="mt-2">
-                                <a class="text-body text-light" href="./smb_msp.html">Managed Service Provider (MSP) </a>
-                            </li> -->
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 703 551 7854</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 703 551 7854</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 807 767 5560</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 807 767 5560</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 807 767 5565</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 807 767 5565</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 706 605 3380</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 706 605 3380</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 814 994 5984
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 814 994 5984
                                 </a>
                             </li>
                         </ul>
@@ -442,25 +463,14 @@
                                 Subscribe
                             </button>
                         </div>
-                        <!--Grid column-->
-                        <!-- <h5 class="text-uppercase">
-                            <img src="./Assets/icons/logos/logo_2.png" alt="">
-                        </h5>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mt-2">
-                                <a class="text-body text-light" href="#!">
-                                    <img src="./Assets/icons/logos/cloud_partner_logo.png" alt="" width="200" height="70">
-                                </a>
-                            </li>
-                            </ul> -->
                     </div>
-                </div>
                 <!--Grid row-->
+                </div>
             </section>
         <!-- Section: Links -->
         </div>
         <!-- Copyright -->
-        <div class="text-center p-3 mt-2" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="text-center p-3 mt-2" style="background-color: rgba(255, 255, 255, 0.1) !important;">
         © 2024 Copyright:
         <a class="text-reset fw-bold" href="./index.html">I-World Networks</a>
         </div>
@@ -471,23 +481,7 @@
 
 
 
-    <!-- Javascripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
-    <!-- Whatsapp widget initializer -->
-    <script>
-        document.querySelector('.whatsapp-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.open('https://wa.me/08104161937', '_blank');
-        });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./Assets/js/accordion.js"></script>
-    <!-- <script src="./Assets/js/app.js"></script> -->
-    <script src="./Assets/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="./Assets/js/dropdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Iconify Initializer -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<!-- =====================Javascripts ===========================-->
     <!--  Preloader Functionality -->
     <script>
         $(document).ready(function() {
@@ -500,7 +494,6 @@
         hidePreloader();
         });
     </script>
-
     <!-- Back to top Button Functionality -->
     <script>
         let BacktoTopBtn = document.getElementById("BacktoTopBtn");
@@ -517,5 +510,14 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./Assets/js/accordion.js"></script>
+    <script src="./Assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./Assets/js/dropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 </body>
 </html>

@@ -11,20 +11,20 @@
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="./Assets/css/style.css">
         <link rel="stylesheet" href="./Assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./Assets/css/responsivecss.css">
     
         <!-- Google Fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
         <style>
             .home-internet-header{
                 width: 100%;
-                height: 80vh;
+                height: auto;
             }
             .home-internet-header .home-internet-header-content{
                 width: 100%;
-                height: 85%;
+                height: 70vh;
                 background: url(./Assets/img/home_internet.jpg) center;
                 background-size: cover;
             }
@@ -32,6 +32,13 @@
         </style>
     </head>
 <body class="overflow-x-hidden">
+    <!--======================= Back to top button beginning======================= -->
+    <button onclick="topFunction()" id="BacktoTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M15 20H9v-8H6.16L12 4.16L19.84 12H15z"/>
+        </svg>
+    </button>
+    <!--======================= Back to top button ending======================== -->
     <!-- Header Beginning -->
     <div class="home-internet-header">
         <!-- Navbar beginning -->
@@ -108,7 +115,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/unlimited.svg" width="50" height="50" alt="">
                                 <h5 class="service-title fw-bold ">Unlimited Data</h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     No Data limit, No throttle, No Dongle and you can connect multiple devices at any time. You can download and stream as you like.  
                                 </p>
                             </div>
@@ -119,7 +126,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/smart-home.svg" width="50" height="50" alt="">
                                 <h5 class="service-title fw-bold ">WI-FI Coverage for the Entire Home</h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     We will blanket your entire home with WI-FI coverage so that you can stay connected wherever you are in your Home.  
                                 </p>
                             </div>
@@ -130,7 +137,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/couple.svg" width="50" height="50" alt="">
                                 <h5 class="service-title fw-bold ">Senior Citizen Discount</h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     I-World Networks celebrate our senior citizens with 25% discount on all I-World Services including monthly subscription for their home internet service.  
                                 </p>
                             </div>
@@ -141,7 +148,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/affiliate-marketing.svg" width="50" height="50" alt="google-cloud icon">
                                 <h5 class="service-title fw-bold ">Referral Pay Discount</h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     Every time you refer your friend or family to subscribed to our home internet, you will get the next subscription FREE. 
                                 </p>
                             </div>
@@ -154,7 +161,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/vlogger.svg" width="50" height="50" alt="">
                                 <h5 class="service-title fw-bold ">No Buffering for Smart TV and Streaming Devices</h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     Our Home WI-FI is designed and built for streaming and home entertainment. The low latency and high bandwidth optimized for 4K streaming without buffering.  
                                 </p>
                             </div>
@@ -165,7 +172,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/game-controller.svg" width="50" height="50" alt="">
                                 <h5 class="service-title fw-bold ">Optimized for Gaming  </h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     Are you a gamer?  Our Home Internet is the best choice for home gaming and gaming centers. We will provide you with a dedicated custom plan that will meet your bandwidth demand and provide you with the best gaming experience.  
                                 </p>
                             </div>
@@ -176,7 +183,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/cctv-camera.svg" width="50" height="50" alt="google-cloud icon">
                                 <h5 class="service-title fw-bold ">Optimized for Home Security  </h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     I-World Home Internet is enabled for all your home security gadget so that you can view and monitor your home and properties anywhere you are in the world with smart security camera, surveillance and alarm system. 
                                 </p>
                             </div>
@@ -187,7 +194,7 @@
                             <div class="">
                                 <img src="./Assets/icons/home_internet_icons/vlogger.svg" width="50" height="50" alt="">
                                 <h5 class="service-title fw-bold ">Travelling and Diasporan Home Internet  </h5>
-                                <p class="lato service-text">
+                                <p class=" service-text">
                                     Looking for a cost-effective way to stay connected to your properties and loved ones in Nigeria while living abroad or traveling? Our custom home internet plan provides various speed options whether you're in or out of Nigeria.
                                 </p>
                             </div>
@@ -206,7 +213,7 @@
             <div class="container-fluid mt-4 d-flex flex-column align-items-center">
                 <div class="row">
                     <div class="col-md-3 col-sm-12">
-                        <a href="./Service_Request_Form.html" id="dp-lite" class="text-decoration">
+                        <a href="#home_SRF" id="dp-lite" class="text-decoration">
                             <div class="card border h-100">
                                 <div class="card-header bg-white w-100">
                                     <h5 class="card-title py-1 mb-0 fs-3 fw-bold">H-Lite</h5>
@@ -225,7 +232,7 @@
                                         <!-- <li class="lato list-unstyled px-3">Click Here </li> -->
                                     </ul>
                                 </div>
-                                <div class="card-footer w-100 mt-2">
+                                <div class=" px-3 w-100 mt-2">
                                     <button type="button" class="btn btn-warn my-2 px-3 text-uppercase">Subscribe Now</button>
                                 </div>
                             </div>
@@ -233,7 +240,7 @@
                         
                     </div>
                     <div class="col-md-3 col-sm-12">
-                        <a href="./Service_Request_Form.html" id="dp-lite" class="text-decoration">
+                        <a href="#home_SRF" id="dp-lite" class="text-decoration">
                             <div class="card border h-100">
                                 <div class="card-header bg-white w-100">
                                     <h5 class="card-title py-1 mb-0 fs-3 fw-bold">H-Max</h5>
@@ -251,14 +258,14 @@
                                         <li class="lato list-group-item px-3">Get your 1st Month Free </li>
                                     </ul>
                                 </div>
-                                <div class="card-footer w-100 mt-2">
+                                <div class=" px-3 w-100 mt-2">
                                     <button type="button" class="btn btn-warn my-2 px-3 text-uppercase">Subscribe Now</button>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12">
-                        <a href="./Service_Request_Form.html" id="dp-lite" class="text-decoration">
+                        <a href="#home_SRF" id="dp-lite" class="text-decoration">
                             <div class="card border h-100">
                                 <div class="card-header bg-white w-100">
                                     <h5 class="card-title py-1 mb-0 fs-3 fw-bold">H-Pro</h5>
@@ -277,7 +284,7 @@
                                         <!-- <li class="lato list-unstyled px-3">Click Here </li> -->
                                     </ul>
                                 </div>
-                                <div class="card-footer w-100 mt-2">
+                                <div class=" px-3 w-100 mt-2">
                                     <button type="button" class="btn btn-warn my-2 px-3 text-uppercase">Subscribe Now</button>
                                 </div>
                             </div>
@@ -285,7 +292,7 @@
                         
                     </div>
                     <div class="col-md-3 col-sm-12">
-                        <a href="./Service_Request_Form.html" id="dp-lite" class="text-decoration">
+                        <a href="#home_SRF" id="dp-lite" class="text-decoration">
                             <div class="card border h-100">
                                 <div class="card-header bg-white w-100">
                                     <h5 class="card-title py-1 mb-0 fs-3 fw-bold">H-Custom</h5>
@@ -303,7 +310,7 @@
                                         <!-- <li class="lato list-unstyled px-3">Click Here </li> -->
                                     </ul>
                                 </div>
-                                <div class="card-footer w-100 mt-2">
+                                <div class=" px-3 w-100">
                                     <button type="button" class="btn btn-warn my-2 px-3 text-uppercase">Subscribe Now</button>
                                 </div>
                             </div>
@@ -316,22 +323,278 @@
     </div>
     <!-- dataplans section ending  -->
 
+    <!-- Router -->
+    <div class="container py-3">
+        <h5 class="fw-bold fs-3 text-start">Need an Advance WI-FI Router?  (Optional) </h5>
+        <hr class="hr">
+        <div class="">
+            <div class="row">
+                <div class="col-md">
+                    <div class="card py-3 px-2 border d-flex flex-column align-items-center justify-content-center ">
+                        <img src="./Assets/img/routers/1.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Wall Mount Mesh.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card py-3 px-2 border d-flex flex-column align-items-center justify-content-center ">
+                        <img src="./Assets/img/routers/2.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Gaming Router for Gamers</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card py-3 px-2 border d-flex flex-column align-items-center justify-content-center ">
+                        <img src="./Assets/img/routers/3.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Tabletop Air Cube WI-FI Router</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md">
+                  <div class="card py-3 px-2 border d-flex flex-column align-items-center justify-content-center ">
+                        <img src="./Assets/img/routers/4.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Mesh Router for bigger homes. </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                  <div class="card py-3 px-2 border d-flex flex-column align-items-center justify-content-center ">
+                        <img src="./Assets/img/routers/5.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Roof Mount Uni-fi WI-FI 6 Access point</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                  <div class="card py-3 px-2 border d-flex flex-column align-items-center justify-content-center ">
+                        <img src="./Assets/img/routers/1.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Power Backup </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dataplans differences -->
+    <div class="container-fluid bg-green py-3 mt-5">
+        <div class="container">
+            <h5 class="dataplan-title fw-bold fs-3 text-start">How to choose a Service plan that suits your home and lifestyle? </h5>
+            <hr class="hr">
+            <div class="card-group">
+              <div class="card border">
+                <h5 class="card-header fw-bold">H-Lite</h5>
+                <div class="card-body p-3">
+                  <p class="card-text">Optimized for Streaming and Home Entertainment</p>
+                  <p class="card-text">Ideal for Small Family</p>
+                  <p class="card-text">Connect multiple gadgets</p>
+                  <p class="card-text">Guarantee speed all time</p>
+                  <p class="card-text">Optimized for Home Security real time monitoring</p>
+                  <p class="card-text">Unlimited Data</p>
+                </div>
+              </div>
+              <div class="card border">
+                <h5 class="card-header fw-bold">H-Max (Most Popular)</h5>
+                <div class="card-body p-3">
+                  <p class="card-text">Optimized for Streaming and Home Entertainment</p>
+                  <p class="card-text">Ideal for Small & Medium Sized Family</p>
+                  <p class="card-text">Connect multiple gadgets</p>
+                  <p class="card-text">50% more guaranteed Internet Speed than H-Lite</p>
+                  <p class="card-text">Optimized for Home Security and real time monitoring</p>
+                  <p class="card-text">Unlimited Data</p>
+                </div>
+              </div>
+              <div class="card border">
+                <h5 class="card-header fw-bold">H-Pro</h5>
+                <div class="card-body p-3">
+                  <p class="card-text">Optimized for Streaming, Home Entertainment and Gaming</p>
+                  <p class="card-text">Ideal for all family size, remote workers, and Home Office</p>
+                  <p class="card-text">Connect multiple gadgets</p>
+                  <p class="card-text">100% more guaranteed Internet speed than H-Lite</p>
+                  <p class="card-text">Optimized for Home Security, real time online monitoring and IOT (Internet of Things)</p>
+                  <p class="card-text">Unlimited Data</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+            <h5 class="fw-bold fs-3">Subscribe Now!</h5>
+            <p>Click here to subscribe now & get 30 days subscription FREE!</p>
+            <button class="btn btn-warn"><a href="#home_SRF" class="text-white fs-5">Subscribe Now</a> </button>
+            <p class="mt-3 fw-bold">30 days money back guarantee If you don't like our service, we will refund your money back 100%</p>
+            </div>
+        </div>
+        <!-- Delivery Process -->
+        <div class=" mb-4">
+            <h5 class=" mb-4 fw-bold fs-4">Our Service Delivery Process to Your Home</h5>
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card d-flex align-items-center h-100">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Step 1</h5>
+                    <img src="./Assets/icons/home_internet_icons/service.svg" width="40" height="40" alt="">
+                    <p class="card-text">Complete our Service Request Form</p>
+                    <a href="#home_SRF" class="btn btn-warn">Complete SRF</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-flex align-items-center h-100">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Step 2</h5>
+                    <img src="./Assets/icons/home_internet_icons/surveying.svg" width="40" height="40" alt="">
+                    <p class="card-text">On-site Assessment and Survey</p>
+                    <a href="#" class="btn btn-warn">Schedule Survey</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card  d-flex align-items-center h-100">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Step 3</h5>
+                    <img src="./Assets/icons/home_internet_icons/technician.svg" width="40" height="40" alt="">
+                    <p class="card-text">Installation & Activation of Home Internet Service</p>
+                    <a href="#" class="btn btn-warn">Get Installed</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SRF FORM FOR HOME -->
+    <div class="container-fluid gray-bg" id="home_SRF">
+        <div class="container pt-3 pb-5">
+            <h5 class="fw-bold fs-3">Service Request Form</h5>
+            <hr class="hr">
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="home-name" class="form-label ">Name</label>
+                    <input required type="text" class="form-control" id="home-name">
+                </div>
+                <div class="col-md-6">
+                    <label for="address" class="form-label ">Home Address</label>
+                    <input required type="text" class="form-control" id="address" name="address" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="phoneNo" class="form-label ">Phone Number</label>
+                  <input required type="tel" class="form-control" id="phoneNo">
+                </div>
+                <div class="col-md-6">
+                    <label for="whatsapp" class="form-label ">WhatsApp Number</label>
+                    <input required type="tel" class="form-control" id="whatsapp">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="email" class="form-label ">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                  <!-- <div class="col-md-6">
+                      <label for="whatsapp" class="form-label ">WhatsApp Number</label>
+                      <input required type="tel" class="form-control" id="whatsapp">
+                  </div> -->
+              </div>
+              <div class="mb-3">
+                <label class="form-label ">Select Plan:</label><br>
+                <div class="">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="plan" id="hlite" value="H-Lite">
+                    <label class="form-check-label" for="hlite">H-Lite</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="plan" id="hmax" value="H-Max">
+                    <label class="form-check-label" for="hmax">H-Max</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="plan" id="hpro" value="H-Pro">
+                    <label class="form-check-label" for="hpro">H-Pro</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="plan" id="hcustom" value="H-Custom">
+                    <label class="form-check-label" for="hcustom">H-Custom</label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">How to contact you:</label><br>
+                <div class="">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="contact[]" id="whatsappCheck" value="WhatsApp">
+                    <label class="form-check-label" for="whatsappCheck">WhatsApp</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="contact[]" id="emailCheck" value="Email">
+                    <label class="form-check-label" for="emailCheck">Email</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="contact[]" id="phoneCheck" value="Phone Call">
+                    <label class="form-check-label" for="phoneCheck">Phone Call</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="contact[]" id="smsCheck" value="SMS">
+                    <label class="form-check-label" for="smsCheck">SMS</label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Best time to contact you:</label><br>
+                <div class="d-flex flex-row">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input me-4" type="checkbox" name="time[]" id="daytimeCheck" value="Daytime">
+                    <label class="form-check-label" for="daytimeCheck">Daytime</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input mx-4" type="checkbox" value="evening" id="evening">
+                    <label class="form-check-label" for="evening">Evening</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input mx-4" type="checkbox" value="anytime" id="anytime">
+                    <label class="form-check-label" for="anytime">Anytime</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input mx-4" type="checkbox" value="weekend" id="weekend">
+                    <label class="form-check-label" for="weekend">Weekend</label>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-warn px-5 text-uppercase">Submit</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Coverage section beginning -->
     <div class="coverage container">
         <div class="coverage-content row align-items-center justify-content-evenly">
             <div class="coverage-list col-lg-6">
-                <h5 class="lato fw-bold fs-3">I-World Business Internet coverage</h5>
+                <h5 class=" fw-bold fs-3">I-World Home Internet coverage</h5>
                 <ul class="list-unstyled">
-                    <li class="coverage-place my-2 lato fs-5">Abeokuta</li>
-                    <li class="coverage-place my-2 lato fs-5">Agbara & Agbara Industrial Estate </li>
-                    <li class="coverage-place my-2 lato fs-5">Akure</li>
-                    <li class="coverage-place my-2 lato fs-5">Ibadan</li>
-                    <li class="coverage-place my-2 lato fs-5">Ibadan - Abeokuta Expressway </li>
-                    <li class="coverage-place my-2 lato fs-5">Ijebu Ode</li>
-                    <li class="coverage-place my-2 lato fs-5">Mowe, Ibafo, Magboro & Lagos-Ibadan Expressway </li>
-                    <li class="coverage-place my-2 lato fs-5">Oshogbo</li>
-                    <li class="coverage-place my-2 lato fs-5">Sango Otta</li>
-                    <li class="coverage-place my-2 lato fs-5">Shagamu</li>
+                    <li class="coverage-place my-2  fs-5">Abeokuta</li>
+                    <li class="coverage-place my-2  fs-5">Agbara & Agbara Industrial Estate </li>
+                    <li class="coverage-place my-2  fs-5">Akure</li>
+                    <li class="coverage-place my-2  fs-5">Ibadan</li>
+                    <li class="coverage-place my-2  fs-5">Ibadan - Abeokuta Expressway </li>
+                    <li class="coverage-place my-2  fs-5">Ijebu Ode</li>
+                    <li class="coverage-place my-2  fs-5">Mowe, Ibafo, Magboro & Lagos-Ibadan Expressway </li>
+                    <li class="coverage-place my-2  fs-5">Oshogbo</li>
+                    <li class="coverage-place my-2  fs-5">Sango Ota</li>
+                    <li class="coverage-place my-2  fs-5">Shagamu</li>
                 </ul>
             </div>
             <div class="coverage-img col-lg-6">
@@ -341,103 +604,96 @@
     </div>
     <!-- Coverage section ending -->
 
+
+
+
+
+
+
     <!-- Footer section Beginning -->
-    <footer class=" text-start border pt-5">
+    <footer class=" text-start border pt-5 text-white bg-black">
         <!-- Grid container -->
         <div class="container">
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
-                <div class="row">
+                <div class="row py-5">
                     <!--Grid column-->
                     <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Quick Links</h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Quick Links</h6>
             
                         <ul class="list-unstyled mb-0">
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./index.html">Home</a>
+                            <a class="text-white" href="./index.html">Home</a>
                         </li>
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./about.html">About Us</a>
+                            <a class="text-white" href="./about.html">About Us</a>
                         </li>
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./contact.html">Contact Us</a>
+                            <a class="text-white" href="./contact.html">Contact Us</a>
                         </li>
                         <li class="mt-2">
-                            <a class="text-body text-light" href="./careers.html">Careers</a>
+                            <a class="text-white" href="./careers.html">Careers</a>
                         </li>
                         
                         </ul>
                     </div>
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Connectivity Services</h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Connectivity Services</h6>
                         <ul class="list-unstyled mb-0">
                             
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./internet_for_home.html">Internet for Home</a>
+                                <a class="text-white" href="./internet_for_home.html">Internet for Home</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./Internet_for_business.html">Internet for Business</a>
+                                <a class="text-white" href="./Internet_for_business.html">Internet for Business</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./enterprise_internet.html">Enterprise Internet</a>
+                                <a class="text-white" href="./enterprise_internet.html">Enterprise Internet</a>
                             </li>
-                            <!-- <li class="mt-2">
-                                <a class="text-body text-light" href="./mpls.html">MPLS (Multiprotocol Label Switching)</a>
-                            </li> -->
                         </ul>
                     </div>
 
                     <!--Grid column-->
                     <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Cloud Services </h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Cloud Services </h6>
                         <ul class="list-unstyled mb-0">
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education</a>
+                                <a class="text-white" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./Google_Workspace.html">Google Workspace</a>
+                                <a class="text-white" href="./Google_Workspace.html">Google Workspace</a>
                             </li>
                             <li class="mt-2">
-                                <a class="text-body text-light" href="./smb_msp.html">Managed Service Provider (MSP) </a>
+                                <a class="text-white" href="./msp.html">Managed Service Provider (MSP) </a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Grid Column -->
                     <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold fs-5 text-uppercase">Hotlines</h6>
+                        <h6 class="fw-bold fs-5 text-uppercase i-green">Hotlines</h6>
                         <ul class="list-unstyled mb-0">
-                            <!-- <li class="mt-2">
-                            
-                                <a class="text-body text-light" href="./index.html#Nigerian_Google_for_Education_Program">Nigeria Google for Education</a>
-                            </li>
-                            <li class="mt-2">
-                                <a class="text-body text-light" href="./Google_Workspace.html">Google Workspace</a>
-                            </li>
-                            <li class="mt-2">
-                                <a class="text-body text-light" href="./smb_msp.html">Managed Service Provider (MSP) </a>
-                            </li> -->
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 703 551 7854</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 703 551 7854</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 807 767 5560</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 807 767 5560</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 807 767 5565</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 807 767 5565</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 706 605 3380</a>
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 706 605 3380</a>
                             </li>
                             <li class="">
-                                <img src="./Assets/icons/telephone.svg" width="10" height="10" alt="">
-                                <a class="text-body text-light" href="#">+234 814 994 5984
+                                <img src="./Assets/icons/telephone.svg" width="20" height="20" alt="">
+                                <a class="text-white" href="#">+234 814 994 5984
                                 </a>
                             </li>
                         </ul>
@@ -472,25 +728,14 @@
                                 Subscribe
                             </button>
                         </div>
-                        <!--Grid column-->
-                        <!-- <h5 class="text-uppercase">
-                            <img src="./Assets/icons/logos/logo_2.png" alt="">
-                        </h5>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mt-2">
-                                <a class="text-body text-light" href="#!">
-                                    <img src="./Assets/icons/logos/cloud_partner_logo.png" alt="" width="200" height="70">
-                                </a>
-                            </li>
-                            </ul> -->
                     </div>
-                </div>
                 <!--Grid row-->
+                </div>
             </section>
         <!-- Section: Links -->
         </div>
         <!-- Copyright -->
-        <div class="text-center p-3 mt-2" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="text-center p-3 mt-2" style="background-color: rgba(255, 255, 255, 0.1) !important;">
         © 2024 Copyright:
         <a class="text-reset fw-bold" href="./index.html">I-World Networks</a>
         </div>
@@ -502,6 +747,23 @@
 
 
     <!-- Javascripts -->
+    <!--======================== Back to top Button Functionality========================== -->
+    <script>
+        let BacktoTopBtn = document.getElementById("BacktoTopBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            BacktoTopBtn.style.display = "block";
+        } else {
+            BacktoTopBtn.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <!--======================== Back to top Button Functionality========================== -->
     <script src="./Assets/js/accordion.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./Assets/js/app.js"></script>

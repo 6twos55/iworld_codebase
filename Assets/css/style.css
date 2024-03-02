@@ -224,8 +224,8 @@ footer .text-body{
 .about-header-content{
     width: 100%;
     height: 60vh;
-    background: url(../img/about-bg.png) center no-repeat;
-    background-size: cover;
+    background: #fff url(../img/about-bg.png) center no-repeat;
+    background-size: contain;
 }
 .v-m-container{
     width: 100%;
@@ -369,11 +369,11 @@ footer .text-body{
 /* Internet for Business Page Styling */
 .iob-header{
     width: 100%;
-    height: 70vh;
+    height: auto;
 }
 .iob-header .iob-header-content{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background: url(../img/smb.jpg);
     background-size: cover;
 }
@@ -516,26 +516,15 @@ hr{
 .bg-successed{
     background: #59AF17;
 }
-
-
-
-/* Whatsapp widget button styling */
-.whatsapp-link {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
-    border-radius: 50%;
-    background: white;
+.bg-green{
+    background: rgba(89, 175, 23, 0.5) !important;
 }
-/* Generic styles */
-
 
 
 /* Enterprise Internet Styling*/
 .enterprise-internet-header{
     width: 100%;
-    height: 70vh;
+    height: auto;
 }
 .enterprise-internet-header .enterprise-internet-header-content{
     width: 100%;
@@ -648,7 +637,7 @@ hr{
 .workspace-header-content{
     width: 100%;
     height: 60vh;
-    background:#f7f8f9 url(../img/workspace-bg.png) center no-repeat;
+    background:#fff url(../img/google-workspace-bg.png) center no-repeat;
     background-size: contain;
 }
 
@@ -675,7 +664,7 @@ hr{
     color: white;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/careers-bg5.jpg) center;
     background-size: cover;
-    height: 65vh;
+    height: 60vh;
 }
 
 /* Managed Service Choice Provider Page Styling */

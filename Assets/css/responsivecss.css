@@ -36,6 +36,45 @@
     .mobile-view{
         display: block !important;
     }
+
+    .msp-header-content{
+        background: url(../img/MITSMOBILE.jpg) left !important;
+        background-size: cover !important;
+    }
+    .internet-header-content{
+        background: url(../img/MPLS-MOBILE.jpg) left;
+        background-size: cover;
+    }
+    .home-internet-header-content{
+        background: url(../img/Home-MOBILE.jpg) left !important;
+        background-size: cover !important;
+    }
+    .enterprise-internet-header-content{
+        /* background: black !important; */
+        background: #233d49 url(../img/Enterprise-MOBILE.jpg) right no-repeat  !important;
+        background-size: contain !important;
+    }
+    .iob-header-content{
+        background: url(../img/SMB-MOBILE.jpg) no-repeat !important;
+        background-size: contain !important;
+    }
+    .workspace-header-content{
+        background: #fff url(../img/workspace_mobiles.jpg) center no-repeat !important;
+        background-size: contain !important;
+    }
+    .certification-container{
+        height: auto;
+    }
+    .certification-image{
+        display: none !important;
+    }
+    .certificates{
+        height: auto !important;
+    }
+    .certificate, .certificate-title{
+        text-align: start !important;
+    }
+
 }
 @media (max-width: 576px) {
     /* Two columns on small devices */

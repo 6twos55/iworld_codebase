@@ -270,25 +270,9 @@ footer .text-body{
 /* Contact Us Page Styling */
 .contact-header-content{
     width: 100%;
-    height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/contact-bg.jpg) center fixed;
+    height: 70vh;
+    background:url(../img/contact-bg.jpg) top;
     background-size: cover;
-}
-.contact-header-content contact-header-text{
-    width: 40%;
-    height: 100%;
-}
-.contact-header-content .contact-header-text p{
-    font-family: 'Lato', sans-serif;
-}
-.contact-header-content .contact-header-img{
-    width: 60%;
-    height: 100%;
-}
-.contact-header-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .contact-form{
     width: 100%;
@@ -662,9 +646,9 @@ hr{
 .career-header-content {
     width: 100%;
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/careers-bg5.jpg) center;
+    background:url(../img/career-bg.jpg) center;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
 }
 
 /* Managed Service Choice Provider Page Styling */

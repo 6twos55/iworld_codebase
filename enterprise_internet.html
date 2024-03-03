@@ -360,14 +360,58 @@
                     <label for="city" class="form-label lato">City:</label>
                     <input type="text" class="form-control" id="city" name="city">
                 </div>
-                <div class="col-md-12 mb-3">
-                    <label for="address" class="form-label lato">Address:</label>
-                    <textarea class="form-control" id="address" name="address"></textarea>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="">
+                            <label class="form-label">How best to contact you:</label><br>
+                            <div class="">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="contact[]" id="whatsappCheck" value="WhatsApp">
+                                    <label class="form-check-label" for="whatsappCheck">WhatsApp</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="contact[]" id="emailCheck" value="Email">
+                                    <label class="form-check-label" for="emailCheck">Email</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="contact[]" id="phoneCheck" value="Phone Call">
+                                    <label class="form-check-label" for="phoneCheck">Phone Call</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="contact[]" id="smsCheck" value="SMS">
+                                    <label class="form-check-label" for="smsCheck">SMS</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <label class="form-label">Best time to contact you:</label><br>
+                            <div class="d-flex flex-row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input me-4" type="checkbox" name="time[]" id="daytimeCheck" value="Daytime">
+                                <label class="form-check-label" for="daytimeCheck">Day</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mx-4" type="checkbox" value="evening" id="evening">
+                                <label class="form-check-label" for="evening">Evening</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mx-4" type="checkbox" value="anytime" id="anytime">
+                                <label class="form-check-label" for="anytime">Anytime</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mx-4" type="checkbox" value="weekend" id="weekend">
+                                <label class="form-check-label" for="weekend">Weekend</label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- CTA Button -->
             <div class="cta">
-                <button type="submit" class="btn btn-warn w-auto text-uppercase fw-bold">Submit</button>
+                <button type="submit" class="btn btn-warn w-auto text-uppercase fw-bold px-5">Submit</button>
                 <p class="my-2 lato">
                     Thank you for choosing I-World Networks! We will contact you within the hour.
                 </p>

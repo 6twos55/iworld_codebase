@@ -81,12 +81,9 @@
     .contact-header-content{
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/contact-bg.jpg) top fixed;
         background-size: cover;
-        /* background: left;
-        background-size: cover; */
     }
     .gfe-header-content{
-        /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/responsive-ngn-edu-bg1.png) center; */
-        background-size: cover;    
+       background-size: cover;    
     }
     .educator-content{
         width: 100%;

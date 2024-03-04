@@ -2320,14 +2320,9 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
-  background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-color:white;
   background-size: 16px 12px;
-  border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2340,7 +2335,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border: none;
   outline: 0;
-  box-shadow: 0 0 0 0.1rem #ff6600;
+  box-shadow: 0 0 0 0.1rem #fff;
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;

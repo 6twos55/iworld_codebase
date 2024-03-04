@@ -5,3 +5,8 @@ $(document).ready(function () {
       auto: true, // Auto play the carousel
     });
   });
+
+// Recaptcha
+// Submit Buttons for forms
+
+

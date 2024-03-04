@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="./Assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="./Assets/css/responsivecss.css">
     
+        <!-- RECAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
         <!-- Google Fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -373,7 +376,7 @@
                 </div>
                 <div class="col-md">
                   <div class="card py-3 px-2 border d-flex flex-column align-items-center justify-content-center ">
-                        <img src="./Assets/img/routers/1.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
+                        <img src="./Assets/img/routers/6.jpg" width="200" class="card-img-top object-fit-cover " alt="Router 1">
                         <div class="card-body mt-3">
                             <h5 class="card-title">Power Backup </h5>
                         </div>
@@ -446,7 +449,6 @@
                     <h5 class="card-title fw-bold">Step 1</h5>
                     <img src="./Assets/icons/home_internet_icons/service.svg" width="40" height="40" alt="">
                     <p class="card-text">Complete our Service Request Form</p>
-                    <a href="#home_SRF" class="btn btn-warn">Complete SRF</a>
                   </div>
                 </div>
               </div>
@@ -456,7 +458,6 @@
                     <h5 class="card-title fw-bold">Step 2</h5>
                     <img src="./Assets/icons/home_internet_icons/surveying.svg" width="40" height="40" alt="">
                     <p class="card-text">On-site Assessment and Survey</p>
-                    <a href="#" class="btn btn-warn">Schedule Survey</a>
                   </div>
                 </div>
               </div>
@@ -466,7 +467,6 @@
                     <h5 class="card-title fw-bold">Step 3</h5>
                     <img src="./Assets/icons/home_internet_icons/technician.svg" width="40" height="40" alt="">
                     <p class="card-text">Installation & Activation of Home Internet Service</p>
-                    <a href="#" class="btn btn-warn">Get Installed</a>
                   </div>
                 </div>
               </div>
@@ -487,8 +487,8 @@
                     <input required type="text" class="form-control" id="home-name">
                 </div>
                 <div class="col-md-6">
-                    <label for="address" class="form-label ">Home Address</label>
-                    <input required type="text" class="form-control" id="address" name="address" required>
+                    <label for="email" class="form-label ">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
               </div>
               <div class="row mb-3">
@@ -502,10 +502,11 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="email" class="form-label ">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                <div class="col-md">
+                    <label for="address" class="form-label ">Home Address</label>
+                    <input required type="text" class="form-control" id="address" name="address" required>
                 </div>
+                
                   <!-- <div class="col-md-6">
                       <label for="whatsapp" class="form-label ">WhatsApp Number</label>
                       <input required type="tel" class="form-control" id="whatsapp">
@@ -533,7 +534,7 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label class="form-label">How to contact you:</label><br>
+                <label class="form-label">How best to contact you:</label><br>
                 <div class="">
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" name="contact[]" id="whatsappCheck" value="WhatsApp">
@@ -574,7 +575,7 @@
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn btn-warn px-5 text-uppercase">Submit</button>
+              <button type="submit" class="btn btn-warn px-5 text-uppercase" class="g-recaptcha"  data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit' id="srf-home-btn">Submit</button>
             </form>
         </div>
     </div>
@@ -764,6 +765,15 @@
         }
     </script>
     <!--======================== Back to top Button Functionality========================== -->
+    <!-- ===============================RECAPTCHA================================= -->
+    <script>
+        function onSubmit(token) {
+            console.log("done");
+            document.getElementById("srf-home-btn").submit();
+        }
+    </script>
+    <!-- ===============================RECAPTCHA================================= -->
+
     <script src="./Assets/js/accordion.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./Assets/js/app.js"></script>

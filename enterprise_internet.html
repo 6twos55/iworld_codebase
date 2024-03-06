@@ -326,7 +326,7 @@
 
     <!-- Enterprise Form  -->
     <div class="container-fluid py-5" id="enterprise-form">
-        <form class="container">
+        <form class="container" id="enterpriseInternetForm">
             <h4 class=" text-start fw-bold">Request Form for Enterprise Internet service</h4>
             <hr class="hr">
             <div class="row">
@@ -387,15 +387,15 @@
                                 <label class="form-check-label" for="daytimeCheck">Day</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input mx-4" type="checkbox" value="evening" id="evening">
+                                <input class="form-check-input mx-4" type="checkbox" value="Evening" name="time[]" id="evening">
                                 <label class="form-check-label" for="evening">Evening</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input mx-4" type="checkbox" value="anytime" id="anytime">
+                                <input class="form-check-input mx-4" type="checkbox" value="Anytime" name="time[]" id="anytime">
                                 <label class="form-check-label" for="anytime">Anytime</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input mx-4" type="checkbox" value="weekend" id="weekend">
+                                <input class="form-check-input mx-4" type="checkbox" value="Weekend" name="time[]" id="weekend">
                                 <label class="form-check-label" for="weekend">Weekend</label>
                             </div>
                             </div>
@@ -547,7 +547,10 @@
     </footer>
 
 
-
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
 
 
 <!-- =====================Javascripts ===========================-->
@@ -587,6 +590,10 @@
     <script src="./Assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/enterprise_internet.js"></script>
 
 </body>
 </html>

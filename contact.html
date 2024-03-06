@@ -92,22 +92,22 @@
         <div class="container">
             <h2 class="fw-bold">Contact Form</h2>
             <p class="lato">Our dedicated customer support team is available 24/7 to address any inquiries, technical issues, or general assistance you may require.</p>
-            <form> 
+            <form id="contactForm"> 
                 <div class="row my-2">
                     <div class="col-md-6 col-12">
-                        <label class="lato" for="customer-name">Name:</label>
-                        <input type="text" class="form-control lato" id="customer-name" required placeholder="Enter Full Name">
+                        <label class="lato" for="name">Name:</label>
+                        <input type="text" class="form-control lato" id="name" required placeholder="Enter Full Name">
                     </div>
     
                     <div class="col-md-6 col-12">
-                        <label class="lato" for="customer-email">Email:</label>
-                        <input type="email" class="form-control lato" id="customer-email" required placeholder="Enter Valid Email Address">
+                        <label class="lato" for="email">Email:</label>
+                        <input type="email" class="form-control lato" id="email" required placeholder="Enter Valid Email Address">
                     </div>
                 </div>
                 <div class="row my-2">
                     <div class="col">
-                        <label class="lato" for="customer-message">Message:</label>
-                        <textarea class="form-control lato" id="customer-message" rows="4" required placeholder="Enter Comment or Message"></textarea>
+                        <label class="lato" for="message">Message:</label>
+                        <textarea class="form-control lato" id="message" rows="4" required placeholder="Enter Comment or Message"></textarea>
                     </div>
                 </div>
                 <div class="">
@@ -249,6 +249,11 @@
         <!-- Copyright -->
     </footer>
 
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
+
     <!--======================== Back to top Button Functionality========================== -->
     <script>
         let BacktoTopBtn = document.getElementById("BacktoTopBtn");
@@ -270,6 +275,10 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./Assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./Assets/js/app.js"></script>
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/contact.js"></script>
 
 </body>
 </html>

@@ -272,7 +272,7 @@
     <div class="container pt-4">
         <h4 class="fw-bold fs-3 mt-5">Managed Service Provider Form</h4>
         <hr class="hr">
-        <form id="msp_Form">
+        <form id="mspForm">
             <div class="lato row mb-3">
                 <div class="lato col-md-6">
                     <label for="input1" class="lato form-label">Name</label>
@@ -287,21 +287,21 @@
             <div class="lato row mb-3">
                 <div class="lato col-md-6">
                     <label for="input4" class="lato form-label">Phone Number</label>
-                    <input required type="text" class="lato form-control" id="input4">
+                    <input required type="text" class="lato form-control" id="input3">
                 </div>
                 <div class="lato col-md-6">
                     <label for="input3" class="lato form-label">Business Phone Number</label>
-                    <input required type="text" class="lato form-control" id="input3">
+                    <input required type="text" class="lato form-control" id="input4">
                 </div>
             </div>
             <div class="lato row mb-3">
                 <div class="lato col-md-6">
                     <label for="input3" class="lato form-label">Email Address</label>
-                    <input required type="email" class="lato form-control" id="input3">
+                    <input required type="email" class="lato form-control" id="input5">
                 </div>
                 <div class="lato col-md-6">
                     <label for="input4" class="lato form-label">Business Address</label>
-                    <input required type="text" class="lato form-control" id="input4">
+                    <input required type="text" class="lato form-control" id="input6">
                 </div>
             </div>
             <div class="lato mb-3">
@@ -453,6 +453,11 @@
     </footer>
 
 
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
+
 
     <!--======================== Back to top Button Functionality========================== -->
     <script>
@@ -471,6 +476,7 @@
         }
     </script>
     <!--======================== Back to top Button Functionality========================== -->
+
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./Assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./Assets/js/app.js"></script>
@@ -479,8 +485,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Font Awesome Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-EtxzV57yovh2NacqIvbtG4u1+JlzhPyoGtz7fRb0M6+zXOKaW4xGn6JAsRJ0hH6KmR3tgUxsnVVJ6haPUiqP7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/msp.js"></script>
   
 </body>
 </html>

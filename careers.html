@@ -175,7 +175,7 @@
         <div class="container">
             <p class="fs-4 fw-bold">Submit CV /Resume /Portfolio</p>
             <hr class="hr">
-            <form>
+            <form id="careersForm" method="post" enctype="multipart/form-data">
                 <!-- First Row -->
                 <div class="lato row mb-3">
                     <div class="lato col-md-6">
@@ -234,13 +234,13 @@
             
                 <!-- File Input Elements -->
                 <div class="lato mb-3">
-                    <label for="file2" class="lato form-label">Add Cover Letter</label>
-                    <input type="file" class="lato form-control" id="file2" required name="file2" accept=".pdf" placeholder="Upload Cover Letter">
+                    <label for="fileCoverLetter" class="form-label">Add Cover Letter</label>
+                    <input type="file" class="form-control" id="fileCoverLetter" name="file" accept=".pdf" required>
                 </div>
             
                 <div class="lato mb-3">
-                    <label for="file3" class="lato form-label">Submit CV /Resume/ Portfolio</label>
-                    <input type="file" class="lato form-control" id="file3" name="file3" accept=".doc, .docx" required placeholder="Upload CV">
+                    <label for="fileResume" class="form-label">Submit CV /Resume/ Portfolio</label>
+                    <input type="file" class="form-control" id="fileResume" name="file" accept=".pdf" required>
                 </div>
             
                 <!-- Submit Button -->
@@ -386,6 +386,12 @@
     <!-- Footer section ending -->
 
 
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
+
+
 <!-- ============================Javascripts================================== -->
     <script>
         function dropdownFunction() {
@@ -439,6 +445,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/careers.js"></script>
     
 </body>
 </html>

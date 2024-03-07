@@ -20,9 +20,9 @@ const toaster = (color, message, notificationsContainer) => {
   }, 3000);
 }
 
-const enterpriseMail = async(formData) => {
+const enterpriseInternetMail = async(formData) => {
   try {
-    const response = await axios.post(`${dbURI}/enterprise`, formData);
+    const response = await axios.post(`${dbURI}/enterprise_internet`, formData);
     return response.data;
   } catch (error) {
     throw error.response.data;
@@ -31,25 +31,26 @@ const enterpriseMail = async(formData) => {
 
 
 const notificationsContainer = document.getElementById('notificationsContainer');
-const enterpriseForm = document.getElementById('enterpriseForm');
+const enterpriseInternetForm = document.getElementById('enterpriseInternetForm');
 
-enterpriseForm.addEventListener('submit', async(e) => {
+enterpriseInternetForm.addEventListener('submit', async(e) => {
   e.preventDefault();
 
   const formData = {
-    name: enterpriseForm.name.value,
-    companyName: enterpriseForm.companyName.value,
-    email: enterpriseForm.email.value,
-    phoneNumber: enterpriseForm.phoneNumber.value,
-    state: enterpriseForm.state.value,
-    city: enterpriseForm.city.value,
-    address: enterpriseForm.address.value,
+    name: document.getElementById('name').value,
+    companyName: document.getElementById('companyName').value,
+    email: document.getElementById('email').value,
+    phoneNumber: document.getElementById('phoneNumber').value,
+    state: document.getElementById('state').value,
+    city: document.getElementById('city').value,
+    contactMethods: Array.from(document.querySelectorAll('input[name="contact[]"]:checked')).map(checkbox => checkbox.value),
+    contactTimes: Array.from(document.querySelectorAll('input[name="time[]"]:checked')).map(checkbox => checkbox.value)
   };
 
-  enterpriseMail(formData)
+  enterpriseInternetMail(formData)
   .then(result => {
     toaster("success", result.message, notificationsContainer);
-    enterpriseForm.reset();
+    enterpriseInternetForm.reset();
 
     setTimeout(() => {
       location.href = "confirmation.html";

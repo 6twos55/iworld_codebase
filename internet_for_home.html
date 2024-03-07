@@ -481,11 +481,11 @@
         <div class="container pt-3 pb-5">
             <h5 class="fw-bold fs-3">Service Request Form</h5>
             <hr class="hr">
-            <form>
+            <form id="internetForHomeForm">
               <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="home-name" class="form-label ">Name</label>
-                    <input required type="text" class="form-control" id="home-name">
+                    <label for="name" class="form-label ">Name</label>
+                    <input required type="text" class="form-control" id="name">
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="form-label ">Email Address</label>
@@ -563,15 +563,15 @@
                     <label class="form-check-label" for="daytimeCheck">Daytime</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input mx-4" type="checkbox" value="evening" id="evening">
+                    <input class="form-check-input mx-4" type="checkbox" value="evening" name="time[]" id="evening">
                     <label class="form-check-label" for="evening">Evening</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input mx-4" type="checkbox" value="anytime" id="anytime">
+                    <input class="form-check-input mx-4" type="checkbox" value="anytime" name="time[]" id="anytime">
                     <label class="form-check-label" for="anytime">Anytime</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input mx-4" type="checkbox" value="weekend" id="weekend">
+                    <input class="form-check-input mx-4" type="checkbox" value="weekend" name="time[]" id="weekend">
                     <label class="form-check-label" for="weekend">Weekend</label>
                   </div>
                 </div>
@@ -744,6 +744,10 @@
         <!-- Copyright -->
     </footer>
 
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
 
 
 
@@ -784,5 +788,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/internet_for_home_form.js"></script>
+
 </body>
 </html>

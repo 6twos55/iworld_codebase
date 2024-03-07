@@ -20,9 +20,9 @@ const toaster = (color, message, notificationsContainer) => {
   }, 3000);
 }
 
-const enterpriseMail = async(formData) => {
+const googleWorkspaceMail = async(formData) => {
   try {
-    const response = await axios.post(`${dbURI}/enterprise`, formData);
+    const response = await axios.post(`${dbURI}/google_workspace`, formData);
     return response.data;
   } catch (error) {
     throw error.response.data;
@@ -31,25 +31,25 @@ const enterpriseMail = async(formData) => {
 
 
 const notificationsContainer = document.getElementById('notificationsContainer');
-const enterpriseForm = document.getElementById('enterpriseForm');
+const googleForm = document.getElementById('googleWorkspaceForm');
 
-enterpriseForm.addEventListener('submit', async(e) => {
+googleForm.addEventListener('submit', async(e) => {
   e.preventDefault();
 
   const formData = {
-    name: enterpriseForm.name.value,
-    companyName: enterpriseForm.companyName.value,
-    email: enterpriseForm.email.value,
-    phoneNumber: enterpriseForm.phoneNumber.value,
-    state: enterpriseForm.state.value,
-    city: enterpriseForm.city.value,
-    address: enterpriseForm.address.value,
+    fullName: document.getElementById('fullName').value,
+    businessName: document.getElementById('businessName').value,
+    phoneNumber: document.getElementById('phoneNumber').value,
+    businessEmail: document.getElementById('businessEmail').value,
+    companySize: document.getElementById('companySize').value,
+    businessDomain: document.getElementById('businessDomain').value,
+    howDidYouHear: document.getElementById('howDidYouHear').value
   };
 
-  enterpriseMail(formData)
+  googleWorkspaceMail(formData)
   .then(result => {
     toaster("success", result.message, notificationsContainer);
-    enterpriseForm.reset();
+    googleForm.reset();
 
     setTimeout(() => {
       location.href = "confirmation.html";

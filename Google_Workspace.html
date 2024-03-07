@@ -271,7 +271,7 @@
             <p class="text-start lato">
                 We're excited to learn more about your IT requirements. Please take a moment to provide us with some essential details so that we can tailor our managed services to meet your business needs.
             </p>
-            <form>
+            <form id="googleWorkspaceForm">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
@@ -527,6 +527,10 @@
     </footer>
     <!-- Ending of footer -->
 
+    <!-- Notification toasts "" -->
+    <div class="col-md-6" id="notificationsContainer" style="position: fixed; bottom: 25px; right: 15px; width: fit-content; z-index: 5000;">
+        <!-- Notifications here - server controlled -->
+    </div>
 
 
     <!--======================== Back to top Button Functionality========================== -->
@@ -553,5 +557,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slide.js/2.3.0/slide.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- BACKEND MAILSENDING JS -- DO NOT DELETE! -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./Assets/js/mail/google_workspace.js"></script>
+
 </body>
 </html>

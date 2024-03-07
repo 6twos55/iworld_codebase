@@ -17,7 +17,7 @@ const toaster = (color, message, notificationsContainer) => {
 
   setTimeout(() => {
     toast.style.display = "none";
-  }, 4000);
+  }, 3000);
 }
 
 const serviceMail = async(formData) => {
@@ -49,6 +49,10 @@ serviceForm.addEventListener('submit', async(e) => {
   .then(result => {
     toaster("success", result.message, notificationsContainer);
     serviceForm.reset();
+
+    setTimeout(() => {
+      location.href = "confirmation.html";
+    }, 3000);
 
   }).catch(error => {
     toaster("danger", error.message, notificationsContainer);

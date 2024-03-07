@@ -20,36 +20,34 @@ const toaster = (color, message, notificationsContainer) => {
   }, 3000);
 }
 
-const enterpriseMail = async(formData) => {
+const mspMail = async(formData) => {
   try {
-    const response = await axios.post(`${dbURI}/enterprise`, formData);
+    const response = await axios.post(`${dbURI}/msp`, formData);
     return response.data;
   } catch (error) {
     throw error.response.data;
   }
 };
 
-
 const notificationsContainer = document.getElementById('notificationsContainer');
-const enterpriseForm = document.getElementById('enterpriseForm');
 
-enterpriseForm.addEventListener('submit', async(e) => {
+document.getElementById('mspForm').addEventListener('submit', (e) => {
   e.preventDefault();
 
   const formData = {
-    name: enterpriseForm.name.value,
-    companyName: enterpriseForm.companyName.value,
-    email: enterpriseForm.email.value,
-    phoneNumber: enterpriseForm.phoneNumber.value,
-    state: enterpriseForm.state.value,
-    city: enterpriseForm.city.value,
-    address: enterpriseForm.address.value,
+    firstName: document.getElementById('input1').value,
+    businessName: document.getElementById('input2').value,
+    phoneNumber: document.getElementById('input3').value,
+    businessNumber: document.getElementById('input4').value,
+    emailAddress: document.getElementById('input5').value,
+    businessAddress: document.getElementById('input6').value,
+    companySize: document.getElementById('select1').value
   };
 
-  enterpriseMail(formData)
+  mspMail(formData)
   .then(result => {
     toaster("success", result.message, notificationsContainer);
-    enterpriseForm.reset();
+    document.getElementById('mspForm').reset();
 
     setTimeout(() => {
       location.href = "confirmation.html";

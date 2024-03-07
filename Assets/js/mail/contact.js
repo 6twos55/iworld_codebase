@@ -20,36 +20,30 @@ const toaster = (color, message, notificationsContainer) => {
   }, 3000);
 }
 
-const enterpriseMail = async(formData) => {
+const contactMail = async(formData) => {
   try {
-    const response = await axios.post(`${dbURI}/enterprise`, formData);
+    const response = await axios.post(`${dbURI}/contact`, formData);
     return response.data;
   } catch (error) {
     throw error.response.data;
   }
 };
 
-
 const notificationsContainer = document.getElementById('notificationsContainer');
-const enterpriseForm = document.getElementById('enterpriseForm');
 
-enterpriseForm.addEventListener('submit', async(e) => {
+document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
 
   const formData = {
-    name: enterpriseForm.name.value,
-    companyName: enterpriseForm.companyName.value,
-    email: enterpriseForm.email.value,
-    phoneNumber: enterpriseForm.phoneNumber.value,
-    state: enterpriseForm.state.value,
-    city: enterpriseForm.city.value,
-    address: enterpriseForm.address.value,
+    fullName: document.getElementById('name').value,
+    emailAddress: document.getElementById('email').value,
+    message: document.getElementById('message').value,
   };
 
-  enterpriseMail(formData)
+  contactMail(formData)
   .then(result => {
     toaster("success", result.message, notificationsContainer);
-    enterpriseForm.reset();
+    document.getElementById('contactForm').reset();
 
     setTimeout(() => {
       location.href = "confirmation.html";
@@ -57,9 +51,8 @@ enterpriseForm.addEventListener('submit', async(e) => {
 
   }).catch(error => {
     toaster("danger", error.message, notificationsContainer);
+    console.log(error);
   })
 
 })
-
-
 

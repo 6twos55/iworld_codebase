@@ -2321,6 +2321,7 @@ textarea.form-control-lg {
   line-height: 1.5;
   color: var(--bs-body-color);
   background-color:white;
+  border-color: rgba(128, 128, 128, 0.3)  1px;
   background-size: 16px 12px;
   border-radius: var(--bs-border-radius);
   -webkit-appearance: none;
